@@ -1,0 +1,61 @@
+@import url(global/card.css);
+
+/* Discipline Styles */
+
+.overflow-container {
+    height: 90%;
+}
+
+.disc-section__title {
+    grid-column: 1 / span 12;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.disc-card__container {
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.section {
+    position: relative;
+}
+
+@media (min-width:768px) {
+
+    .disc-section-title {
+        grid-column: 3 / span 6;
+        justify-content: flex-start;
+        /* margin-left: 2rem; */
+    }
+
+    .disc-card__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+
+    .overflow-container {
+        height: 84%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .overflow-container {
+        height: 88%;
+    }
+}
+
+@media screen and (min-height:810px) {
+
+    .overflow-container {
+        height: 93%;
+    }
+}
+

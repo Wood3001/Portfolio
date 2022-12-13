@@ -9,7 +9,7 @@
     ?>
 
     <body>
-
+`
         <?php require('partials/global/header.php'); ?>
         
         <main>

@@ -1,0 +1,18 @@
+/* root variables */
+
+:root {
+    --body-font:'Poppins', sans-serif;
+    --column-gap: 0.5rem;
+    --oil: rgb(9, 1, 15);
+    --oil-trns: rgb(9, 1, 15,0.5);
+    --oil-trns2: rgb(9, 1, 15,0.25);
+    --eggshell: #f8f8f8;
+    --orange:  #F18626;
+    --purple: #702999;
+    --midnight: #310754;
+    --grad-shadelight: linear-gradient(0deg, rgba(9, 1, 15,1) 15%, rgba(9, 1, 15,0) 85%, rgba(0,0,0,0) 100%);
+    --grad-shadedark: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(0,0,0,0.75) 75%, rgba(0,0,0,0) 100%);
+    --grad-dark: linear-gradient(180deg, rgba(9,1,15,1) 50%, rgba(49,7,84,1) 100%);
+    --grad-light: linear-gradient(0deg, rgba(241,134,38,1) 0%, rgba(112,41,153,1) 50%, rgba(49,7,84,1) 85%);
+    --grad-foot: linear-gradient(0deg, rgba(0,0,0,1) 100%, rgba(49,7,84,1) 100%);
+}

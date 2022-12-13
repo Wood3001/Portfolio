@@ -1,0 +1,13 @@
+@import url(partials/artifact.css);
+
+.artifact__sources li a {
+    list-style: none;
+}
+
+@media screen and (min-width:768px) {
+    
+    .artifact {
+        grid-template-rows: 13rem 15rem 23rem 23rem 19rem 9rem repeat(3, 1fr);
+
+    }
+}

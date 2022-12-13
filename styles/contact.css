@@ -1,0 +1,130 @@
+.site-header__menu li #contact {
+    color: var(--orange);
+}
+
+section {
+    max-width: 1000px;
+    margin: auto !important;
+    grid-template-rows: 5rem 16rem 1fr;
+    align-items: start;
+}
+
+.contact__heading {
+    margin-top: 2rem;
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+}
+
+.contact__heading h1 {
+    display: flex;
+    margin: auto;
+}
+
+.contact__container {
+    padding: 2rem;
+    border-radius: 1rem;
+    grid-column: 2 / span 10;
+    grid-row: 2 / span 1;
+}
+
+.contact__content {
+    margin-top: 2rem;
+}
+
+.contact__item {
+    flex-direction: column;
+    height: 5rem;
+    justify-content: left;
+}
+
+.contact__item a {
+    color: var(--eggshell);
+    text-decoration: none;
+}
+
+.contact__item a h3 {
+    margin-top: 1rem;
+    font-size: 0.65rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width:370px) {
+
+    section {
+        grid-template-rows: 10rem 22rem 1fr;
+    }
+
+    .contact__item a h3 {
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+}
+
+@media screen and (min-width:768px) {
+
+    section {
+        padding: 2rem;
+    }
+
+    .contact__heading {
+        margin-top: 2rem;
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 1;
+    }
+
+    .contact__heading h1 {
+        margin: 0;
+    }
+    
+    .contact__container {
+        padding: 2rem;
+        border-radius: 1rem;
+        grid-column: 4 / span 8;
+        grid-row: 2 / span 1;
+    }
+    
+    .contact__content {
+        margin-top: 2rem;
+    }
+    
+    .contact__item {
+        flex-direction: row;
+        height: 5rem;
+        justify-content: left;
+    }
+    
+    .contact__item a {
+        color: var(--eggshell);
+        text-decoration: none;
+    }
+    
+    .contact__item a h3 {
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+    
+}
+
+@media screen and (min-width:992px) {
+    
+    section {
+        max-width: 700px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    
+    section {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (min-height:810px) {
+
+    #page-container {
+        min-height: 94vh;
+    }
+    
+}
