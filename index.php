@@ -3,7 +3,7 @@
     
     <?php 
         $title = "Web Developer & Designer";
-        $description = "I am a Web Developer and New Media Designer from Vancouver, British Columbia, Canada. I am a student at BCIT, soon entering the work force!";
+        $description = "I am a Web Developer and New Media Designer from Vancouver, British Columbia, Canada. I am a student at BCIT, soon entering the workforce!";
         $stylesheet = "styles/partials/home.css";
         require('partials/global/head.php');
     ?>
