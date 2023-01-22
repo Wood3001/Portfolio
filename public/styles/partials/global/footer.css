@@ -5,9 +5,13 @@
     height: 100%;
     color: var(--eggshell);
     font-size: 0.75rem;
-    padding: 2rem 0;
     background-color: var(--oil);
     z-index: 10;
+}
+
+.site-footer__content {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
 
 .site-footer__logo {
@@ -53,7 +57,7 @@
 .site-footer__copyright p {
     color: var(--midnight);
     font-size: 1rem;
-    margin-top: 0rem;
+    margin-top: 0;
 }
 
 /* media queries */

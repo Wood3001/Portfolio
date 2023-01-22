@@ -16,12 +16,6 @@
     margin: auto;
 }
 
-.gn-items a {
-    color: white;
-    text-decoration: none;
-    z-index: 10;
-}
-
 .gn li {
     width: 100vw;
     text-transform: uppercase;
@@ -65,11 +59,11 @@
     }
 
     .gn li {
-        width: none;
+        width: auto;
         text-transform: none;
         background: none;
         backdrop-filter: none;
-        padding: 1rem;
+        /* padding: 1rem; */
         border: none;
         font-size: 1rem;
     }
@@ -77,11 +71,7 @@
     .gn {
         display: block !important;
         position: static;
-        width: 32rem;
-    }
-
-    .gn-items {
-        display: flex;
+        /* width: 32rem; */
     }
 
     .gn-trigger {

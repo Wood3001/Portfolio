@@ -24,9 +24,9 @@
                 <ul class="gn-items">
                     <li><a id="home" href="index.php">Home</a></li>
                     <li><a id="about" href="about.php">About</a></li>
+                    <li><a id="port" href="portfolio.php">Portfolio</a></li>
                     <li><a id="dev" href="development.php">Development</a></li>
                     <li><a id="des" href="design.php">Design</a></li>
-                    <li><a id="contact" href="contact.php">Contact</a></li>
                 </ul>
             </nav>
         </div>

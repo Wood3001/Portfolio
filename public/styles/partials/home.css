@@ -12,6 +12,7 @@
 
 .sec-1 {
     height:100vh;
+    grid-template-rows: 4rem 1fr;
     align-content: center;
 }
 
@@ -21,6 +22,7 @@
 
 .home-banner {
     grid-column: 1 / span 12;
+    grid-row: 2 / span 1;
     z-index: 10;
 }
 
@@ -35,6 +37,9 @@
 .home-banner__message {
     order: 1;
     margin-top: 1rem;
+}
+.home-banner__message h2 {
+    font-weight: 400;
 }
 
 .home-banner__profile-picture {
@@ -61,7 +66,7 @@
 }
 
 .home-intro__bg {
-    padding: 1rem;
+    padding: 1rem 0;
     width: 100%;
     justify-content: center;
 }
@@ -90,8 +95,9 @@
     filter: saturate(0);
     width: 3rem;
     margin-bottom: 1rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
     box-shadow: 0 0 3px var(--oil);
+    order: -1;
 }
 
 .my-name {
@@ -109,6 +115,7 @@
     hyphens: auto;
     font-size: 1.25rem;
     line-height: 1.5;
+    margin-bottom: 1rem;
 }
 
 /* card styles */
@@ -181,6 +188,21 @@
         justify-content: center;
         margin: 2rem auto;
     }
+
+    .home-intro__text-box p {
+        font-size: 1.4rem;
+    }
+
+    .home-intro__hello {
+
+        height: 7rem;
+    }
+
+    .home-intro__hello img {
+        height: 5.5rem;
+        width: auto;
+        order: -1;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -191,6 +213,46 @@
 
     .sec-3 {
         min-height: 50vh;
+    }
+    
+}
+
+@media screen and (min-width:1200px) {
+
+    .home-intro__text-box {
+        max-width: 50rem;
+    }
+
+    .home-intro__text-box p {
+        font-size: 1.65rem;
+        line-height: 1.6;
+    }
+
+    .home-intro__hello {
+        width: 50rem;
+        height: 10rem;
+    }
+
+    .home-intro__hello-content {
+        max-width: 16rem;
+    }
+    
+    .home-intro__hello h2 {
+        font-size: 1.75rem;
+    }
+    
+    .home-intro__hello img {
+        height: 8rem;
+        width: auto;
+        order: -1;
+    }
+}
+
+
+@media screen and (min-width:1500px) {
+
+    .sec-1 {
+        grid-template-rows: 16rem 1fr;
     }
     
 }

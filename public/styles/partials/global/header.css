@@ -15,7 +15,7 @@
 .site-header__content {
     display: grid;
     width: 100vw;
-    grid-template-columns: 1rem repeat(11, 1fr) 2rem 1rem;
+    grid-template-columns: 1rem repeat(12, 1fr) 1rem;
     grid-template-rows: 1rem 1fr 1rem;
     align-items: center;
     justify-content: center;
@@ -57,7 +57,7 @@
     color: var(--orange);
 }
  
-.site-header__menu nav ul.flex {
+.site-header__menu nav .flex {
     column-gap: var(--column-gap);
 }
 
@@ -105,8 +105,12 @@
 
 @media screen and (min-width:1200px) {
 
+    .site-header__content {
+        grid-template-columns: 1rem 1fr fit-content(100%) 1rem;
+    }
+
     .site-header__menu {
-        grid-column: 8 / span 5;  
+        grid-column: 3 / span 1;  
     }
 
     .gn-items {

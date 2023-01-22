@@ -16,7 +16,8 @@ h1{
 h2{ font-size: 1rem;
     font-weight: 900;}
 h3{ font-size: 1.15rem;
-    font-weight: 700;}
+    font-weight: 700;
+    line-height: 2;}
 h4{ font-size: 0.85rem;}
 h5{ font-size: 0.75rem;}
 h6{ font-size: 0.5rem;}
@@ -38,12 +39,38 @@ p a {
     color: var(--eggshell);
 }
 
+.breadcrumb {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--eggshell);
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    transition: color 150ms ease-in-out;
+    line-height: 1;
+}
+
+.breadcrumb:hover {
+    color: var(--orange);
+}
+
+.breadcrumb_arrow {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--eggshell);
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+
+/* Media Queries */
+
 @media (min-width:370px) {
+    
     h1 {font-size: 2rem;}
     h2 {font-size: 1.25rem;;}
 
     .bigger {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         font-weight: 700;
         line-height:1.5;
     }
@@ -53,3 +80,13 @@ p a {
     h1 {font-size: 3rem;}
     h2 {font-size: 1.5rem;}
 }
+
+@media (min-width:1200px) {
+
+    .bigger {
+        font-size: 5rem;
+        font-weight: 700;
+        line-height:1.5;
+    }
+}
+

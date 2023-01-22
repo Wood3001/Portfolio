@@ -1,5 +1,5 @@
 <footer class="site-footer">
-    <div class="flex">
+    <div class="site-footer__content flex">
         <div class="site-footer__logo">
             <img src="images/logo.svg" alt="My S logo">
         </div>

@@ -7,10 +7,8 @@
 }
 
 .disc-section__title {
-    grid-column: 1 / span 12;
-    display: flex;
     justify-content: center;
-    margin: 1rem 0;
+    margin: 1rem;
 }
 
 .disc-card__container {
@@ -22,7 +20,7 @@
     position: relative;
 }
 
-@media (min-width:768px) {
+@media screen and (min-width:768px) {
 
     .disc-section-title {
         grid-column: 3 / span 6;
@@ -46,6 +44,10 @@
 }
 
 @media screen and (min-width:1200px) {
+
+    .disc-section__title {
+        align-items: center;
+    }
 
     .overflow-container {
         height: 88%;

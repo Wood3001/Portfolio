@@ -72,3 +72,11 @@
         margin: 0 1rem;
     }
 }
+
+@media (min-width:1200px) {
+
+    .title-container {
+        width: 82rem;
+    }
+}
+
