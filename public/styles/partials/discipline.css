@@ -3,7 +3,7 @@
 /* Discipline Styles */
 
 .overflow-container {
-    height: 90%;
+    height: 80%;
 }
 
 .disc-section__title {
@@ -20,7 +20,20 @@
     position: relative;
 }
 
+.title-container {
+    max-width: 61rem;
+}
+
+#page-container {
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (min-width:768px) {
+
+    .overflow-container {
+        height: 82%;
+    }
 
     .disc-section-title {
         grid-column: 3 / span 6;
@@ -38,9 +51,7 @@
 
 @media screen and (min-width:992px) {
 
-    .overflow-container {
-        height: 84%;
-    }
+    
 }
 
 @media screen and (min-width:1200px) {
@@ -49,15 +60,19 @@
         align-items: center;
     }
 
+    .disc-card__container {
+        max-width: 70rem;
+    }
+
     .overflow-container {
-        height: 88%;
+        height: 90%;
     }
 }
 
-@media screen and (min-height:810px) {
+/* @media screen and (min-height:810px) {
 
     .overflow-container {
-        height: 93%;
+        height: 85%;
     }
-}
+} */
 

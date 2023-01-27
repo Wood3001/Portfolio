@@ -53,7 +53,7 @@ main {
 }
 
 .overflow-container {
-    height: 99%;
+    height: 95%;
     width: 100%;
     position: fixed;
     overflow-x: hidden;
@@ -66,14 +66,14 @@ main {
 }
 
 #content-wrap {
-    padding-bottom: 15rem;
+    padding-bottom: 20rem;
 }
 
 #footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 15rem;
+    height: 20rem;
 }
 
 .section {
@@ -91,7 +91,7 @@ footer {
 .blackout {
     background-color: var(--oil-trns2);
     -webkit-backdrop-filter: blur(0.0625rem);
-    backdrop-filter: blur(0.0625rem);
+    backdrop-filter: blur(0.25rem);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -121,5 +121,33 @@ footer {
 
 @media screen and (min-width:1200px) {
 
+    ::-webkit-scrollbar {
+        position: absolute;
+        width: 10px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        position: absolute;
+        background: rgba(241, 241, 241, 0.25);
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        position: absolute;
+        background: var(--orange25);
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        position: absolute;
+        background: var(--orange50);
+      }
+
+    #content-wrap {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
     
 }

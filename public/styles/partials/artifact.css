@@ -43,12 +43,16 @@
     flex-direction: column;
 }
 
+.artifact__specs h3 {
+    font-size: 1rem;
+}
+
 .artifact__narrative #tech {
     flex-direction: column;
 }
 
 .artifact__narrative h3 {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .artifact__narrative li {
@@ -58,6 +62,10 @@
     list-style: disc;
     margin-left: 1rem;
     margin-bottom: 4px;
+}
+
+.artifact__narrative p {
+    margin: 0.5rem;
 }
 
 .artifact__sources {

@@ -201,8 +201,7 @@
 
 @media (min-width:1200px) {
     
-    .about__sec-1, .about__sec-2 {
-        max-width: 1000px;
+    .about__sec-1 {
         margin: 0 auto !important;
     }
 }

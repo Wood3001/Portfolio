@@ -1,12 +1,13 @@
 /////////////////// NAVIGATION /////////////////
 
   var tl = gsap.timeline();
-  var windowWidth = $('body').width();
+  var windowWidth;
   
-  if (windowWidth < 1200) {
+  
   $('.gn-trigger').on('click', function(e) {
     e.preventDefault();
-    if($(this).hasClass('is-active')) {
+    windowWidth = $('body').width();
+    if((windowWidth < 1200)&&($(this).hasClass('is-active'))) {
       $(this).removeClass('is-active');
       $('.gn').slideUp(200);
       blackOut();
@@ -17,7 +18,7 @@
       blackOut();
       disableScroll();
     }
-})};
+});
 
   $('.gn-trigger, .gn a').on('click', turnBun);
   

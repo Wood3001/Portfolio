@@ -6,6 +6,8 @@
     // declare a variable that executes the find_all function on the Note class
     $artifacts = Artifact::find_all();
 
+    $count = 0;
+
 ?><!DOCTYPE html>
 <html lang="en">
     
@@ -24,7 +26,7 @@
             <div class="overflow-container">
                 <div id="page-container">
                     <div id="content-wrap">
-                        <section class="sec-1 grid">
+                        <section class="sec-1 flex">
                             <div class="home-banner">
                                 <div class="home-banner__logo flex">
                                     <img  src="images/logo.svg" alt="My S logo">
@@ -57,20 +59,22 @@
                                         <p>I am excited to continue my learning in a professional environment, and to work with diverse teams to accomplish amazing things!</p>
                                     </div>
                                 </div>
-
-                                <div class="home-banner__cta flex flex-column flex-middle">
-                                    <a href="about.php"><button class="btn-1"><h3>More About Me</h3></button></a>
+                                <div class="home-banner__cta flex">
+                                    <div class="button-wrapper">
+                                        <a href="about.php"><button class="btn-1"><h3>More About Me</h3></button></a>
+                                    </div>
                                 </div>
                             </div>
                         </section>
                         <section class="sec-3">
-                            <div class="home-card__heading flex flex-column flex-middle flex-end">
+                            <div class="home-card__heading flex flex-column flex-end">
                                 <h2>Featured Projects</h2>
                             </div>
                             <div class="home-card__container flex flex-middle"> 
 
-                                <?php while($artifact = $artifacts->fetch_assoc()) {
+                                <?php while($count < 4 && $artifact = $artifacts->fetch_assoc()) {
                                     include(get_path('public/partials/global/home-card.php'));
+                                    $count++;
                                 } ?>
 
                             </div>
