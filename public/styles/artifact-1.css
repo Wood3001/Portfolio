@@ -1,0 +1,19 @@
+@import url(partials/artifact.css);
+
+@media screen and (min-width:768px) {
+    
+    .artifact {
+        grid-template-rows: 11rem 9rem 25rem 29rem 30rem 26rem repeat(3, 1fr);
+
+    }
+}
+
+@media screen and (min-width:992px) {
+    
+    .artifact {
+        grid-template-rows: 12rem 10rem 25rem 29rem 30rem 26rem repeat(3, 1fr);
+
+    }
+}
+
+

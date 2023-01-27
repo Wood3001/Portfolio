@@ -1,0 +1,128 @@
+/* header styles */
+
+.site-header {
+    position: fixed;
+    height: 5rem;
+    z-index: 10;
+}
+
+.top-bar {
+    background: var(--midnight);
+    height: 1rem;
+    width: 100%;
+}
+
+.site-header__content {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1rem repeat(12, 1fr) 1rem;
+    grid-template-rows: 1rem 1fr 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 0.5rem;
+    grid-column: 2 / span 10;
+    grid-row: 2;
+    align-items: center;
+}
+
+.site-header__logo img {
+    width: 2rem;
+}
+
+.site-header__message {
+    display: none;
+    line-height: 1.35;
+    margin-left: 0.5rem;
+    transform: translateY(-1.5px);
+}
+
+.site-header__menu {
+    margin-top: 0.5rem;
+    grid-column: 13 / span 1;
+    grid-row: 2;
+}
+
+.site-header__menu nav {
+    display: none;
+}
+
+.site-header__menu li a {
+    padding: 1rem;
+}
+
+.site-header__menu li:hover a {
+    color: var(--orange);
+}
+ 
+.site-header__menu nav .flex {
+    column-gap: var(--column-gap);
+}
+
+@media (min-width:370px) {
+
+    .site-header__message {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 481px) {
+
+    .site-header {
+        width: 100%;
+    }
+
+    .site-header__content {
+        width: 100%;
+    }
+
+    .site-header__menu {
+        grid-column: 13 / span 1;
+        flex-grow: 1;
+    }   
+}
+
+@media screen and (min-width:768px) {
+
+    .site-header__logo img {
+        width: 2.4rem;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .site-header {
+        display: flex;
+    }
+
+    .site-header__content {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .site-header__content {
+        grid-template-columns: 1rem 1fr fit-content(100%) 1rem;
+    }
+
+    .site-header__menu {
+        grid-column: 3 / span 1;  
+    }
+
+    .gn-items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .site-header__menu nav {
+        display: block;
+    }
+
+    .site-header__menu li a {
+        padding: 0;
+    }
+}

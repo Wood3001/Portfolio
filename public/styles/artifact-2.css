@@ -1,0 +1,19 @@
+@import url(partials/artifact.css);
+
+.artifact__sources li a {
+    list-style: none;
+}
+
+@media screen and (min-width:768px) {
+    
+    .artifact {
+        grid-template-rows: 13rem 14rem 24rem 24rem 20rem 8rem repeat(2, 1fr);
+
+    }
+}
+
+.artifact__sources {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
