@@ -35,8 +35,9 @@ p {
     line-height:1.5;
 }
 
-p a {
+a {
     color: var(--eggshell);
+    text-decoration: none;
 }
 
 .breadcrumb {
