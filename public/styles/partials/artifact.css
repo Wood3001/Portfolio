@@ -24,7 +24,7 @@
 
 .artifact__specs {
     flex-direction: row;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 0.25rem 0.25rem 0.75rem var(--oil-trns);
 }
@@ -53,6 +53,9 @@
 
 .artifact__narrative h3 {
     font-size: 1.25rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+
 }
 
 .artifact__narrative li {
@@ -64,9 +67,9 @@
     margin-bottom: 4px;
 }
 
-.artifact__narrative p {
+/* .artifact__narrative p {
     margin: 0.5rem;
-}
+} */
 
 .artifact__sources {
     margin: 1rem 0;
@@ -149,9 +152,10 @@
 
     .artifact__narrative {
         flex-direction: row;
-        padding: 1rem;
+        padding: 1.5rem;
         border-radius: 0.5rem;
         box-shadow: 0.25rem 0.25rem 0.75rem var(--oil-trns);
+        align-self: center;
     }
     
     .artifact__narrative ul {

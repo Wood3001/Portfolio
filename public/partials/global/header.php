@@ -7,8 +7,10 @@
             </div>
             <div class="site-header__message">
                 <div class="flex flex-column">
-                    <h2>Sherwood Seabrook</h2>
-                    <h4>Web Developer & Designer</h4>
+                    <a href="index.php">
+                        <h2>Sherwood Seabrook</h2>
+                        <h4>Web Developer & Designer</h4>
+                    </a>
                 </div>
             </div>
         </div>
@@ -22,7 +24,7 @@
             </button>
             <nav class="gn">
                 <ul class="gn-items">
-                    <li><a id="home" href="index.php">Home</a></li>
+                    <!-- <li><a id="home" href="index.php">Home</a></li> -->
                     <li><a id="about" href="about.php">About</a></li>
                     <li><a id="port" href="portfolio.php">Portfolio</a></li>
                     <li><a id="dev" href="development.php">Development</a></li>

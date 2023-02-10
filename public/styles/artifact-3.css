@@ -3,7 +3,7 @@
 @media screen and (min-width:768px) {
     
     .artifact {
-        grid-template-rows: 10rem 9rem 22rem 41rem 28rem 12rem 21rem 13rem;
+        grid-template-rows: 10rem 13rem 22rem 41rem 28rem 12rem 21rem 13rem;
 
     }
 

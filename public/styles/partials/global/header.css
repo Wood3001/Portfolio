@@ -39,6 +39,11 @@
     transform: translateY(-1.5px);
 }
 
+.site-header__message a {
+    color: var(--eggshell);
+    text-decoration: none;
+}
+
 .site-header__menu {
     margin-top: 0.5rem;
     grid-column: 13 / span 1;

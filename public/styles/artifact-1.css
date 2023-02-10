@@ -11,7 +11,7 @@
 @media screen and (min-width:992px) {
     
     .artifact {
-        grid-template-rows: 12rem 10rem 25rem 29rem 30rem 26rem repeat(3, 1fr);
+        grid-template-rows: 12rem 12rem 25rem 29rem 30rem 26rem repeat(3, 1fr);
 
     }
 }

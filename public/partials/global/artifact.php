@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="artifact__narrative blur" id="nar1">
-                    <h3><?php echo ($artifact['nar_sec1_head']); ?></h3>
+                    <!-- <h3><?php echo ($artifact['nar_sec1_head']); ?></h3> -->
                     <?php echo ($artifact['nar_sec1']); ?>
                 </div>
                 <div class="artifact__image" id="pic1">
