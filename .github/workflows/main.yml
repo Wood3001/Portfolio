@@ -12,5 +12,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         server: ftp.sherwoodseabrook.com	
-        username: ${{ secrets.ftp_user }}
-        password: ${{ secrets.ftp_password }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
