@@ -41,7 +41,7 @@
                                     <img src="images/portrait01.jpg" alt="A picture of me">
                                 </div>
                                 <div class="home-banner__cta flex">
-                                    <a href="development.php"><button class="btn-1"><h3>View My Portfolio</h3></button></a>
+                                    <a href="portfolio.php"><button class="btn-1"><h3>View My Portfolio</h3></button></a>
                                 </div>
                             </div>
                         </section>

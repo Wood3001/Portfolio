@@ -99,6 +99,7 @@
 .artifact__image {
     display: flex;
     justify-content: center;
+    align-self: center;
 }
 
 .artifact__image img {

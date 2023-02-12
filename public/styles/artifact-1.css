@@ -3,17 +3,8 @@
 @media screen and (min-width:768px) {
     
     .artifact {
-        grid-template-rows: 11rem 9rem 25rem 29rem 30rem 26rem repeat(3, 1fr);
+        grid-template-rows: 12rem 12rem 25rem 29rem 30rem 33rem repeat(2, 1fr);
 
     }
 }
-
-@media screen and (min-width:992px) {
-    
-    .artifact {
-        grid-template-rows: 12rem 12rem 25rem 29rem 30rem 26rem repeat(3, 1fr);
-
-    }
-}
-
 
