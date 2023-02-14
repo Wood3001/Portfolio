@@ -44,7 +44,7 @@
     .disc-card__container {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
 }
@@ -61,7 +61,7 @@
     }
 
     .disc-card__container {
-        max-width: 70rem;
+        max-width: 64rem;
     }
 
     .overflow-container {

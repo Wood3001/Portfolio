@@ -27,7 +27,7 @@
                 <div id="page-container">
                     <div id="content-wrap">
                         <section class="sec-1 flex">
-                            <div class="home-banner">
+                            <div class="home-banner blur">
                                 <div class="home-banner__logo flex">
                                     <img  src="images/logo.svg" alt="My S logo">
                                 </div>
@@ -45,24 +45,18 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="sec-2 flex">
+                        <section class="sec-2">
                             <div class="home-intro__message">
-                                <div class="home-intro__hello">
-                                    <div class="home-intro__hello-content flex">
-                                    <h2>Hello, my name is <span class="bigger my-name">Sherwood.</span></h2>
-                                    <img src="images/fam-pic1.jpg" alt="a picture of me with my partner and daughter">
-                                    </div>
+                                
+                                <h2>Hello, my name is <span class="bigger my-name">Sherwood.</span></h2>
+                                <img src="images/fam-pic1.jpg" alt="a picture of me with my partner and daughter">
+                                <div class="home-intro__bg blur"></div>
+                                <div class="home-intro__text-box">
+                                    <p>I am a Web Developer and New Media Designer based in Vancouver, Canada. I am a student at the British Columbia Institute of Technology. Soon I will be embarking on my new career!</p>
+                                    <p>I am excited to continue my learning in a professional environment, and to work with diverse teams to accomplish amazing things!</p>
                                 </div>
-                                <div class="home-intro__bg blur flex flex-middle">
-                                    <div class="home-intro__text-box">
-                                        <p>I am a Web Developer and New Media Designer based in Vancouver, Canada. I am a student at the British Columbia Institute of Technology. Soon I will be embarking on my new career!</p>
-                                        <p>I am excited to continue my learning in a professional environment, and to work with diverse teams to accomplish amazing things!</p>
-                                    </div>
-                                </div>
-                                <div class="home-banner__cta flex">
-                                    <div class="button-wrapper">
-                                        <a href="about.php"><button class="btn-1"><h3>More About Me</h3></button></a>
-                                    </div>
+                                <div class="home-banner__cta">
+                                    <a href="about.php"><button class="btn-1"><h3>More About Me</h3></button></a>
                                 </div>
                             </div>
                         </section>

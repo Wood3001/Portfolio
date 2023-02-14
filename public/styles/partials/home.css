@@ -24,6 +24,8 @@
 .home-banner {
     margin-bottom: 10rem;
     z-index: 10;
+    width: 100%;
+    padding: 1rem 0;
 }
 
 .home-banner__logo {
@@ -91,7 +93,7 @@
     font-size: 0.75rem;
 }
 
-.home-intro__hello img {
+.home-intro__message img {
     border-radius: 50%;
     filter: saturate(0);
     width: 3rem;
@@ -109,7 +111,6 @@
     padding: 2rem;
     border-radius: 0.5rem;
     max-width: 35rem;
-    /* margin-right: 2rem; */
 }
 
 .home-intro__text-box p {
@@ -165,20 +166,61 @@
         min-height: 100%;
     }
 
+    .home-banner {
+        width: auto;
+        padding: 4rem;
+        border-radius: 50%;
+    }
+
     .home-intro__message {
-        margin: auto;
-    }
-    
-    .sec-1 {
-        min-height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 10rem 40rem 1fr;
+        grid-template-rows: 1fr 10rem 24rem 10rem 1fr;
     }
 
-    .my-name {
-        left: 7rem;
+    .home-intro__message img {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+        width: 8rem;
+        margin: 1rem;
+        margin-top: 2rem;
     }
 
-    .home-banner__cta {
-        flex-direction: row;
+    .home-intro__message h2 {
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+        margin: 1rem;
+        margin-top: 2rem;
+    }
+
+    .home-intro__bg {
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 3;
+        z-index: -10;
+    }
+
+    .home-intro__text-box {
+        grid-column: 3 / span 1;
+        grid-row: 3 / span 1;
+        z-index: 12;
+        padding: 0;
+        margin: 1rem;
+        margin-top: 2.5rem;
+    }
+
+    .home-intro__text-box p {
+        font-size: 1.65rem;
+    }
+
+    .home-intro__message .home-banner__cta {
+        margin-top: 0;
+        grid-column: 3 / span 1;
+        grid-row: 4 / span 1;
+
+    }
+
+    .home-intro__message .btn-1 {
+        margin: 1rem;
     }
 
     .sec-3 {
@@ -192,30 +234,6 @@
         flex-wrap: wrap;
         justify-content: center;
         margin: 2rem auto;
-    }
-
-    .home-intro__text-box p {
-        font-size: 1.4rem;
-    }
-
-    .home-intro__hello {
-        height: 7rem;
-    }
-
-    .home-intro__hello img {
-        height: 5.5rem;
-        width: auto;
-        order: -1;
-        margin-right: 2rem;
-    }
-
-    .home-card__heading {
-        width: 34rem;
-        margin: auto;
-    }
-
-    .home-banner__cta .btn-1 {
-        margin: 0 1.5rem 2rem;
     }
 }
 
@@ -233,43 +251,9 @@
 
 @media screen and (min-width:1200px) {
 
-    .home-intro__text-box {
-        max-width: 35rem;
-        margin-left: 3.5rem;
-    }
-
-    .home-intro__text-box p {
-        font-size: 1.65rem;
-        line-height: 1.6;
-    }
-
-    .home-intro__hello {
-        width: 52rem;
-        height: 10rem;
-    }
-
-    .home-intro__hello-content {
-        max-width: 16rem;
-    }
-    
-    .home-intro__hello h2 {
-        font-size: 1.75rem;
-    }
-    
-    .home-intro__hello img {
-        height: 8rem;
-        width: auto;
-        order: -1;
-    }
-
-    .home-banner__cta .button-wrapper {
-        width: 35rem;
-    }
-
-    
-
     .home-card__heading {
         width: 34rem;
         margin: auto;
     }
 }
+
