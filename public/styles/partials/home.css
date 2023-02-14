@@ -63,61 +63,74 @@
 }
 
 .home-intro__message {
-    width: 100%;
-    z-index: 10;
-    justify-content: center;
-}
-
-.home-intro__bg {
-    padding: 1rem 0;
-    width: 100%;
-    justify-content: center;
-}
-
-.home-intro__hello {
-    justify-self: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 35rem;
-    height: 4rem;
-    margin: auto;
-    padding: 0 2rem;
-}
-
-.home-intro__hello-content {
-    max-width: 16rem;
-}
-
-.home-intro__hello h2 {
-    font-size: 0.75rem;
+    display: grid;
+    grid-template-columns: 1rem 6rem 1fr 1rem;
+    grid-template-rows: 1fr 6rem 24rem 10rem 1fr;
 }
 
 .home-intro__message img {
     border-radius: 50%;
     filter: saturate(0);
-    width: 3rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
     box-shadow: 0 0 3px var(--oil);
-    order: -1;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    width: 4rem;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+.home-intro__message h2 {
+    font-size: 0.75rem;
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    margin-top: 2rem;
 }
 
 .my-name {
     color: var(--orange);
 }
 
+.home-intro__bg {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 3;
+    z-index: -10;
+}
+
 .home-intro__text-box {
-    padding: 2rem;
-    border-radius: 0.5rem;
-    max-width: 35rem;
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+    z-index: 12;
+    padding: 0;
+    margin: 1rem;
+    margin-top: 2.5rem;
 }
 
 .home-intro__text-box p {
-    hyphens: auto;
     font-size: 1.25rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
+}
+
+.home-intro__message .home-banner__cta {
+    margin-top: 0;
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 1;
+    align-items: center;
+}
+
+.home-intro__message .btn-1 {
+    margin: 1rem;
+}
+
+.sec-3 {
+    justify-content: center;
+    min-height: 70%;
+}
+
+.home-card__container {
+    max-width: 40rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem auto;
 }
 
 /* card styles */
@@ -173,7 +186,6 @@
     }
 
     .home-intro__message {
-        display: grid;
         grid-template-columns: 1fr 10rem 40rem 1fr;
         grid-template-rows: 1fr 10rem 24rem 10rem 1fr;
     }
@@ -187,6 +199,7 @@
     }
 
     .home-intro__message h2 {
+        font-size: 2rem;
         grid-column: 3 / span 1;
         grid-row: 2 / span 1;
         margin: 1rem;
@@ -196,7 +209,6 @@
     .home-intro__bg {
         grid-column: 1 / span 4;
         grid-row: 2 / span 3;
-        z-index: -10;
     }
 
     .home-intro__text-box {
