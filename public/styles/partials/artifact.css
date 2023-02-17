@@ -244,6 +244,10 @@
         grid-column: 1 / span 12;
         grid-row: 9 / span 1;
     }
+
+    #footer {
+        height: 17rem;
+    }
     
 }
 

@@ -66,7 +66,7 @@
                             </div>
                             <div class="home-card__container flex flex-middle"> 
 
-                                <?php while($count < 4 && $artifact = $artifacts->fetch_assoc()) {
+                                <?php while($count < 3 && $artifact = $artifacts->fetch_assoc()) {
                                     include(get_path('public/partials/global/home-card.php'));
                                     $count++;
                                 } ?>

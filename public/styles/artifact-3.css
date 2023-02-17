@@ -1,13 +1,1 @@
 @import url(partials/artifact.css);
-
-@media screen and (min-width:768px) {
-    
-    .artifact {
-        grid-template-rows: 10rem 14rem 27rem 42rem 28rem 43rem 0rem 13rem;
-
-    }
-
-    .artifact__cta {
-        grid-row: 9 / span 1;
-    }
-}

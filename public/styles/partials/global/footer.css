@@ -6,8 +6,6 @@
     color: var(--eggshell);
     font-size: 0.75rem;
     background-color: var(--oil);
-    background-image: url(../../../images/van-skyline.png);
-    background-size: cover;
 }
 
 .site-footer__content {
@@ -77,7 +75,7 @@
 }
 
 .contact__content {
-    width: 30rem;
+    width: 20rem;
     justify-content: center;
 }
 
@@ -123,6 +121,11 @@
     
 
 @media screen and (min-width:768px) {
+
+    /* .site-footer {
+        background-image: url(../../../images/van-skyline.png);
+        background-size: contain;
+    } */
 
     .site-footer__content {
         height: 50%;

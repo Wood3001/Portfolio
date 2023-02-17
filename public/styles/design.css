@@ -3,3 +3,11 @@
 .site-header__menu li #des {
     color: var(--orange);
 }
+
+
+@media (min-width: 768px) {
+
+    #footer {
+        height: 14rem;
+    }  
+}
