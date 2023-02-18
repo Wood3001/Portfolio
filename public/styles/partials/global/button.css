@@ -2,7 +2,7 @@
 
 .btn-1 {
     border: none;
-    width: 11.25rem;
+    width: 15rem;
     height: 3.75rem;
     color: white;
     background-color:var(--purple);
@@ -34,6 +34,5 @@
 }
 
 @media screen and (min-width:768px) {
-
 
 }

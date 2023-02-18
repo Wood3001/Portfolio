@@ -18,15 +18,15 @@
     list-style: none;
 }
 
-#skills{
-    margin-left: 2rem;
-}
-
 .artifact__specs {
-    flex-direction: row;
+    flex-direction: column;
     padding: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 0.25rem 0.25rem 0.75rem var(--oil-trns);
+}
+
+#skills{
+    margin-top: 1rem;
 }
 
 .artifact__narrative {
@@ -114,6 +114,15 @@
 }
 
 @media screen and (min-width:768px) {
+
+    .artifact__specs {
+        flex-direction: row;
+    }
+
+    #skills{
+        margin-left: 2rem;
+        margin-top: 0;
+    }
 
     .overflow-container {
         height: 88%;
