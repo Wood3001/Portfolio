@@ -107,6 +107,7 @@
 
 .home-intro__text-box p {
     font-size: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 .home-intro__message .home-banner__cta {
@@ -187,12 +188,12 @@
     }
 
     .sec-2 {
-        height: 38rem;
+        height: 34rem;
     }
 
     .home-intro__message {
         grid-template-columns: 1fr 8rem 32rem 1fr;
-        grid-template-rows: 1fr 8rem 18rem 10rem 1fr;
+        grid-template-rows: 1fr 8rem 18rem 8rem 1fr;
     }
 
     .home-intro__message img {
