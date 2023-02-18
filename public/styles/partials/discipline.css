@@ -19,10 +19,6 @@
     position: relative;
 }
 
-.title-container {
-    max-width: 61rem;
-}
-
 #page-container {
     display: flex;
     flex-direction: column;
@@ -39,30 +35,24 @@
     .disc-section-title {
         grid-column: 3 / span 6;
         justify-content: flex-start;
-        /* margin-left: 2rem; */
+        align-items: center;
+    }
+
+    .disc-card__container {
+        max-width: 64rem;
     }
 
     .disc-card__container {
         flex-direction: row;
         flex-wrap: wrap;
-        /* justify-content: center; */
     }
 
 }
 
 @media screen and (min-width:992px) {
 
-    
-}
-
-@media screen and (min-width:1200px) {
-
     .disc-section__title {
         align-items: center;
-    }
-
-    .disc-card__container {
-        max-width: 64rem;
     }
 
     .overflow-container {

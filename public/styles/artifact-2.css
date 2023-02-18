@@ -9,6 +9,10 @@
     flex-direction: column;
 }
 
+#pic6 {
+    display: none;
+}
+
 @media screen and (min-width:768px) {
 
     .artifact__sources {
