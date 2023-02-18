@@ -15,7 +15,7 @@ h1{
 }
 h2{ font-size: 1rem;
     font-weight: 900;}
-h3{ font-size: 1.15rem;
+h3{ font-size: 0.8625rem;
     font-weight: 700;
     line-height: 2;}
 h4{ font-size: 0.85rem;}
@@ -78,18 +78,18 @@ a {
 }
 
 @media (min-width:768px) {
-    h1 {font-size: 3rem;}
-    h2 {font-size: 1.5rem;}
+    h1 {font-size: 2.25rem;}
+    h2 {font-size: 1.125rem;}
 
     .bigger {
-        font-size: 4.5rem;
+        font-size: 3.75rem;
     }
 }
 
 @media (min-width:1200px) {
 
     .bigger {
-        font-size: 5rem;
+        font-size: 3.75rem;
         font-weight: 700;
         line-height:1.5;
     }
