@@ -6,6 +6,15 @@
 
 .artifact__sources {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px) {
+
+    .artifact__sources {
+        flex-direction: row;
+        justify-content: space-between;
+        line-height: 1.5;
+    }
+    
 }
