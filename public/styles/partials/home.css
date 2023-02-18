@@ -77,6 +77,7 @@
 }
 
 .home-intro__message img {
+    display: none;
     border-radius: 50%;
     filter: saturate(0);
     box-shadow: 0 0 3px var(--oil);
@@ -88,9 +89,10 @@
 
 .home-intro__message h2 {
     font-size: 0.75rem;
-    grid-column: 3 / span 1;
+    grid-column: 2 / span 2;
     grid-row: 2 / span 1;
     margin-top: 2rem;
+    max-width: 20rem;
 }
 
 .my-name {
@@ -109,6 +111,7 @@
     z-index: 12;
     padding: 0;
     margin-top: 2rem;
+    max-width: 29rem;
 }
 
 .home-intro__text-box p {
@@ -154,11 +157,15 @@
 @media screen and (min-width:370px) {
 
     .sec-2 {
-        height:60vh;
+        height:75vh;
     }
 
     .home-intro__message {
         grid-template-columns: 2rem 5rem 1fr 2rem;
+    }
+
+    .home-intro__message .home-banner__cta {
+        max-width: 16rem;
     }
 
     .home-intro__hello {
@@ -181,6 +188,10 @@
 
     .home-intro__hello h2 {
         font-size: 1rem;
+    }
+
+    .home-intro__text-box {
+        max-width: 29rem;
     }
 }
 
@@ -211,6 +222,7 @@
     }
 
     .home-intro__message img {
+        display: block;
         grid-column: 2 / span 1;
         grid-row: 2 / span 1;
         width: 6rem;
@@ -233,9 +245,6 @@
 
     .home-intro__text-box {
         grid-column: 3 / span 1;
-        grid-row: 3 / span 1;
-        z-index: 12;
-        padding: 0;
         margin: 1rem;
         margin-top: 2rem;
     }

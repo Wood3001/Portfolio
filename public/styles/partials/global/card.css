@@ -133,6 +133,10 @@ a {
         margin-bottom: 2rem;
         justify-content: center;
     }
+
+    .card__cta a {
+        width: 16rem;
+    }
 }
 
 @media screen and (min-width:480px) {
@@ -158,8 +162,4 @@ a {
             height: 6rem;
         }
 
-        .card__cta a {
-            width: 16rem;
-        }
-    
 }
