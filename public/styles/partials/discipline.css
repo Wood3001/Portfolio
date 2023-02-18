@@ -22,7 +22,6 @@
 #page-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -39,12 +38,9 @@
     }
 
     .disc-card__container {
-        max-width: 64rem;
-    }
-
-    .disc-card__container {
         flex-direction: row;
         flex-wrap: wrap;
+        width: 64rem;
     }
 
 }
@@ -59,11 +55,3 @@
         height: 90%;
     }
 }
-
-/* @media screen and (min-height:810px) {
-
-    .overflow-container {
-        height: 85%;
-    }
-} */
-
