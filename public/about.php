@@ -12,8 +12,8 @@
         
         <?php require('partials/global/header.php'); ?>
 
-        <main>
-            <div class="overflow-container">
+        <main id="main">
+            <div class="overflow-container scene_element--flyin">
             <div id="page-container">
                 <div id="content-wrap">
                     <section class="about__sec-1 grid">

@@ -22,7 +22,7 @@
         
         <?php require('partials/global/header.php'); ?>
 
-        <main>
+        <main id="main">
         
             <?php include(get_path('public/partials/global/artifact.php')); ?>
 

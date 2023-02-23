@@ -20,7 +20,7 @@
 
         <?php require('partials/global/header.php'); ?>
 
-        <main>
+        <main id="main">
             <div class="disc-section__title flex flex-column">
                 <div class="title-container">
                     <div class="breadcrumb-container flex flex-row">
