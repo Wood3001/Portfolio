@@ -21,34 +21,36 @@
         <?php require('partials/global/header.php'); ?>
 
         <main id="main">
-            <div class="disc-section__title flex flex-column">
-                <div class="title-container">
-                    <div class="breadcrumb-container flex flex-row">
-                        <a class="breadcrumb" href="../../../public/portfolio.php">Portfolio</a>
-                    </div>
-                    <h1>Design</h1>
-                </div>
-            </div>
-            <div class="overflow-container">
-                <div id="page-container">
-                    <div id="content-wrap">
-                        <div class="disc-card__container flex flex-middle">
-
-                            <?php while($artifact = $artifacts->fetch_assoc()) {
-                                if ($artifact['discipline'] == 1){
-                                    include(get_path('public/partials/global/card.php'));
-                                }} ?>
-
+            <div class="scene_element--flyin">
+                <div class="disc-section__title flex flex-column">
+                    <div class="title-container">
+                        <div class="breadcrumb-container flex flex-row">
+                            <a class="breadcrumb" href="../../../public/portfolio.php">Portfolio</a>
                         </div>
+                        <h1>Design</h1>
                     </div>
-                    <footer id="footer">
-
-                        <?php require('partials/global/footer.php'); ?>
-
-                    </footer>
                 </div>
+                <div class="overflow-container">
+                    <div id="page-container">
+                        <div id="content-wrap">
+                            <div class="disc-card__container flex flex-middle">
+
+                                <?php while($artifact = $artifacts->fetch_assoc()) {
+                                    if ($artifact['discipline'] == 1){
+                                        include(get_path('public/partials/global/card.php'));
+                                    }} ?>
+
+                            </div>
+                        </div>
+                        <footer id="footer">
+
+                            <?php require('partials/global/footer.php'); ?>
+
+                        </footer>
+                    </div>
+                </div>
+                <div class="blackout"></div>
             </div>
-            <div class="blackout"></div>
         </main> 
 
             <?php require('partials/global/scripts.php'); ?>

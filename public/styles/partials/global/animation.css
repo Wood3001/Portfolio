@@ -1,14 +1,12 @@
-
-
-
-
 .scene_element--flyin {
     /* animation: 1.25s ease-in-out flyIn; */
     animation-name: flyIn;
-    animation-duration: 0.25s;
-    /* animation-fill-mode: both; */
+    animation-duration: 2.25s;
 }
 
+.is-exiting {
+      animation-direction: alternate-reverse;
+}
 
 @keyframes flyIn {
 
