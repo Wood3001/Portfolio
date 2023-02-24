@@ -18,12 +18,12 @@
         require('partials/global/head.php');
     ?>
 
-    <body>
+    <body data-barba="wrapper">
 
         <?php require('partials/global/header.php'); ?>
         
         <main>
-            <div class="overflow-container scene_element--flyin" id="main">
+            <div data-barba="container" class="overflow-container">
                 <div id="page-container">
                     <div id="content-wrap">
                         <section class="sec-1 flex">

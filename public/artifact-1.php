@@ -18,11 +18,11 @@
         require('partials/global/head.php');
     ?>
 
-    <body>
-        
+        <body data-barba="wrapper">
+
         <?php require('partials/global/header.php'); ?>
 
-        <main id="main">
+        <main data-barba="container">
         
             <?php include(get_path('public/partials/global/artifact.php')); ?>
 

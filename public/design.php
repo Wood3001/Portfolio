@@ -16,12 +16,12 @@
         require('partials/global/head.php'); 
     ?>
 
-    <body>
+        <body data-barba="wrapper">
 
         <?php require('partials/global/header.php'); ?>
 
-        <main id="main">
-            <div class="scene_element--flyin">
+        <main>
+            <div data-barba="container">
                 <div class="disc-section__title flex flex-column">
                     <div class="title-container">
                         <div class="breadcrumb-container flex flex-row">

@@ -1,5 +1,4 @@
-.scene_element--flyin {
-    /* animation: 1.25s ease-in-out flyIn; */
+/* .scene_element--flyin {
     animation-name: flyIn;
     animation-duration: 2.25s;
 }
@@ -18,4 +17,4 @@
         transform: translate3d(0, 0, 0);
     }
 
-}
+} */

@@ -8,12 +8,12 @@
         require('partials/global/head.php');
     ?>
 
-    <body>
-        
-        <?php require('partials/global/header.php'); ?>
+    <body data-barba="wrapper">
 
-        <main id="main">
-            <div class="overflow-container scene_element--flyin">
+    <?php require('partials/global/header.php'); ?>
+
+    <main>
+        <div data-barba="container">
             <div id="page-container">
                 <div id="content-wrap">
                     <section class="about__sec-1 grid">
