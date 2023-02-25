@@ -9,7 +9,7 @@
     $count = 0;
 
 ?><!DOCTYPE html>
-<html lang="en"  data-barba="wrapper">
+<html lang="en" data-barba="wrapper">
     
     <?php 
         $title = "Web Developer & Designer";

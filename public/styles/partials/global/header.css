@@ -19,9 +19,10 @@
     grid-template-rows: 1rem 1fr 1rem;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
-.container {
+.logo-container {
     margin-top: 0.5rem;
     grid-column: 2 / span 10;
     grid-row: 2;
