@@ -9,7 +9,7 @@
     
 
 ?><!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-barba="wrapper">
  
     <?php 
         $title = "Grid Escape";
@@ -18,11 +18,11 @@
         require('partials/global/head.php');
     ?>
 
-        <body data-barba="wrapper">
+        <body>
 
         <?php require('partials/global/header.php'); ?>
 
-        <main data-barba="container">
+        <main class="overflow-container" data-barba="container" data-barba-namespace="art-3">
         
             <?php include(get_path('public/partials/global/artifact.php')); ?>
 

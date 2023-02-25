@@ -7,7 +7,7 @@
     $artifacts = Artifact::find_all();
 
 ?><!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-barba="wrapper">
 
     <?php
         $title = "Design Portfolio";
@@ -16,16 +16,16 @@
         require('partials/global/head.php'); 
     ?>
 
-        <body data-barba="wrapper">
+        <body>
 
         <?php require('partials/global/header.php'); ?>
 
         <main>
-            <div data-barba="container">
+            <div class="overflow-container" data-barba="container" data-barba-namespace="des">
                 <div class="disc-section__title flex flex-column">
                     <div class="title-container">
                         <div class="breadcrumb-container flex flex-row">
-                            <a class="breadcrumb" href="../../../public/portfolio.php">Portfolio</a>
+                            <a class="breadcrumb" href="../../../public/portfolio.php">All Projects</a>
                         </div>
                         <h1>Design</h1>
                     </div>

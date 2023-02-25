@@ -9,7 +9,7 @@
     $count = 0;
 
 ?><!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-barba="wrapper">
     
     <?php 
         $title = "Web Developer & Designer";
@@ -18,14 +18,14 @@
         require('partials/global/head.php');
     ?>
 
-    <body data-barba="wrapper">
+    <body>
 
         <?php require('partials/global/header.php'); ?>
         
         <main>
-            <div data-barba="container" class="overflow-container">
+            <div class="overflow-container" data-barba="container" data-barba-namespace="home">
                 <div id="page-container">
-                    <div id="content-wrap">
+                    <div id="content-wrap" class="full-width">
                         <section class="sec-1 flex">
                             <div class="home-banner blur">
                                 <div class="home-banner__logo flex">
@@ -41,7 +41,7 @@
                                     <img src="images/portrait01.jpg" alt="A picture of me">
                                 </div>
                                 <div class="home-banner__cta flex">
-                                    <a href="portfolio.php"><button class="btn-1"><h3>View My Portfolio</h3></button></a>
+                                    <a href="portfolio.php"><button class="btn-1"><h3>View My Work</h3></button></a>
                                 </div>
                             </div>
                         </section>

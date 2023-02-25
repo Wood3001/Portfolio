@@ -1,3 +1,8 @@
+@import url('partials/home.css');
+@import url('partials/about.css');
+@import url('partials/discipline.css');
+@import url('partials/artifact.css');
+
 @import url('partials/global/variables.css');
 @import url('partials/global/utils.css');
 @import url('partials/global/type.css');
@@ -128,24 +133,28 @@ footer {
 @media screen and (min-width:1200px) {
 
     ::-webkit-scrollbar {
+        display: none;
         position: absolute;
         width: 10px;
       }
       
       /* Track */
       ::-webkit-scrollbar-track {
+        display: none;
         position: absolute;
         background: rgba(241, 241, 241, 0.25);
       }
       
       /* Handle */
       ::-webkit-scrollbar-thumb {
+        display: none;
         position: absolute;
         background: var(--orange25);
       }
       
       /* Handle on hover */
       ::-webkit-scrollbar-thumb:hover {
+        display: none;
         position: absolute;
         background: var(--orange50);
       }
@@ -157,3 +166,4 @@ footer {
     }
     
 }
+

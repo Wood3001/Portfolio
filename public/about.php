@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-barba="wrapper">
     
     <?php 
         $title = "About Me";
@@ -8,12 +8,12 @@
         require('partials/global/head.php');
     ?>
 
-    <body data-barba="wrapper">
+    <body>
 
-    <?php require('partials/global/header.php'); ?>
+        <?php require('partials/global/header.php'); ?>
 
     <main>
-        <div data-barba="container">
+        <div class="overflow-container" data-barba="container" data-barba-namespace="about">
             <div id="page-container">
                 <div id="content-wrap">
                     <section class="about__sec-1 grid">
