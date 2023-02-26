@@ -3,18 +3,18 @@
     
     <?php 
         $title = "About Me";
-        $description = "I live in Vancouver BC with my wife and daughter. I appreciate teamwork, inclusivity, creativity and fun.";
+        $description = "I live in Vancouver BC with my wife & daughter. I appreciate teamwork, inclusivity, creativity and fun.";
         $stylesheet = "styles/partials/about.css";
         require('partials/global/head.php');
     ?>
 
-    <body>
+    <body> 
         
         <?php require('partials/global/header.php'); ?>
 
         <main>
             <div class="overflow-container">
-            <div id="page-container">
+            <div id="page-container"> 
                 <div id="content-wrap">
                     <section class="about__sec-1 grid">
                         <div class="section__title section__title-about">
