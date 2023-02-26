@@ -108,7 +108,7 @@
 
 .col {
     margin-right: 1rem;
-    width: 10rem;
+    width: 17rem;
 }
 
 @media (min-width:481px){
@@ -118,7 +118,6 @@
         grid-row: 1;
     }
 }
-
 
 @media (min-width:768px){
 
@@ -200,7 +199,7 @@
 
 @media (min-width:992px) {
     .about__sec-1, .about__sec-2 {
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto !important;
     }
 

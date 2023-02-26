@@ -1,6 +1,15 @@
 /////////////////// TRANSITIONS /////////////////
 
 barba.init({
+  views: [{
+    namespace: 'home',
+    afterLeave(data) {
+      showLogo(data); 
+    },
+    beforeEnter(data) {
+      hideLogo(data);
+    }
+  }],
   transitions: [{
     name: 'default-transition',
     leave(data) {
@@ -17,29 +26,18 @@ barba.init({
         duration: 0.25
       });
     }
-  }],
-  views: [{
-    namespace: 'home',
-    afterLeave() {
-      showLogo();
-    }
-  },{
-    namespace: 'home',
-    beforeEnter() {
-      hideLogo();
-    }
   }]
 });
 
 function hideLogo() {
-  gsap.to('.logo-container', 
-    {y:60}
+  return gsap.fromTo('.logo-container', 
+    {y:0},{y:60}
   );
 }
 
 function showLogo() {
-  gsap.from('.logo_container', 
-    {y:60}
+  return gsap.fromTo('.logo-container', 
+    {y:60},{y:0}
   );
 }
 
