@@ -105,6 +105,18 @@ $('.gn-trigger').on('click', function(e) {
   }
 });
 
+$('.logo-container').on('click', function(e) {
+  e.preventDefault();
+  windowWidth = $('body').width();
+  if((windowWidth < 1200)&&($('.gn-trigger').hasClass('is-active'))) {
+    $('.gn-trigger').removeClass('is-active');
+    $('.gn').slideUp(200);
+    blackOut();
+    enableScroll();
+    turnBun();
+  }
+});
+
 $('.gn-trigger, .gn a').on('click', turnBun);
 
   tl.to(".burger li", {backgroundColor:"#F18626"}, 0.015);
