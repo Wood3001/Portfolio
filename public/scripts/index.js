@@ -1,3 +1,6 @@
+var tl = gsap.timeline();
+var windowWidth;
+
 /////////////////// TRANSITIONS /////////////////
 
 barba.init({
@@ -49,6 +52,13 @@ barba.init({
   transitions: [{
     name: 'default-transition',
     leave(data) {
+      windowWidth = $('body').width();
+      if((windowWidth < 1200)&&($('.gn-trigger').hasClass('is-active'))) {
+        $('.gn-trigger').removeClass('is-active');
+        $('.gn').slideUp(200);
+        blackOut();
+        enableScroll();
+      }
       return gsap.to(data.current.container, {
         x: '-100%',
         opacity: 0,
@@ -78,9 +88,6 @@ function showLogo() {
 }
 
 /////////////////// NAVIGATION /////////////////
-
-var tl = gsap.timeline();
-var windowWidth;
 
 $('.gn-trigger').on('click', function(e) {
   e.preventDefault();
