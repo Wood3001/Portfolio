@@ -11,6 +11,7 @@ barba.init({
     },
     beforeEnter(data) {
       hideLogo(data);
+      rollHomeBanner(data);
     }
   },{
     namespace: 'about',
@@ -94,6 +95,13 @@ function showLogo() {
   return gsap.fromTo('.logo-container', 
     {y:60},{y:0}
   );
+}
+
+function rollHomeBanner() {
+  return gsap.from('.home-banner',{
+    rotation:270,
+    duration: 0.25 
+    });
 }
 
 /////////////////// NAVIGATION /////////////////
