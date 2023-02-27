@@ -2,10 +2,6 @@
 
 /* About Styles */
 
-.site-header__menu li #about {
-    color: var(--orange);
-}
-
 .about__sec-1 {
     grid-template-rows:  repeat(8, auto);
 }

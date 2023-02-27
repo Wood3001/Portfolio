@@ -9,6 +9,42 @@ barba.init({
     beforeEnter(data) {
       hideLogo(data);
     }
+  },{
+    namespace: 'about',
+    beforeLeave() {
+      return gsap.fromTo('#about', 
+      {color: 'rgba(241, 134, 38, 1)'},
+      {color: '#f8f8f8', duration:0});
+    },
+    beforeEnter() {
+      return gsap.fromTo('#about', 
+      {color: '#f8f8f8'},
+      {color: 'rgba(241, 134, 38, 1)', duration:0});
+    }
+  },{
+    namespace: 'dev',
+    beforeLeave() {
+      return gsap.fromTo('#dev', 
+      {color: 'rgba(241, 134, 38, 1)'},
+      {color: '#f8f8f8', duration:0});
+    },
+    beforeEnter() {
+      return gsap.fromTo('#dev', 
+      {color: '#f8f8f8'},
+      {color: 'rgba(241, 134, 38, 1)', duration:0});
+    }
+  },{
+    namespace: 'des',
+    beforeLeave() {
+      return gsap.fromTo('#des', 
+      {color: 'rgba(241, 134, 38, 1)'},
+      {color: '#f8f8f8', duration:0});
+    },
+    beforeEnter() {
+      return gsap.fromTo('#des', 
+      {color: '#f8f8f8'},
+      {color: 'rgba(241, 134, 38, 1)', duration:0});
+    }
   }],
   transitions: [{
     name: 'default-transition',
@@ -40,7 +76,6 @@ function showLogo() {
     {y:60},{y:0}
   );
 }
-
 
 /////////////////// NAVIGATION /////////////////
 
