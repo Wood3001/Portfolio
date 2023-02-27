@@ -19,6 +19,9 @@ barba.init({
       {color: 'rgba(241, 134, 38, 1)'},
       {color: '#f8f8f8', duration:0});
     },
+    afterLeave() {
+      $('#about').removeAttr('style');
+    },
     beforeEnter() {
       return gsap.fromTo('#about', 
       {color: '#f8f8f8'},
@@ -31,6 +34,9 @@ barba.init({
       {color: 'rgba(241, 134, 38, 1)'},
       {color: '#f8f8f8', duration:0});
     },
+    afterLeave() {
+      $('#dev').removeAttr('style');
+    },
     beforeEnter() {
       return gsap.fromTo('#dev', 
       {color: '#f8f8f8'},
@@ -42,6 +48,9 @@ barba.init({
       return gsap.fromTo('#des', 
       {color: 'rgba(241, 134, 38, 1)'},
       {color: '#f8f8f8', duration:0});
+    },
+    afterLeave() {
+      $('#des').removeAttr('style');
     },
     beforeEnter() {
       return gsap.fromTo('#des', 

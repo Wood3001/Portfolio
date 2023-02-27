@@ -59,7 +59,7 @@
     padding: 1rem;
 }
 
-.site-header__menu li:hover a {
+.site-header__menu li a:hover {
     color: var(--orange);
 }
  
