@@ -16,9 +16,11 @@
 @media screen and (min-width:768px) {
 
     .artifact__sources {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         line-height: 1.5;
+        margin: 0;
     }
     
 }
