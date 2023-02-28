@@ -75,6 +75,10 @@
     width: 100%;
 }
 
+.title-container {
+    width: 19rem;
+}
+
 @media (min-width:768px) {
     .grid {
         margin: 0 1rem;
