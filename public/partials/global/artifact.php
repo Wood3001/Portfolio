@@ -1,13 +1,13 @@
-<div class="scene_element--flyin">
-    <div class="artifact__heading flex flex-column">
-        <div class="title-container">
-            <div class="breadcrumb-container flex flex-row">
-                <a class="breadcrumb" href="../../../public/portfolio.php">Portfolio</a><p class="breadcrumb_arrow">&nbsp > &nbsp</p><a class="breadcrumb" href="../../../public/<?php echo $artifact['discipline'] == 0 ? 'development' : 'design'; ?>.php"><?php echo $artifact['discipline'] == 0 ? 'Web Development' : 'Design'; ?></a>
+<div id="smooth-wrapper" class="overflow-container" class="overflow-container" data-barba="container" data-barba-namespace="artifact">
+    <div id="smooth-content">  
+        <div class="artifact__heading flex flex-column">
+            <div class="title-container">
+                <div class="breadcrumb-container flex flex-row">
+                    <a class="breadcrumb" href="../../../public/portfolio.php">Projects</a><p class="breadcrumb_arrow">&nbsp > &nbsp</p><a class="breadcrumb" href="../../../public/<?php echo $artifact['discipline'] == 0 ? 'development' : 'design'; ?>.php"><?php echo $artifact['discipline'] == 0 ? 'Web Development' : 'Design'; ?></a>
+                </div>
+                <h1><?php echo h($artifact['title']); ?></h1>
             </div>
-            <h1><?php echo h($artifact['title']); ?></h1>
         </div>
-    </div>
-    <div class="overflow-container">
         <div id="page-container">
             <div id="content-wrap">
                 <div class="artifact flex flex-column">
@@ -84,7 +84,7 @@
             <footer id="footer">
 
                 <?php require('partials/global/footer.php'); ?>
-
+                
             </footer>
         </div>
     </div>

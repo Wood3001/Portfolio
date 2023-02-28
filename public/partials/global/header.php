@@ -1,7 +1,7 @@
 <div class="top-bar"></div>
 <header class="site-header">
     <div class="site-header__content">
-        <div class="logo-container flex">
+        <div class="logo-container flex hide">
             <div class="site-header__logo block">
                 <a href="index.php"><img src="images/logo.svg" alt="My S logo"></a>
             </div>

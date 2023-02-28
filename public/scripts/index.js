@@ -1,62 +1,78 @@
 var tl = gsap.timeline();
 var windowWidth;
+const orange = 'rgba(241, 134, 38, 1)';
+const white = '#f8f8f8';
 
 /////////////////// TRANSITIONS /////////////////
 
 barba.init({
   views: [{
     namespace: 'home',
-    afterLeave(data) {
-      showLogo(data); 
-    },
     beforeEnter(data) {
       hideLogo(data);
       rollHomeBanner(data);
+    },
+    afterLeave(data) {
+      $('.logo-container').removeClass('hide');
+      showLogo(data); 
     }
   },{
     namespace: 'about',
     beforeLeave() {
       return gsap.fromTo('#about', 
-      {color: 'rgba(241, 134, 38, 1)'},
-      {color: '#f8f8f8', duration:0});
+      {color: orange},
+      {color: white, duration:0});
     },
     afterLeave() {
       $('#about').removeAttr('style');
     },
     beforeEnter() {
+      $('.logo-container').removeClass('hide');
       return gsap.fromTo('#about', 
-      {color: '#f8f8f8'},
-      {color: 'rgba(241, 134, 38, 1)', duration:0});
+      {color: white},
+      {color: orange, duration:0});
     }
   },{
     namespace: 'dev',
     beforeLeave() {
       return gsap.fromTo('#dev', 
-      {color: 'rgba(241, 134, 38, 1)'},
-      {color: '#f8f8f8', duration:0});
+      {color: orange},
+      {color: white, duration:0});
     },
     afterLeave() {
       $('#dev').removeAttr('style');
     },
     beforeEnter() {
+      $('.logo-container').removeClass('hide');
       return gsap.fromTo('#dev', 
-      {color: '#f8f8f8'},
-      {color: 'rgba(241, 134, 38, 1)', duration:0});
+      {color: white},
+      {color: orange, duration:0});
     }
   },{
     namespace: 'des',
     beforeLeave() {
       return gsap.fromTo('#des', 
-      {color: 'rgba(241, 134, 38, 1)'},
-      {color: '#f8f8f8', duration:0});
+      {color: orange},
+      {color: white, duration:0});
     },
     afterLeave() {
       $('#des').removeAttr('style');
     },
     beforeEnter() {
+      $('.logo-container').removeClass('hide');
       return gsap.fromTo('#des', 
-      {color: '#f8f8f8'},
-      {color: 'rgba(241, 134, 38, 1)', duration:0});
+      {color: white},
+      {color: orange, duration:0});
+    }
+  },{
+    namespace: 'artifact',
+    beforeEnter() {
+      $('.logo-container').removeClass('hide');
+    }
+  },{
+    namespace: 'portfolio',
+    beforeEnter() {
+      $('.logo-container').removeClass('hide');
     }
   }],
   transitions: [{
@@ -99,8 +115,9 @@ function showLogo() {
 
 function rollHomeBanner() {
   return gsap.from('.home-banner',{
-    rotation:270,
-    duration: 0.25 
+    rotation: 180,
+    scale: 0,
+    duration: 0.5 
     });
 }
 
@@ -183,4 +200,16 @@ if ($('.blackout').hasClass('is-active')){
   $('.blackout').fadeTo(200, 1);
 }
 }
+
+/////////////////// SMOOTH SCROLL /////////////////
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+let smoother = ScrollSmoother.create({
+  smooth: 3,               // how long (in seconds) it takes to "catch up" to the native scroll position
+  effects: true,           // looks for data-speed and data-lag attributes on elements
+  smoothTouch: 0.1,        // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
+});
+
+// smoothScroll("#smooth-content");
 

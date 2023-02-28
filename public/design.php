@@ -21,19 +21,19 @@
         <?php require('partials/global/header.php'); ?>
 
         <main>
-            <div class="overflow-container" data-barba="container" data-barba-namespace="des">
-                <div class="disc-section__title flex flex-column">
-                    <div class="title-container">
-                        <div class="breadcrumb-container flex flex-row">
-                            <a class="breadcrumb" href="../../../public/portfolio.php">All Projects</a>
+            <div id="smooth-wrapper" class="overflow-container" data-barba="container" data-barba-namespace="des">
+                <div id="smooth-content">
+                    <div class="disc-section__title flex">
+                        <div class="title-container">
+                            <div class="breadcrumb-container flex flex-row">
+                                <a class="breadcrumb" href="../../../public/portfolio.php">All Projects</a>
+                            </div>
+                            <h1>Design</h1>
                         </div>
-                        <h1>Design</h1>
                     </div>
-                </div>
-                <div class="overflow-container">
                     <div id="page-container">
                         <div id="content-wrap">
-                            <div class="disc-card__container flex flex-middle">
+                            <div class="disc-card__container flex">
 
                                 <?php while($artifact = $artifacts->fetch_assoc()) {
                                     if ($artifact['discipline'] == 1){

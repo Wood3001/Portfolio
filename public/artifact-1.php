@@ -22,7 +22,7 @@
 
         <?php require('partials/global/header.php'); ?>
 
-        <main class="overflow-container" data-barba="container" data-barba-namespace="art-1">
+        <main>
         
             <?php include(get_path('public/partials/global/artifact.php')); ?>
 

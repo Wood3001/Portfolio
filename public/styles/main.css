@@ -59,24 +59,23 @@ main {
 }
 
 .overflow-container {
-    height: 95%;
+    height: 100%;
     width: 100%;
     position: fixed;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
-#page-container {
-    position: relative;
-    min-height: 100vh;
+#smooth-content {
+    min-height: 100%;
 }
 
-#content-wrap {
-    /* padding-bottom: 20rem; */
+#page-container {
+    position: relative;
+    min-height: 100%;
 }
 
 #footer {
-    /* position: absolute; */
     background-color: var(--oil);
     bottom: 0;
     width: 100%;
@@ -109,6 +108,7 @@ footer {
 /* media queries */
 
 @media screen and (min-width:481px) {
+
     .section__title h1 {
         font-size: 4rem;
     }
@@ -116,7 +116,6 @@ footer {
     body {
         background-size: cover;
     }
-
 }
 
 @media screen and (min-width:768px) {
@@ -124,10 +123,15 @@ footer {
         font-size: 4rem;
     }
 
-    #footer {
-        height: 15rem;
+    #content-wrap {
+        display: flex;
+        min-width: 685px;
+        min-height: 1150px;
     }
 
+    #footer {
+        height: 16rem;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -160,9 +164,7 @@ footer {
       }
 
     #content-wrap {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        min-width: 1025px;
     }
     
 }

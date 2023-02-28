@@ -26,6 +26,7 @@
     z-index: 10;
     width: 100%;
     padding: 2rem 0;
+    transform: scale(1);
 }
 
 .home-banner__logo {
