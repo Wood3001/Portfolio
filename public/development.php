@@ -7,7 +7,7 @@
     $artifacts = Artifact::find_all();
 
 ?><!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-barba="wrapper">
 
     <?php
         $title = "Development Portfolio";
@@ -16,39 +16,41 @@
         require('partials/global/head.php'); 
     ?>
 
-    <body>
+        <body>
 
         <?php require('partials/global/header.php'); ?>
 
         <main>
-            <div class="disc-section__title flex flex-column">
-                <div class="title-container">
-                    <div class="breadcrumb-container flex flex-row">
-                        <a class="breadcrumb" href="../../../public/portfolio.php">Portfolio</a>
-                    </div>
-                    <h1>Development</h1>
-                </div>
-            </div>
-            <div class="overflow-container">
-                <div id="page-container">
-                    <div id="content-wrap">
-                        <div class="disc-card__container flex flex-middle">
-
-                            <?php while($artifact = $artifacts->fetch_assoc()) {
-                                if ($artifact['discipline'] == 0){
-                                    include(get_path('public/partials/global/card.php'));
-                                }} ?>
-
+            <div id="smooth-wrapper" class="overflow-container" data-barba="container" data-barba-namespace="dev">
+                <div id="smooth-content">
+                    <div class="disc-section__title">
+                        <div class="title-container">
+                            <div class="breadcrumb-container flex flex-row">
+                                <a class="breadcrumb" href="../../../public/portfolio.php">All Projects</a>
+                            </div>
+                            <h1>Development</h1>
                         </div>
                     </div>
-                    <footer id="footer">
+                    <div id="page-container">
+                        <div id="content-wrap">
+                            <div class="disc-card__container flex">
 
-                        <?php require('partials/global/footer.php'); ?>
+                                <?php while($artifact = $artifacts->fetch_assoc()) {
+                                    if ($artifact['discipline'] == 0){
+                                        include(get_path('public/partials/global/card.php'));
+                                    }} ?>
 
-                    </footer>
+                            </div>
+                        </div>
+                        <footer id="footer">
+
+                            <?php require('partials/global/footer.php'); ?>
+
+                        </footer>
+                    </div>
                 </div>
+                <div class="blackout"></div>
             </div>
-            <div class="blackout"></div>
         </main> 
 
         <?php require('partials/global/scripts.php'); ?>

@@ -63,8 +63,20 @@
     display: none !important;
 }
 
+.block {
+    display: block;
+}
+
 .is-orange {
     color: var(--orange);
+}
+
+.full-width {
+    width: 100%;
+}
+
+.title-container {
+    width: 19rem;
 }
 
 @media (min-width:768px) {

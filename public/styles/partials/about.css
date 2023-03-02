@@ -2,15 +2,12 @@
 
 /* About Styles */
 
-.site-header__menu li #about {
-    color: var(--orange);
-}
-
 .about__sec-1 {
     grid-template-rows:  repeat(8, auto);
 }
 
 .section__title {
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
 }
@@ -108,7 +105,7 @@
 
 .col {
     margin-right: 1rem;
-    width: 10rem;
+    width: 17rem;
 }
 
 @media (min-width:481px){
@@ -118,7 +115,6 @@
         grid-row: 1;
     }
 }
-
 
 @media (min-width:768px){
 
@@ -132,6 +128,10 @@
     .about__sec-2 {
         padding-top: 2rem;
         min-height: 100%;
+    }
+
+    .section__title {
+        margin-top: 0;
     }
 
     .section__title-about {
@@ -200,7 +200,7 @@
 
 @media (min-width:992px) {
     .about__sec-1, .about__sec-2 {
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto !important;
     }
 
