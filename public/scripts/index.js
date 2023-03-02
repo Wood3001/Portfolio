@@ -201,15 +201,11 @@ if ($('.blackout').hasClass('is-active')){
 }
 }
 
-/////////////////// SMOOTH SCROLL /////////////////
+/////////////////// SCROLL TRIGGER /////////////////
 
-// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 
-// let smoother = ScrollSmoother.create({
-//   smooth: 3,               // how long (in seconds) it takes to "catch up" to the native scroll position
-//   effects: true,           // looks for data-speed and data-lag attributes on elements
-//   smoothTouch: 0.1,        // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
-// });
-
-// smoothScroll("#smooth-content");
-
+gsap.from(".fly-up", {
+  scrollTrigger: ".fly-up",
+  y:500
+});

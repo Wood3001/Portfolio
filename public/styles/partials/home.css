@@ -73,6 +73,7 @@
 
 .home-intro__message {
     display: grid;
+    overflow: hidden;
     grid-template-columns: 1.5rem 5rem 1fr 1.5rem;
     grid-template-rows: 1rem 6rem 1fr 6rem 1fr;
 }
