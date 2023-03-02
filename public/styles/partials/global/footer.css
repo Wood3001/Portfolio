@@ -163,7 +163,8 @@
     .site-footer_links {
         width: 100%;
         display: flex;
-        justify-content: right;
+        flex-direction: column;
+        align-items: end;
     }
 
     .site-footer__copyright {
@@ -183,6 +184,10 @@
         justify-content: left;
         opacity: 0.5;
         margin: 0.5rem 0;
+    }
+
+    .site-footer__copyright {
+        margin-top: 2rem;
     }
 }
 

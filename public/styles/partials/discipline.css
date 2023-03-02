@@ -2,11 +2,8 @@
 
 /* Discipline Styles */
 
-.overflow-container {
-    height: 80%;
-}
-
 .disc-section__title {
+    display: flex;
     justify-content: center;
     margin: 1rem;
 }
@@ -27,14 +24,8 @@
 
 @media screen and (min-width:768px) {
 
-    .overflow-container {
-        height: 82%;
-    }
-
-    .disc-section-title {
-        grid-column: 3 / span 6;
-        justify-content: flex-start;
-        align-items: center;
+    .disc-section__title {
+        justify-content: left;
     }
 
     .disc-card__container {
@@ -42,17 +33,15 @@
         flex-wrap: wrap;
         max-width: 64rem;
         min-height: 48rem;
-        align-items: start;
+        align-items: flex-start;
     }
 }
 
 @media screen and (min-width:992px) {
 
     .disc-section__title {
-        align-items: center;
+        display: flex;
+        justify-content: center;
     }
 
-    .overflow-container {
-        height: 90%;
-    }
 }

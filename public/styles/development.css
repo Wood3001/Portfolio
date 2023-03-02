@@ -1,5 +1,2 @@
 @import url(partials/discipline.css);
 
-.site-header__menu li #dev {
-    color: var(--orange);
-}

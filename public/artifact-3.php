@@ -9,7 +9,7 @@
     
 
 ?><!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-barba="wrapper">
  
     <?php 
         $title = "Grid Escape";
@@ -18,8 +18,8 @@
         require('partials/global/head.php');
     ?>
 
-    <body>
-        
+        <body>
+
         <?php require('partials/global/header.php'); ?>
 
         <main>
