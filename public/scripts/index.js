@@ -205,7 +205,7 @@ if ($('.blackout').hasClass('is-active')){
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".fly-up", {
+gsap.to(".fly-up", {
   scrollTrigger: ".fly-up",
   y:500
 });
