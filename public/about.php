@@ -3,7 +3,7 @@
     
     <?php 
         $title = "About Me";
-        $description = "I live in Vancouver BC with my wife and daughter. I appreciate teamwork, inclusivity, creativity and fun.";
+        $description = "I live in Vancouver BC with my wife & daughter. I appreciate teamwork, inclusivity, creativity and fun.";
         $stylesheet = "styles/partials/about.css";
         require('partials/global/head.php');
     ?>
