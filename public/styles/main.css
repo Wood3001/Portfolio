@@ -61,7 +61,7 @@ main {
 .overflow-container {
     height: 100%;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     overflow-x: hidden;
     overflow-y: scroll;
 }

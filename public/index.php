@@ -47,7 +47,7 @@
                                 </div>
                             </section>
                             <section class="sec-2">
-                                <div class="home-intro__message">
+                                <div class="home-intro__message fly-up">
                                     <h2>Hello, my name is <span class="bigger my-name">Sherwood.</span></h2>
                                     <img src="images/fam-pic1.jpg" alt="a picture of me with my partner and daughter">
                                     <div class="home-intro__bg blur"></div>

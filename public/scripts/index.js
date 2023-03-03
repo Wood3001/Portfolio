@@ -205,7 +205,11 @@ if ($('.blackout').hasClass('is-active')){
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".fly-up", {
-  scrollTrigger: ".fly-up",
-  y:500
+gsap.from(".fly-up", {
+  scrollTrigger: ".sec-2",
+  y:500, 
+  duration:1.5,
+  onComplete: function() {
+    console.log('hi')
+  }
 });
