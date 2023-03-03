@@ -79,7 +79,7 @@ main {
     background-color: var(--oil);
     bottom: 0;
     width: 100%;
-    height: 20rem;
+    height: 16rem;
 }
 
 .section {
@@ -107,6 +107,14 @@ footer {
 
 /* media queries */
 
+@media screen and (min-width:370px) {
+
+    #footer {
+        height: 20rem;
+    }
+    
+}
+
 @media screen and (min-width:481px) {
 
     .section__title h1 {
@@ -116,6 +124,7 @@ footer {
     body {
         background-size: cover;
     }
+    
 }
 
 @media screen and (min-width:768px) {

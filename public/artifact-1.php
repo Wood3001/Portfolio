@@ -18,7 +18,7 @@
         require('partials/global/head.php');
     ?>
 
-        <body>
+    <body>
 
         <?php require('partials/global/header.php'); ?>
 
