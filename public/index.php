@@ -54,7 +54,6 @@
                             </section>
                             <section class="sec-2" id="sec-2">
                                 <div class="home-intro__message">
-                                    
                                     <h2>Hello, my name is <span class="bigger my-name">Sherwood.</span></h2>
                                     <img src="images/fam-pic1.jpg" alt="a picture of me with my partner and daughter">
                                     <div class="home-intro__bg blur"></div>
