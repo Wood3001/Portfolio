@@ -58,7 +58,7 @@ body::after {
 }
 
 .loader-anim {
-    border: 16px solid var(--eggshell);
+    border: 16px solid var(--eggshell50);
     border-top: 16px solid var(--orange);
     border-radius: 50%;
     width: 100px;
@@ -92,7 +92,7 @@ main {
 .overflow-container {
     height: 100%;
     width: 100%;
-    /* position: fixed; */
+    position: fixed;
     overflow-x: hidden;
     overflow-y: scroll;
 }

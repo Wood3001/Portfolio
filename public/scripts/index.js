@@ -3,16 +3,16 @@ $(window).on("load", function(){
 
   ///////////////// LOADER //////////////////////////
 
-  $(".loader").slideUp('slow', function(){
+  $(".loader").slideUp('fast', function(){
       $(".loader").addClass("hide");
   });
+
+  /////////////////// TRANSITIONS /////////////////
 
   var tl = gsap.timeline();
   var windowWidth;
   const orange = 'rgba(241, 134, 38, 1)';
   const white = '#f8f8f8';
-
-  /////////////////// TRANSITIONS /////////////////
 
   barba.init({
     views: [{
