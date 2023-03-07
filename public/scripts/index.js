@@ -204,12 +204,47 @@ if ($('.blackout').hasClass('is-active')){
 /////////////////// SCROLL TRIGGER /////////////////
 
 gsap.registerPlugin(ScrollTrigger);
+const prefix = 'className';
 
-gsap.from(".fly-up", {
-  scrollTrigger: ".sec-2",
-  y:500, 
-  duration:1.5,
-  onComplete: function() {
-    console.log('hi')
-  }
+let triggerIDs;
+
+init();
+
+function init() {
+    const sections = document.querySelectorAll('sections');
+    triggerIDs = [];
+
+    sections.forEach(function(element, index) {
+      	const ID = prefix + '__' + index;
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                id: ID,
+                markers: true,
+                trigger: element,
+            },
+        })
+
+        triggerIDs.push(ID)
+    });
+}
+
+barba.hooks.beforeLeave((data) => {
+    triggerIDs.forEach(function(id) {
+        ScrollTrigger.getById(id).kill();
+    });
 });
+
+
+barba.hooks.after((data) => {
+    init();
+});
+
+
+// gsap.from(".fly-up", {
+//   scrollTrigger: ".sec-2",
+//   y:500, 
+//   duration:1.5,
+//   onComplete: function() {
+//     console.log('hi')
+//   }
+// });
