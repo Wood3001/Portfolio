@@ -58,11 +58,11 @@ body::after {
 }
 
 .loader-anim {
-    border: 16px solid var(--eggshell50);
+    border: 14px solid var(--eggshell50);
     border-top: 16px solid var(--orange);
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     animation: slideUp 2s linear infinite;
 }
 
