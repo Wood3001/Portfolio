@@ -204,7 +204,16 @@ footer {
 
     #content-wrap {
         min-width: 1025px;
-    }
-    
+    }  
 }
 
+@media screen and (min-width:2200px) {
+
+    body {
+        background: url(../images/ss-hero1-4k.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+}
