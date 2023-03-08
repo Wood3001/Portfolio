@@ -66,6 +66,7 @@
         /* padding: 1rem; */
         border: none;
         font-size: 0.8625rem;
+        -webkit-backdrop-filter: none;
     }
 
     .gn {
