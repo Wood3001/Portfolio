@@ -9,8 +9,6 @@ $(window).on("load", function(){
 
   /////////////////// TRANSITIONS /////////////////
 
-  var tl = gsap.timeline();
-  var windowWidth;
   const orange = 'rgba(241, 134, 38, 1)';
   const white = '#f8f8f8';
 
@@ -132,6 +130,9 @@ $(window).on("load", function(){
 });
 
 /////////////////// NAVIGATION /////////////////
+
+var tl = gsap.timeline();
+var windowWidth;
 
 $('.gn-trigger').on('click', function(e) {
   e.preventDefault();
