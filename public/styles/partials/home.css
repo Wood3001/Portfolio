@@ -73,14 +73,12 @@
 }
 
 .home-banner__arrow {
-    /* position: fixed;
-    bottom: 0; */
     width: 100%;
     height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* z-index: -50; */
+    scroll-behavior: smooth;
 }
 
 .down-arrow {
@@ -102,6 +100,15 @@
     overflow: hidden;
     grid-template-columns: 1.5rem 5rem 1fr 1.5rem;
     grid-template-rows: 1rem 6rem 1fr 6rem 4rem;
+}
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
 }
 
 .home-intro__message img {

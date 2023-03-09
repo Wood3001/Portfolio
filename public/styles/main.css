@@ -10,12 +10,11 @@
 @import url('partials/global/button.css');
 @import url('partials/global/burger.css');
 @import url('partials/global/footer.css');
-@import url('partials/global/animation.css');
 
 /* global styles */
 
-html, body {
-    min-height: 100%;
+html {
+    
 }
 
 body {
@@ -94,6 +93,7 @@ main {
     position: fixed;
     overflow-x: hidden;
     overflow-y: scroll;
+    
 }
 
 #smooth-content {

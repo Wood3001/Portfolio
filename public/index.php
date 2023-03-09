@@ -19,9 +19,6 @@
     ?>
 
     <body>
-        <div class="loader">
-            <div class="loader-anim"></div>
-        </div>
 
             <?php require('partials/global/header.php'); ?>
         
