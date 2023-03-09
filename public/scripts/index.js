@@ -9,37 +9,37 @@ $(window).on("load", function(){
 
   ///////////////////// INTERSECTION OBSERVER ///////////////////////
 
-  // const observer1 = new IntersectionObserver(entries => {
-  //   entries.forEach(entry => {
-  //     const message = entry.target.querySelector('.message-anim-wrapper');
+  const observer1 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const message = entry.target.querySelector('.message-anim-wrapper');
 
-  //     if (entry.isIntersecting) {
-  //           message.classList.add('home-intro__message-anim');
-  //           return;
-  //       }
-  //     // message.classList.remove('home-intro__message-anim');
-  //   }); 
-  // });
+      if (entry.isIntersecting) {
+            message.classList.add('home-intro__message-anim');
+            return;
+        }
+      // message.classList.remove('home-intro__message-anim');
+    }); 
+  });
 
-  // observer1.observe(document.querySelector('.sec-2'));
+  observer1.observe(document.querySelector('.sec-2'));
 
-  // const observer2 = new IntersectionObserver(entries => { 
-  //   entries.forEach(entry => {
-  //     var homecard = entry.target.querySelectorAll('.home-card__wrapper');
-  //     var delayTime = 0;
+  const observer2 = new IntersectionObserver(entries => { 
+    entries.forEach(entry => {
+      var homecard = entry.target.querySelectorAll('.home-card__wrapper');
+      var delayTime = 0;
 
-  //     for(let i = 0; i < homecard.length; i++){
-  //       setTimeout(function(){
-  //         if (entry.isIntersecting) {
-  //           homecard[i].classList.add('home-card-anim');
-  //         }
-  //       },delayTime);
-  //       delayTime = delayTime + 100;
-  //     }
-  //   }); 
-  // }, {threshold:0.5});
+      for(let i = 0; i < homecard.length; i++){
+        setTimeout(function(){
+          if (entry.isIntersecting) {
+            homecard[i].classList.add('home-card-anim');
+          }
+        },delayTime);
+        delayTime = delayTime + 100;
+      }
+    }); 
+  }, {threshold:0.5});
 
-  // observer2.observe(document.querySelector('.sec-3'));
+  observer2.observe(document.querySelector('.sec-3'));
 
   /////////////////// TRANSITIONS ////////////////////
 
