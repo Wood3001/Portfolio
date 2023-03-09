@@ -95,7 +95,12 @@
     to {opacity: 0.225;}
 }
 
+.message-anim-wrapper {
+    overflow: hidden;
+}
+
 .home-intro__message {
+    width: 100vw;
     display: grid;
     overflow: hidden;
     grid-template-columns: 1.5rem 5rem 1fr 1.5rem;
@@ -104,11 +109,17 @@
 
 @keyframes wipe-enter {
 	0% {
-		transform: scale(0, .025);
+		width: 0%;
 	}
-	50% {
-		transform: scale(1, .025);
+	100% {
+		width: 100%;
 	}
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .home-intro__message-anim {
+        animation: wipe-enter 750ms 1;
+    }
 }
 
 .home-intro__message img {
@@ -146,7 +157,7 @@
     z-index: 12;
     padding: 0;
     margin-top: 1rem;
-    max-width: 29rem;
+    width: 14rem;
 }
 
 .home-intro__text-box p {
@@ -162,8 +173,8 @@
 }
 
 .sec-3 {
-    justify-content: center;
-    min-height: 70%;
+    /* justify-content: center;
+    min-height: 70%; */
 }
 
 .home-card__container {
@@ -186,6 +197,36 @@
 .home-card__heading {
     align-items: center;
 }
+
+.home-card__wrapper {
+    position: relative;
+    opacity: 0;
+}
+
+@keyframes fly-up {
+
+    0% {
+        top: 500px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .home-card-anim {
+        animation: fly-up 500ms 1;
+        opacity: 1;
+    }
+}
+
 
 /* media queries */
 
@@ -227,6 +268,7 @@
 
     .home-intro__text-box {
         max-width: 29rem;
+        width: 20rem;
     }
 }
 
@@ -245,10 +287,6 @@
 
     .home-banner__cta a {
         width: 12rem;
-    }
-
-    .sec-2 {
-        /* height: 34rem; */
     }
 
     .home-intro__message {
@@ -282,6 +320,7 @@
         grid-column: 3 / span 1;
         margin: 1rem;
         margin-top: 2rem;
+        width: unset;
     }
 
     .home-intro__text-box p {
@@ -300,8 +339,8 @@
     }
 
     .sec-3 {
-        justify-content: center;
-        min-height: 70%;
+        /* justify-content: center;
+        min-height: 70%; */
     }
 
     .home-card__container {
@@ -311,18 +350,6 @@
         justify-content: center;
     }
 
-}
-
-@media screen and (min-width:992px) {
-
-    .sec-1 {
-        /* min-height: 100vh; */
-    }
-
-    .sec-3 {
-        /* min-height: 50vh; */
-    }
-    
 }
 
 @media screen and (min-width:1200px) {

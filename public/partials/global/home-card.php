@@ -1,4 +1,4 @@
-<a href="<?php echo h($artifact['link_url']); ?>">
+<a class="home-card__wrapper" href="<?php echo h($artifact['link_url']); ?>">
     <div class="home-card flex flex-column blur">
         <div class="home-card__image">
             <img src="<?php echo h($artifact['img_url']); ?>" alt="Preview image for my <?php echo h($artifact['title']); ?> project">
