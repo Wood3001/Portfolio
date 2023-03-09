@@ -23,7 +23,7 @@
             <div class="loader-anim"></div>
         </div>
 
-        <?php require('partials/global/header.php'); ?>
+            <?php require('partials/global/header.php'); ?>
         
         <main>
             <div id="smooth-wrapper" class="overflow-container" data-barba="container" data-barba-namespace="home">

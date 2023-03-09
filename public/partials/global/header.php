@@ -1,4 +1,7 @@
 <div class="top-bar"></div>
+<div class="loader">
+    <div class="loader-anim"></div>
+</div>
 <header class="site-header">
     <div class="site-header__content">
         <div class="logo-container flex hide">
