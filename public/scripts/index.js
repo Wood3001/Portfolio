@@ -39,16 +39,16 @@ $(window).on("load", function(){
 
   const observer3 = new IntersectionObserver(entries => { 
     entries.forEach(entry => {
-      var aboutSkills = entry.target.querySelectorAll('.about__skills');
+      var aboutAnim = entry.target.querySelectorAll('.about-anim');
       var delayTime = 0;
 
-      for(let i = 0; i < aboutSkills.length; i++){
+      for(let i = 0; i < aboutAnim.length; i++){
         setTimeout(function(){
           if (entry.isIntersecting) {
-            aboutSkills[i].classList.add('fly-up-anim');
+            aboutAnim[i].classList.add('fly-up-anim');
           }
         },delayTime);
-        delayTime = delayTime + 150;
+        delayTime = delayTime + 100;
       }
     }); 
   }, {threshold:0.25});
@@ -83,7 +83,7 @@ $(window).on("load", function(){
         delayTime = delayTime + 150;
       }
     }); 
-  }, {threshold:0.25});
+  }, {threshold:0});
 
   /////////////////// TRANSITIONS ////////////////////
 

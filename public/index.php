@@ -23,8 +23,8 @@
             <?php require('partials/global/header.php'); ?>
         
         <main>
-            <div id="smooth-wrapper" class="overflow-container" data-barba="container" data-barba-namespace="home">
-                <div id="smooth-content">
+            <div class="overflow-container" data-barba="container" data-barba-namespace="home">
+                <div>
                     <div id="page-container">
                         <div class="full-width">
                             <section class="sec-1 flex">

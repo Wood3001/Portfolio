@@ -15,13 +15,14 @@
     }
 }
 
+
+
 @media (prefers-reduced-motion: no-preference){
     .fly-up-anim {
         animation: fly-up 500ms 1;
         opacity: 1;
     }
 }
-
 
 @keyframes wipe-enter {
 	0% {
