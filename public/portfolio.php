@@ -21,8 +21,8 @@
         <?php require('partials/global/header.php'); ?>
 
         <main>
-            <div id="smooth-wrapper" class="overflow-container" data-barba="container" data-barba-namespace="portfolio">
-                <div id="smooth-content">
+            <div class="overflow-container" data-barba="container" data-barba-namespace="portfolio">
+                <div>
                     <div class="disc-section__title flex">
                         <div class="title-container">
                             <div class="breadcrumb-container flex flex-row">

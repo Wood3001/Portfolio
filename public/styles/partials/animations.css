@@ -1,0 +1,45 @@
+@keyframes fly-up {
+
+    0% {
+        top: 500px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+
+
+@media (prefers-reduced-motion: no-preference){
+    .fly-up-anim {
+        animation: fly-up 500ms 1;
+        opacity: 1;
+    }
+}
+
+@keyframes wipe-enter {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .wipe-enter-anim {
+        animation: wipe-enter 750ms 1;
+    }
+}
+
+@keyframes arrowPulse {
+    from {opacity: 0;}
+    to {opacity: 0.225;}
+}

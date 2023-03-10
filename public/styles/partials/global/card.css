@@ -1,4 +1,5 @@
 
+
 .card {
     position: relative;
     width: 15rem;
@@ -6,6 +7,7 @@
     margin: 1rem;
     box-shadow: 0.25rem 0.25rem 0.75rem var(--oil-trns);
     overflow: hidden;
+    opacity: 0;
 }
 
 .card__image {
@@ -81,11 +83,6 @@
 .home-card__message {
     padding: 1rem;
     color: var(--eggshell);
-}
-
-.home-card__heading {
-    /* height: 4rem; */
-    /* margin-top: 5rem; */
 }
 
 .home-card__heading h2 {

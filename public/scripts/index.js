@@ -9,37 +9,81 @@ $(window).on("load", function(){
 
   ///////////////////// INTERSECTION OBSERVER ///////////////////////
 
-  // const observer1 = new IntersectionObserver(entries => {
-  //   entries.forEach(entry => {
-  //     const message = entry.target.querySelector('.message-anim-wrapper');
+  const observer1 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const message = entry.target.querySelector('.message-anim-wrapper');
 
-  //     if (entry.isIntersecting) {
-  //           message.classList.add('home-intro__message-anim');
-  //           return;
-  //       }
-  //     // message.classList.remove('home-intro__message-anim');
-  //   }); 
-  // });
+      if (entry.isIntersecting) {
+            message.classList.add('wipe-enter-anim');
+            return;
+        }
+      // message.classList.remove('wipe-enter-anim');
+    }); 
+  });
 
-  // observer1.observe(document.querySelector('.sec-2'));
+  const observer2 = new IntersectionObserver(entries => { 
+    entries.forEach(entry => {
+      var homecard = entry.target.querySelectorAll('.home-card__wrapper');
+      var delayTime = 0;
 
-  // const observer2 = new IntersectionObserver(entries => { 
-  //   entries.forEach(entry => {
-  //     var homecard = entry.target.querySelectorAll('.home-card__wrapper');
-  //     var delayTime = 0;
+      for(let i = 0; i < homecard.length; i++){
+        setTimeout(function(){
+          if (entry.isIntersecting) {
+            homecard[i].classList.add('fly-up-anim');
+          }
+        },delayTime);
+        delayTime = delayTime + 100;
+      }
+    }); 
+  }, {threshold:0.5});
 
-  //     for(let i = 0; i < homecard.length; i++){
-  //       setTimeout(function(){
-  //         if (entry.isIntersecting) {
-  //           homecard[i].classList.add('home-card-anim');
-  //         }
-  //       },delayTime);
-  //       delayTime = delayTime + 100;
-  //     }
-  //   }); 
-  // }, {threshold:0.5});
+  const observer3 = new IntersectionObserver(entries => { 
+    entries.forEach(entry => {
+      var aboutAnim = entry.target.querySelectorAll('.about-anim');
+      var delayTime = 0;
 
-  // observer2.observe(document.querySelector('.sec-3'));
+      for(let i = 0; i < aboutAnim.length; i++){
+        setTimeout(function(){
+          if (entry.isIntersecting) {
+            aboutAnim[i].classList.add('fly-up-anim');
+          }
+        },delayTime);
+        delayTime = delayTime + 100;
+      }
+    }); 
+  }, {threshold:0.25});
+
+  const observer4 = new IntersectionObserver(entries => { 
+    entries.forEach(entry => {
+      var cards = entry.target.querySelectorAll('.card');
+      var delayTime = 0;
+
+      for(let j = 0; j < cards.length; j++){
+        setTimeout(function(){
+          if (entry.isIntersecting) {
+            cards[j].classList.add('fly-up-anim');
+          }
+        },delayTime);
+        delayTime = delayTime + 150;
+      }
+    }); 
+  }, {threshold:0.25});
+
+  const observer5 = new IntersectionObserver(entries => { 
+    entries.forEach(entry => {
+      var artBoxes = entry.target.querySelectorAll('.art-anim');
+      var delayTime = 0;
+
+      for(let k = 0; k < artBoxes.length; k++){
+        setTimeout(function(){
+          if (entry.isIntersecting) {
+            artBoxes[k].classList.add('fly-up-anim');
+          }
+        },delayTime);
+        delayTime = delayTime + 150;
+      }
+    }); 
+  }, {threshold:0});
 
   /////////////////// TRANSITIONS ////////////////////
 
@@ -56,6 +100,10 @@ $(window).on("load", function(){
       afterLeave(data) {
         $('.logo-container').removeClass('hide');
         showLogo(data); 
+      },
+      afterEnter() {
+        observer1.observe(document.querySelector('.sec-2'));
+        observer2.observe(document.querySelector('.sec-3'));
       }
     },{
       namespace: 'about',
@@ -72,6 +120,9 @@ $(window).on("load", function(){
         return gsap.fromTo('#about', 
         {color: white},
         {color: orange, duration:0});
+      },
+      afterEnter() {
+        observer3.observe(document.querySelector('.about__sec-2'));
       }
     },{
       namespace: 'dev',
@@ -88,6 +139,9 @@ $(window).on("load", function(){
         return gsap.fromTo('#dev', 
         {color: white},
         {color: orange, duration:0});
+      },
+      afterEnter() {
+        observer4.observe(document.querySelector('.disc-card__container'));
       }
     },{
       namespace: 'des',
@@ -104,16 +158,25 @@ $(window).on("load", function(){
         return gsap.fromTo('#des', 
         {color: white},
         {color: orange, duration:0});
+      },
+      afterEnter() {
+        observer4.observe(document.querySelector('.disc-card__container'));
       }
     },{
       namespace: 'artifact',
       beforeEnter() {
         $('.logo-container').removeClass('hide');
+      },
+      afterEnter() {
+        observer5.observe(document.querySelector('.artifact'));
       }
     },{
       namespace: 'portfolio',
       beforeEnter() {
         $('.logo-container').removeClass('hide');
+      },
+      afterEnter() {
+        observer4.observe(document.querySelector('.disc-card__container'));
       }
     }],
     transitions: [{

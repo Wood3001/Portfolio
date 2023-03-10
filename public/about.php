@@ -13,8 +13,8 @@
         <?php require('partials/global/header.php'); ?>
 
         <main>
-            <div id="smooth-wrapper" class="overflow-container" data-barba="container" data-barba-namespace="about">
-                <div id="smooth-content">
+            <div class="overflow-container" data-barba="container" data-barba-namespace="about">
+                <div>
                     <div id="page-container">
                         <div>
                             <section class="about__sec-1 grid">
@@ -39,8 +39,8 @@
                                 </div>
                                 <div class="about__skills skills-dev">  
                                     <div class="sub-title">
-                                        <h3>Web Development</h3>
-                                        <div class="col-wrapper flex blur">
+                                        <h3 class="about-anim">Web Development</h3>
+                                        <div class="about-anim col-wrapper flex blur">
                                             <ul class="col">
                                                 <li><p>HTML/CSS</p></li>
                                                 <li><p>JavaScript</p></li>
@@ -60,8 +60,8 @@
                                 </div>
                                 <div class="about__skills skills-des">  
                                     <div class="sub-title">
-                                        <h3>Design</h3>
-                                        <div class="col-wrapper flex blur">
+                                        <h3 class="about-anim">Design</h3>
+                                        <div class="about-anim col-wrapper flex blur">
                                             <ul class="col">
                                                 <li><p>Adobe Photoshop</p></li>
                                                 <li><p>Adobe Illustrator</p></li>
@@ -74,8 +74,8 @@
                                 </div>
                                 <div class="about__skills skills-3d">  
                                     <div class="sub-title">
-                                        <h3>3D Modelling & Animation</h3>
-                                        <div class="col-wrapper flex blur">
+                                        <h3 class="about-anim">3D Modelling & Animation</h3>
+                                        <div class="about-anim col-wrapper flex blur">
                                             <ul class="col">
                                                 <li><p>Adobe Dimension</p></li>
                                                 <li><p>Adobe Aero</p></li>
@@ -89,8 +89,8 @@
                                 </div>
                                 <div class="about__skills skills-av">  
                                     <div class="sub-title">
-                                        <h3>Audio / Video</h3>
-                                        <div class="col-wrapper flex blur">
+                                        <h3 class="about-anim">Audio / Video</h3>
+                                        <div class="about-anim col-wrapper flex blur">
                                             <ul class="col">
                                                 <li><p>Adobe Premier</p></li>
                                                 <li><p>Adobe AfterEffects</p></li>

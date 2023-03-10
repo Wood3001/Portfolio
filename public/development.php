@@ -21,7 +21,7 @@
         <?php require('partials/global/header.php'); ?>
 
         <main>
-            <div id="smooth-wrapper" class="overflow-container" data-barba="container" data-barba-namespace="dev">
+            <div class="overflow-container" data-barba="container" data-barba-namespace="dev">
                 <div id="smooth-content">
                     <div class="disc-section__title">
                         <div class="title-container">
