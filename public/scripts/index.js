@@ -39,7 +39,7 @@ $(window).on("load", function(){
 
   const observer3 = new IntersectionObserver(entries => { 
     entries.forEach(entry => {
-      var aboutAnim = entry.target.querySelectorAll('.about-anim');
+      var aboutAnim = entry.target.querySelectorAll('.about__skills');
       var delayTime = 0;
 
       for(let i = 0; i < aboutAnim.length; i++){

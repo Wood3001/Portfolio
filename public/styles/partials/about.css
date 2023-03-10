@@ -67,10 +67,6 @@
     position: relative;
     grid-column: 1 / span 12;
     padding: 1rem; 
-}
-
-.about__anim {
-    position: relative;
     opacity: 0;
 }
 
