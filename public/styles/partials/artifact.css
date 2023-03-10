@@ -136,6 +136,11 @@
         align-items: start;
     }
 
+    .art-anim {
+        position: relative;
+        opacity: 0;
+    }
+
     .artifact__narrative {
         margin: 1rem;
     }
