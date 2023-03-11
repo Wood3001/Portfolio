@@ -24,7 +24,7 @@
 .home-banner {
     margin: 2rem 0;
     z-index: 10;
-    width: 100%;
+    width: 100vw;
     padding: 2rem 0;
     transform: scale(1);
 }
