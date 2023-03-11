@@ -36,7 +36,6 @@
 
 .site-footer_message {
     display: flex;
-    /* flex-direction: row; */
     justify-content: center;
 }
 
@@ -121,11 +120,6 @@
     
 
 @media screen and (min-width:768px) {
-
-    /* .site-footer {
-        background-image: url(../../../images/van-skyline.png);
-        background-size: contain;
-    } */
 
     .site-footer__content {
         height: 50%;

@@ -27,7 +27,6 @@
     grid-column: 2 / span 10;
     grid-row: 2;
     align-items: center;
-    /* transform: translate(0, 60px); */
 }
 
 .site-header__logo img {

@@ -18,7 +18,6 @@
         <ul>
             <li><a href="https://twitter.com/wood_3001"><i class="fa-brands fa-twitter fa-1x"></i></a></li>
             <li><a href="https://www.instagram.com/wood_3001"><i class="fa-brands fa-instagram fa-1x"></i></a></li>
-            <!-- <li><a href="https://www.youtube.com/channel/UCxSjgRB2VMdbjCXSv3tcLLg"><i class="fa-brands fa-youtube fa-1x"></i></a></li> -->
             <li><a href="https://www.linkedin.com/in/wood3001"><i class="fa-brands fa-linkedin fa-1x"></i></a></li>
             <li><a href="https://github.com/Wood3001"><i class="fa-brands fa-github fa-1x"></i></a></li>
         </ul>

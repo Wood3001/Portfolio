@@ -7,32 +7,6 @@ $(window).on("load", function(){
       $(".loader").addClass("hide");
   });
 
-  ///////////////////// INTERSECTION OBSERVER ///////////////////////
-
-  
-
-  
-
-  
-
-  
-
-  const observer5 = new IntersectionObserver(entries => { 
-    entries.forEach(entry => {
-      var artBoxes = entry.target.querySelectorAll('.art-anim');
-      var delayTime = 0;
-
-      for(let k = 0; k < artBoxes.length; k++){
-        setTimeout(function(){
-          if (entry.isIntersecting) {
-            artBoxes[k].classList.add('fly-up-anim');
-          }
-        },delayTime);
-        delayTime = delayTime + 150;
-      }
-    }); 
-  }, {threshold:0});
-
   /////////////////// TRANSITIONS ////////////////////
 
   const orange = 'rgba(241, 134, 38, 1)';
@@ -188,6 +162,21 @@ $(window).on("load", function(){
         $('.logo-container').removeClass('hide');
       },
       afterEnter() {
+        const observer5 = new IntersectionObserver(entries => { 
+          entries.forEach(entry => {
+            var artBoxes = entry.target.querySelectorAll('.art-anim');
+            var delayTime = 0;
+      
+            for(let k = 0; k < artBoxes.length; k++){
+              setTimeout(function(){
+                if (entry.isIntersecting) {
+                  artBoxes[k].classList.add('fly-up-anim');
+                }
+              },delayTime);
+              delayTime = delayTime + 150;
+            }
+          }); 
+        }, {threshold:0});
         observer5.observe(document.querySelector('.artifact'));
       }
     },{
