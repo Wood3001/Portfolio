@@ -106,7 +106,13 @@ main {
     min-height: 100%;
 }
 
+.full-width {
+    width: 100%;
+    padding-bottom: 16rem;
+}
+
 #footer {
+    position: absolute;
     background-color: var(--oil);
     bottom: 0;
     width: 100%;

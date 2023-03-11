@@ -16,7 +16,7 @@
             <div class="overflow-container" data-barba="container" data-barba-namespace="about">
                 <div>
                     <div id="page-container">
-                        <div>
+                        <div class="full-width">
                             <section class="about__sec-1 grid">
                                 <div class="section__title section__title-about">
                                     <h1>About</h1>
