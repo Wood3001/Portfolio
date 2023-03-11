@@ -1,14 +1,11 @@
 //execute the function once the page has finished loading
-$(window).on("DOMContentLoaded", function(){
+$(window).on("load", function(){
 
   ///////////////// LOADER //////////////////////////
 
-  const $loader = $(".loader");
-  $loader.slideUp('fast', function(){
-    $loader.addClass("hide");
+  $(".loader").slideUp('fast', function(){
+      $(".loader").addClass("hide");
   });
-
-  /////////////////// INTERSECTION OBSERVERS /////////
 
   /////////////////// TRANSITIONS ////////////////////
 
@@ -34,23 +31,24 @@ $(window).on("DOMContentLoaded", function(){
             if (entry.isIntersecting) {
                   message.classList.add('wipe-enter-anim');
                   return;
-            }
+              }
+            // message.classList.remove('wipe-enter-anim');
           }); 
-        }, {threshold:0.5});
+        });
         observer1.observe(document.querySelector('.sec-2'));
         const observer2 = new IntersectionObserver(entries => { 
           entries.forEach(entry => {
             var homecard = entry.target.querySelectorAll('.home-card__wrapper');
             var delayTime = 0;
       
-            homecard.forEach((card) => {
+            for(let i = 0; i < homecard.length; i++){
               setTimeout(function(){
                 if (entry.isIntersecting) {
-                  card.classList.add('fly-up-anim');
+                  homecard[i].classList.add('fly-up-anim');
                 }
               },delayTime);
               delayTime = delayTime + 100;
-            });            
+            }
           }); 
         }, {threshold:0.5});
         observer2.observe(document.querySelector('.sec-3'));
@@ -77,14 +75,14 @@ $(window).on("DOMContentLoaded", function(){
             var aboutAnim = entry.target.querySelectorAll('.about__skills');
             var delayTime = 0;
       
-            aboutAnim.forEach((card) => {
+            for(let i = 0; i < aboutAnim.length; i++){
               setTimeout(function(){
                 if (entry.isIntersecting) {
-                  card.classList.add('fly-up-anim');
+                  aboutAnim[i].classList.add('fly-up-anim');
                 }
               },delayTime);
               delayTime = delayTime + 100;
-            }); 
+            }
           }); 
         }, {threshold:0.25})
         observer3.observe(document.querySelector('.about__sec-2'));
@@ -106,22 +104,22 @@ $(window).on("DOMContentLoaded", function(){
         {color: orange, duration:0});
       },
       afterEnter() {
-        const observer4 = new IntersectionObserver(entries => { 
+        const observer6 = new IntersectionObserver(entries => { 
           entries.forEach(entry => {
             var cards = entry.target.querySelectorAll('.card');
             var delayTime = 0;
       
-            cards.forEach((card) => {
+            for(let j = 0; j < cards.length; j++){
               setTimeout(function(){
                 if (entry.isIntersecting) {
-                  card.classList.add('fly-up-anim');
+                  cards[j].classList.add('fly-up-anim');
                 }
               },delayTime);
-              delayTime = delayTime + 100;
-            }); 
+              delayTime = delayTime + 150;
+            }
           }); 
         }, {threshold:0.25});
-        observer4.observe(document.querySelector('.js-devcards'));
+        observer6.observe(document.querySelector('.js-devcards'));
       }
     },{
       namespace: 'des',
@@ -145,14 +143,15 @@ $(window).on("DOMContentLoaded", function(){
             var cards = entry.target.querySelectorAll('.card');
             var delayTime = 0;
             
-            cards.forEach((card) => {
+            for(let j = 0; j < cards.length; j++){
               setTimeout(function(){
+                
                 if (entry.isIntersecting) {
-                  card.classList.add('fly-up-anim');
+                  cards[j].classList.add('fly-up-anim');
                 }
               },delayTime);
-              delayTime = delayTime + 100;
-            }); 
+              delayTime = delayTime + 150;
+            }
           }); 
         }, {threshold:0.25});
         observer4.observe(document.querySelector('.js-descards'));
@@ -168,14 +167,14 @@ $(window).on("DOMContentLoaded", function(){
             var artBoxes = entry.target.querySelectorAll('.art-anim');
             var delayTime = 0;
       
-            artBoxes.forEach((card) => {
+            for(let k = 0; k < artBoxes.length; k++){
               setTimeout(function(){
                 if (entry.isIntersecting) {
-                  card.classList.add('fly-up-anim');
+                  artBoxes[k].classList.add('fly-up-anim');
                 }
               },delayTime);
-              delayTime = delayTime + 100;
-            }); 
+              delayTime = delayTime + 150;
+            }
           }); 
         }, {threshold:0});
         observer5.observe(document.querySelector('.artifact'));
@@ -191,14 +190,15 @@ $(window).on("DOMContentLoaded", function(){
             var cards = entry.target.querySelectorAll('.card');
             var delayTime = 0;
             
-            cards.forEach((card) => {
+            for(let j = 0; j < cards.length; j++){
               setTimeout(function(){
+                
                 if (entry.isIntersecting) {
-                  card.classList.add('fly-up-anim');
+                  cards[j].classList.add('fly-up-anim');
                 }
               },delayTime);
-              delayTime = delayTime + 100;
-            }); 
+              delayTime = delayTime + 150;
+            }
           }); 
         }, {threshold:0.25});
         observer4.observe(document.querySelector('.js-allcards'));
