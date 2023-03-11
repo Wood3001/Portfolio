@@ -180,10 +180,6 @@
 
 @media screen and (min-width:370px) {
 
-    .sec-2 {
-        /* height:75vh; */
-    }
-
     .home-intro__message {
         grid-template-columns: 2rem 5rem 1fr 2rem;
     }
@@ -221,10 +217,6 @@
 }
 
 @media screen and (min-width:768px) {
-    
-    .sec-1 {
-        /* min-height: 100%; */
-    }
 
     .home-banner {
         width: auto;
