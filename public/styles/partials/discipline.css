@@ -8,8 +8,13 @@
     margin: 1rem;
 }
 
+.title-container {
+    width: 95vw;
+}
+
 .disc-card__container {
     flex-direction: column;
+    width: 100vw;
 }
 
 .section {
@@ -43,11 +48,23 @@
     }
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:1024px) {
 
     .disc-section__title {
         display: flex;
         justify-content: center;
     }
 
+    .title-container {
+        width: 1000px;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+
+    .disc-card__container {
+        width: 64rem;
+    }
+    
 }
