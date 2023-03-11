@@ -14,8 +14,8 @@
 
 /* global styles */
 
-html {
-    
+*, html {
+    scroll-behavior: smooth !important;
 }
 
 body {
