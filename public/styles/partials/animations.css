@@ -27,15 +27,18 @@
 @keyframes wipe-enter {
 	0% {
 		width: 0%;
+        opacity: 1;
 	}
 	100% {
 		width: 100%;
+        opacity: 1;
 	}
 }
 
 @media (prefers-reduced-motion: no-preference){
     .wipe-enter-anim {
         animation: wipe-enter 750ms 1;
+        opacity: 1;
     }
 }
 
