@@ -1,17 +1,25 @@
+@import url('partials/global/button.css');
+@import url('partials/global/variables.css');
+
 /* Global */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
     color: var(--eggshell);
     background-color: var(--midnight);
+    overflow: hidden;
+    display: flex;
 }
 
 .container {
-    width: 100%;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    left: 15rem;
 }
 
 .container .text {
@@ -24,14 +32,16 @@ body {
 }
 
 .container .text h1 {
-    font-weight: 100;
-    font-size: 14vw;
-    padding: 3vh 0;
+    font-weight: 900;
+    margin-bottom: 3rem;
 }
 
 .container .text p {
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 6vw;
+    margin-bottom: 3rem;
+    line-height: 1.5;
 }
 
 .container .graphic {
@@ -40,7 +50,11 @@ body {
     margin: 2vh auto;
 }
 
-.container .btn {
+.btn-container {
+    width: 15rem;
+}
+
+/* .container .btn {
     display: flex;
     justify-content: center;
     margin-top: 4vh;
@@ -50,16 +64,16 @@ body {
     width: 90%;
     background-color: var(--purple);
     border-color: var(--eggshell);;
-}
+} */
 
-.container button a {
+/* .container button a {
     text-decoration: none;
     color: var(--eggshell);;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 8vw;
     line-height: 1.2;
-}
+} */
 
 @media (max-height: 670px) {
     .container .graphic {
@@ -76,13 +90,13 @@ body {
         margin: 2vh auto;
     }
 
-    .container button {
+    /* .container button {
         width: 60%;
     }
 
     .container button a {
         font-size: 5vw;
-    }
+    } */
 
 }
 
@@ -118,25 +132,25 @@ body {
         font-size: 2vw;
         text-align: left;
     }
-
+/* 
     .container .btn {
         margin: auto;
-    }
+    } */
     
-    .container button {
+    /* .container button {
         width: 28vw;
     }
     
     .container button a {
         font-size: 2.5vw;
         line-height: 2;
-    }
+    } */
 }
 
 @media (min-width: 992px) {
 
     .container .graphic {
-        width: 35vw;
+        width: 25vw;
         padding: 20px;
     }
 
@@ -153,7 +167,7 @@ body {
     }
 
     .container .text h1 {
-        font-size: 7vw;
+        font-size: 5rem;
     }
 
     .container .text p {
@@ -172,13 +186,13 @@ body {
         width: 25vw;
     }
 
-    .container button {
+    /* .container button {
         width: 18vw;
     }
     
     .container button a {
         font-size: 1.5vw;
         line-height: 2;
-    }
+    } */
 
 }
