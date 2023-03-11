@@ -1,7 +1,7 @@
 <?php
 
     // import the init page
-    require('db/init.php');
+    require('../db/init.php');
 
 ?><!DOCTYPE html>
 <html lang="en" data-barba="wrapper">
@@ -9,13 +9,13 @@
     <?php 
         $title = "Page Not Fpound";
         $description = "The page you are looking for is somewhere else.";
-        $stylesheet = "public/styles/404.css";
-        require('public/partials/global/head.php');
+        $stylesheet = "styles/404.css";
+        require('partials/global/head.php');
     ?>
 
     <body>
 
-        <?php require('public/partials/global/header.php'); ?>
+        <?php require('partials/global/header.php'); ?>
 
         <main>
             <section class="container">
@@ -37,7 +37,7 @@
             <div class="blackout"></div>
         </main> 
 
-        <?php require('public/partials/global/scripts.php'); ?>
+        <?php require('partials/global/scripts.php'); ?>
         
     </body>
 </html>
