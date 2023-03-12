@@ -1,5 +1,5 @@
 //execute the function once the page has finished loading
-$(window).on("DOMContentLoaded", function(){
+$(window).on("load", function(){
 
   ///////////////// LOADER //////////////////////////
 
