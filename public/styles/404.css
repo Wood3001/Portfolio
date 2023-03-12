@@ -18,7 +18,7 @@ body {
     width: 100vw;
     display: grid;
     grid-template-columns: 1rem 1fr 1rem;
-    grid-template-rows: 1rem 1fr 1fr 1fr 1fr 1rem;
+    grid-template-rows: 1rem 0fr 1fr 0fr 1fr 1rem;
 }
 
 .text, .heading {
