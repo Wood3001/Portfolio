@@ -1,5 +1,6 @@
 @import url('partials/global/button.css');
 @import url('partials/global/variables.css');
+@import url('partials/global/type.css');
 
 /* Global */
 
@@ -10,189 +11,124 @@ body {
     color: var(--eggshell);
     background-color: var(--midnight);
     overflow: hidden;
-    display: flex;
 }
 
 .container {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    left: 15rem;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1rem 1fr 1rem;
+    grid-template-rows: 1rem 1fr 1fr 1fr 1fr 1rem;
 }
 
-.container .text {
-    width: 80%;
+.text, .heading {
     display: flex;
-    margin: 0 auto 2vh;
     flex-direction: column;  
     text-align: center; 
     order: -1;
 }
 
-.container .text h1 {
-    font-weight: 900;
-    margin-bottom: 3rem;
+.text {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
 }
 
-.container .text p {
+.heading {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    line-height: 1.15;
+}
+
+p {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 6vw;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     line-height: 1.5;
 }
 
-.container .graphic {
-    width: 60vw;
-    height: 55vh; 
-    margin: 2vh auto;
+.graphic {
+    width: 12rem;
+    margin: 1rem auto;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
 }
 
 .btn-container {
-    width: 15rem;
-}
-
-/* .container .btn {
     display: flex;
     justify-content: center;
-    margin-top: 4vh;
+    grid-column: 2 / span 1;
+    grid-row: 5 / span 1;
 }
 
-.container button {
-    width: 90%;
-    background-color: var(--purple);
-    border-color: var(--eggshell);;
-} */
-
-/* .container button a {
-    text-decoration: none;
-    color: var(--eggshell);;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 8vw;
-    line-height: 1.2;
-} */
-
-@media (max-height: 670px) {
-    .container .graphic {
-        width: 55vw;
-        height: 52vh;
-    }
-}
-
-@media (min-width: 480px) {
-
-    .container .graphic {
-        width: 33vw;
-        height: 45vh; 
-        margin: 2vh auto;
-    }
-
-    /* .container button {
-        width: 60%;
-    }
-
-    .container button a {
-        font-size: 5vw;
-    } */
-
+.hide {
+    display: none;
 }
 
 @media (min-width: 768px) {
 
-    .container {
-        width: 95%;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-    }
-
-    .container .graphic {
-        order: -1;
-        width: 50vmax;
+    .graphic {
+        width: 18rem;
         height: auto; 
         padding: 5vmax 0;
     }
 
-    .container .text {
-        align-items: left;
-        margin-left: 30px;
-    }
-
-    .container .text h1 {
+    h1 {
         font-size: 10vw;
-        text-align: left;
     }
     
-    .container .text p {
-        font-size: 2vw;
-        text-align: left;
+    p {
+        font-size: 2rem;
     }
-/* 
-    .container .btn {
-        margin: auto;
-    } */
-    
-    /* .container button {
-        width: 28vw;
-    }
-    
-    .container button a {
-        font-size: 2.5vw;
-        line-height: 2;
-    } */
 }
 
 @media (min-width: 992px) {
 
-    .container .graphic {
-        width: 25vw;
-        padding: 20px;
-    }
-
-    .container .text {
-        margin-left: 55px;
-    }
-
-}
-
-@media (min-width: 1200px) {
-
     .container {
-        width: 80%;
+        display: grid;
+        grid-template-columns: 1rem 1fr 26rem 26rem 1fr 1rem;
+        grid-template-rows: 1rem 1fr 14rem 6rem 1fr 1rem;
     }
 
-    .container .text h1 {
+    .graphic {
+        width: 20rem;
+        padding: 20px;
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 4;
+        display: flex;
+    }
+
+    .text {
+        grid-column: 4 / span 1;
+        grid-row: 4 / span 1;
+        text-align: left;
+    }
+    
+    .heading {
+        grid-column: 4 / span 1;
+        grid-row: 3 / span 1;
+        text-align: left;
+    }
+
+    h1 {
         font-size: 5rem;
     }
 
-    .container .text p {
-        font-size: 1.5vw;
+    p {
+        font-size: 1.5rem;
     }
 
-}
-
-@media (min-width: 4000px) {
-
-    .container {
-        width: 65%;
+    .btn-container {
+        width: 15rem;
+        display: flex;
+        justify-content: center;
+        grid-column: 4 / span 1;
+        grid-row: 5 / span 1;
     }
-
-    .container .graphic {
-        width: 25vw;
-    }
-
-    /* .container button {
-        width: 18vw;
-    }
-    
-    .container button a {
-        font-size: 1.5vw;
-        line-height: 2;
-    } */
-
 }
