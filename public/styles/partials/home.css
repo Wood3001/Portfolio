@@ -100,6 +100,7 @@
     overflow: hidden;
     grid-template-columns: 1.5rem 5rem 1fr 1.5rem;
     grid-template-rows: 1rem 6rem 1fr 6rem 4rem;
+    opacity: 0;
 }
 
 .home-intro__message img {
@@ -126,9 +127,8 @@
 }
 
 .home-intro__bg {
+    width: 100vw;
     background: var(--oil-trns);
-    -webkit-backdrop-filter: blur(0.75rem);
-    backdrop-filter: blur(0.75rem);
     grid-column: 1 / span 4;
     grid-row: 2 / span 3;
     z-index: -10;

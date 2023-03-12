@@ -10,13 +10,21 @@
 }
 
 .title-container {
-    width: 19rem;
+    width: 15rem;
 }
 
 .disc-card__container {
+    width: 21rem;
     flex-direction: column;
     width: 100vw;
     align-items: center;
+}
+
+.card-wrap {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #page-container {
@@ -31,6 +39,14 @@
     align-items: center;
 }
 
+@media screen and (min-width:370px) {
+
+    .title-container {
+        width: 19rem;
+    }
+}
+
+
 @media screen and (min-width:768px) {
 
     .disc-card__container {
@@ -43,8 +59,6 @@
 
     .card-wrap {
         width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: left;
     }
 }

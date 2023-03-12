@@ -23,36 +23,26 @@
 }
 
 @keyframes wipe-enter {
-	0% {
-		width: 0%;
-        opacity: 1;
-	}
-	100% {
-		width: 100%;
-        opacity: 1;
-	}
-}
 
-@keyframes blur {
-	0% {
-        backdrop-filter: blur(0rem);
-        -webkit-backdrop-filter: blur(0rem);
-	}
-	100% {
-        backdrop-filter: blur(0.75rem);
-        -webkit-backdrop-filter: blur(0.75rem);
-	}
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 
 @media (prefers-reduced-motion: no-preference){
-    .blur-anim {
-        animation: blur 1s 1;
-        backdrop-filter: blur(0.75rem);
-        animation-delay: 1s;
-    }
 
     .wipe-enter-anim {
-        animation: wipe-enter 750ms 1;
+        animation: wipe-enter 1s 1;
         opacity: 1;
     }
     

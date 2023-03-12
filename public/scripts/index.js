@@ -29,11 +29,9 @@ $(window).on("load", function(){
       afterEnter() {
         const observer1 = new IntersectionObserver(entries => {
           entries.forEach(entry => {
-            var message = entry.target.querySelector('.message-anim-wrapper');
-            var backdrop = entry.target.querySelector('.home-intro__bg');
+            var message = entry.target.querySelector('.home-intro__message');
       
             if (entry.isIntersecting) {
-                  backdrop.classList.add('blur-anim');
                   message.classList.add('wipe-enter-anim');
                   return;
             }
@@ -76,7 +74,7 @@ $(window).on("load", function(){
       afterEnter() {
         const observer3 = new IntersectionObserver(entries => { 
           entries.forEach(entry => {
-            var aboutAnim = entry.target.querySelectorAll('.about__skills');
+            var aboutAnim = entry.target.querySelectorAll('.about-anim');
             var delayTime = 0;
       
             aboutAnim.forEach((card) => {

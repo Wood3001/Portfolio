@@ -37,69 +37,57 @@
                                 <div class="section__title section__title-skills">
                                     <h1>Skills</h1>
                                 </div>
-                                <div class="about__skills skills-dev">  
-                                    <div class="sub-title">
-                                        <h3>Web Development</h3>
-                                        <div class="col-wrapper flex blur">
-                                            <ul class="col">
-                                                <li><p>HTML/CSS</p></li>
-                                                <li><p>JavaScript</p></li>
-                                                <li><p>PHP/SQL</p></li>
-                                                <li><p>React</p></li>
-                                                <li><p>JS Libraries:</p></li>
-                                                <li>
-                                                    <ul>
-                                                        <li><p>jQuery</p></li>
-                                                        <li><p>GSAP</p></li>
-                                                        <li><p>Three.js</p></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                <div class="about__skills skills-dev blur about-anim">
+                                    <div class="col-wrapper flex flex-column">
+                                        <ul class="col">
+                                            <li><h3>Web & App Development</h3></li>
+                                            <li><p>HTML/CSS</p></li>
+                                            <li><p>JavaScript</p></li>
+                                            <li><p>PHP/MySQL</p></li>
+                                            <li><p>React Native</p></li>
+                                            <li><p>Laravel</p></li>
+                                            <li><p>Wordpress</p></li>
+                                            <li><p>REST APIs</p></li>
+                                            <li><p>Node.js</p></li>
+                                        </ul>
+                                    </div>  
+                                </div>
+                                <div class="about__skills skills-des blur about-anim">
+                                    <div class="col-wrapper flex flex-column">
+                                        <ul class="col">
+                                            <li><h3>Design</h3></li>
+                                            <li><p>Adobe Photoshop</p></li>
+                                            <li><p>Adobe Illustrator</p></li>
+                                            <li><p>Adobe InDesign</p></li>
+                                            <li><p>Adobe XD</p></li>
+                                            <li><p>Figma</p></li>
+                                        </ul>
                                     </div>   
                                 </div>
-                                <div class="about__skills skills-des">  
-                                    <div class="sub-title">
-                                        <h3>Design</h3>
-                                        <div class="col-wrapper flex blur">
-                                            <ul class="col">
-                                                <li><p>Adobe Photoshop</p></li>
-                                                <li><p>Adobe Illustrator</p></li>
-                                                <li><p>Adobe InDesign</p></li>
-                                                <li><p>Adobe XD</p></li>
-                                                <li><p>Figma</p></li>
-                                            </ul>
-                                        </div>
+                                <div class="about__skills skills-3d blur about-anim">
+                                    <div class="col-wrapper flex flex-column">
+                                        <ul class="col">
+                                            <li><h3>3D Modelling & Animation</h3></li>
+                                            <li><p>Adobe Dimension</p></li>
+                                            <li><p>Adobe Aero</p></li>
+                                            <li><p>Blender 3D</p></li>
+                                            <li><p></p></li>
+                                            <li><p></p></li>
+                                            <li><p></p></li>
+                                        </ul>
                                     </div>   
                                 </div>
-                                <div class="about__skills skills-3d">  
-                                    <div class="sub-title">
-                                        <h3>3D Modelling & Animation</h3>
-                                        <div class="col-wrapper flex blur">
-                                            <ul class="col">
-                                                <li><p>Adobe Dimension</p></li>
-                                                <li><p>Adobe Aero</p></li>
-                                                <li><p>Blender 3D</p></li>
-                                                <li><p></p></li>
-                                                <li><p></p></li>
-                                                <li><p></p></li>
-                                            </ul>
-                                        </div>
-                                    </div>   
-                                </div>
-                                <div class="about__skills skills-av">  
-                                    <div class="sub-title">
-                                        <h3>Audio / Video</h3>
-                                        <div class="col-wrapper flex blur">
-                                            <ul class="col">
-                                                <li><p>Adobe Premier</p></li>
-                                                <li><p>Adobe AfterEffects</p></li>
-                                                <li><p>Adobe Audition</p></li>
-                                                <li><p>Davinci Resolve</p></li>
-                                                <li><p>GarageBand</p></li>
-                                                <li><p>Ableton Live</p></li>
-                                            </ul>
-                                        </div>
+                                <div class="about__skills skills-av blur about-anim">
+                                    <div class="col-wrapper flex flex-column">
+                                        <ul class="col">
+                                            <li><h3>Audio / Video</h3></li>
+                                            <li><p>Adobe Premier</p></li>
+                                            <li><p>Adobe AfterEffects</p></li>
+                                            <li><p>Adobe Audition</p></li>
+                                            <li><p>Davinci Resolve</p></li>
+                                            <li><p>GarageBand</p></li>
+                                            <li><p>Ableton Live</p></li>
+                                        </ul>
                                     </div>   
                                 </div>
                             </section>
