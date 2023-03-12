@@ -15,8 +15,6 @@
     }
 }
 
-
-
 @media (prefers-reduced-motion: no-preference){
     .fly-up-anim {
         animation: fly-up 500ms 1;
@@ -35,11 +33,29 @@
 	}
 }
 
+@keyframes blur {
+	0% {
+        backdrop-filter: blur(0rem);
+        -webkit-backdrop-filter: blur(0rem);
+	}
+	100% {
+        backdrop-filter: blur(0.75rem);
+        -webkit-backdrop-filter: blur(0.75rem);
+	}
+}
+
 @media (prefers-reduced-motion: no-preference){
+    .blur-anim {
+        animation: blur 1s 1;
+        backdrop-filter: blur(0.75rem);
+        animation-delay: 1s;
+    }
+
     .wipe-enter-anim {
         animation: wipe-enter 750ms 1;
         opacity: 1;
     }
+    
 }
 
 @keyframes arrowPulse {

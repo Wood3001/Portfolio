@@ -54,7 +54,7 @@ p {
 }
 
 .graphic {
-    width: 12rem;
+    width: 25vh;
     margin: 1rem auto;
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;

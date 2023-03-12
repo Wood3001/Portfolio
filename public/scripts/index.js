@@ -29,9 +29,11 @@ $(window).on("DOMContentLoaded", function(){
       afterEnter() {
         const observer1 = new IntersectionObserver(entries => {
           entries.forEach(entry => {
-            const message = entry.target.querySelector('.message-anim-wrapper');
+            var message = entry.target.querySelector('.message-anim-wrapper');
+            var backdrop = entry.target.querySelector('.home-intro__bg');
       
             if (entry.isIntersecting) {
+                  backdrop.classList.add('blur-anim');
                   message.classList.add('wipe-enter-anim');
                   return;
             }
@@ -120,7 +122,7 @@ $(window).on("DOMContentLoaded", function(){
               delayTime = delayTime + 100;
             }); 
           }); 
-        }, {threshold:0.25});
+        }, {threshold:0});
         observer4.observe(document.querySelector('.js-devcards'));
       }
     },{
@@ -154,7 +156,7 @@ $(window).on("DOMContentLoaded", function(){
               delayTime = delayTime + 100;
             }); 
           }); 
-        }, {threshold:0.25});
+        }, {threshold:0});
         observer4.observe(document.querySelector('.js-descards'));
       }
     },{
@@ -200,7 +202,7 @@ $(window).on("DOMContentLoaded", function(){
               delayTime = delayTime + 100;
             }); 
           }); 
-        }, {threshold:0.25});
+        }, {threshold:0});
         observer4.observe(document.querySelector('.js-allcards'));
       }
     }],

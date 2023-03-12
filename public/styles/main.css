@@ -149,7 +149,10 @@ footer {
     #footer {
         height: 20rem;
     }
-    
+
+    .full-width {
+        padding-bottom: 20rem;
+    }
 }
 
 @media screen and (min-width:481px) {
@@ -177,6 +180,10 @@ footer {
 
     #footer {
         height: 16rem;
+    }
+
+    .full-width {
+        padding-bottom: 16rem;
     }
 }
 
