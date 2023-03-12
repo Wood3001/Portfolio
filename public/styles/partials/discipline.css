@@ -13,14 +13,10 @@
     width: 19rem;
 }
 
-.card-wrap {
-    width: 100%;
+.disc-card__container {
     flex-direction: column;
-    justify-content: center;
-}
-
-.section {
-    position: relative;
+    width: 100vw;
+    align-items: center;
 }
 
 #page-container {
@@ -46,6 +42,7 @@
     }
 
     .card-wrap {
+        width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: left;
@@ -66,5 +63,4 @@
     .title-container {
         width: 62rem;
     }
-
 }

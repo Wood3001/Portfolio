@@ -33,12 +33,14 @@
                             </div>
                         </div>
                         <div class="disc-card__container flex js-descards">
+                            <div class="card-wrap flex">
 
-                            <?php while($artifact = $artifacts->fetch_assoc()) {
-                                if ($artifact['discipline'] == 1){
-                                    include(get_path('public/partials/global/card.php'));
-                                }} ?>
+                                <?php while($artifact = $artifacts->fetch_assoc()) {
+                                    if ($artifact['discipline'] == 1){
+                                        include(get_path('public/partials/global/card.php'));
+                                    }} ?>
 
+                            </div>
                         </div>
                     </div>
                     <footer id="footer">
