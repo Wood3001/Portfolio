@@ -39,7 +39,15 @@
                                     if ($artifact['discipline'] == 0){
                                         include(get_path('public/partials/global/card.php'));
                                     }} ?>
-
+                                
+                                <div class="card flex flex-column blur height-mobile">
+                                    <div class="card__image"></div>
+                                    <div class="card__message">
+                                        <h3>Stay Tuned!</h3>
+                                        <h2>More Projects Coming Soon!</h2>
+                                    </div>
+                                    <div class="card__cta flex"></div>
+                                </div>
                             </div>
                         </div>
                     </div>

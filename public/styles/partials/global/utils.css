@@ -75,8 +75,24 @@
     margin-left: 1rem;
 }
 
+.hide-mobile {
+    display: none;
+}
+
+.height-mobile {
+    height: fit-content;
+}
+
 @media (min-width:768px) {
     .grid {
         margin: 0 1rem;
+    }
+    
+    .hide-mobile {
+        display: unset;
+    }
+
+    .height-mobile {
+        height: inherit;
     }
 }
