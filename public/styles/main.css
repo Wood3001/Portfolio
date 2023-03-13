@@ -20,16 +20,17 @@
 
 body {
     color: var(--eggshell);
+    background-color: var(--oil);
     font-family: var(--body-font);
     display: grid;
     height: 100%;
-    max-width: 100%;
 }
 
 #parallax-container {
-    transform: translateX(-4rem);
+    /* transform: translateX(-4rem); */
+    justify-self: center;
     position: fixed;
-    height: 108vh;
+    min-height: 105vh;
     object-fit: cover;
 }
 
@@ -221,15 +222,4 @@ footer {
     #content-wrap {
         min-width: 1025px;
     }  
-}
-
-@media screen and (min-width:2200px) {
-
-    body {
-        background: url(../images/ss-hero1-4k.png);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-    }
 }

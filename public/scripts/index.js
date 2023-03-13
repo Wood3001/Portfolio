@@ -15,9 +15,10 @@ $(window).on("load", function(){
 
   barba.hooks.beforeEnter(() => {
     $(".overflow-container").mousemove(function(e) {
-      parallaxIt(e, "#city", 5);
+      // parallaxIt(e, "#sky", 25);
+      parallaxIt(e, "#city", 10);
       parallaxIt(e, "#water", -5);
-      parallaxIt(e, "#foreground", -15);
+      parallaxIt(e, "#foreground", -20);
     });
   })
 
@@ -260,9 +261,15 @@ $(window).on("load", function(){
     var $this = $(".overflow-container");
     var relX = e.pageX - $this.offset().left;
   
-    TweenMax.to(target, 0, {
-      x: (relX - $this.width() * 2) / $this.width() * (movement),
-      ease: Power3.easeInOut
+    TweenMax.to(target, 1, {
+      inertia:{
+        x: {
+          velocity: (relX - $this.width() / 2) / $this.width() * (movement),
+          max: movement,
+          min: -(movement),
+        }
+      },
+      ease: "Power2.inOut"
     });
   }
 });
