@@ -10,7 +10,6 @@
     background: var(--midnight);
     height: 1rem;
     width: 100%;
-    z-index: 100;
 }
 
 .site-header__content {

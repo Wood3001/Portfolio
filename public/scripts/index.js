@@ -8,18 +8,12 @@ $(window).on("load", function(){
     $loader.addClass("hide");
   });
 
+  /////////////////// INTERSECTION OBSERVERS /////////
+
   /////////////////// TRANSITIONS ////////////////////
 
   const orange = 'rgba(241, 134, 38, 1)';
   const white = '#f8f8f8';
-
-  barba.hooks.beforeEnter(() => {
-    $(".overflow-container").mousemove(function(e) {
-      parallaxIt(e, "#city", 5);
-      parallaxIt(e, "#water", -5);
-      parallaxIt(e, "#foreground", -15);
-    });
-  })
 
   barba.init({
     views: [{
@@ -255,16 +249,6 @@ $(window).on("load", function(){
       duration: 0.5 
       });
   }
-
-  function parallaxIt(e, target, movement) {
-    var $this = $(".overflow-container");
-    var relX = e.pageX - $this.offset().left;
-  
-    TweenMax.to(target, 0, {
-      x: (relX - $this.width() * 2) / $this.width() * (movement),
-      ease: Power3.easeInOut
-    });
-  }
 });
 
 /////////////////// NAVIGATION /////////////////
@@ -349,6 +333,3 @@ if ($('.blackout').hasClass('is-active')){
     $('.blackout').fadeTo(200, 1);
   }
 }
-
-
-
