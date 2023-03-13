@@ -20,15 +20,17 @@
 
 body {
     color: var(--eggshell);
-    background: url(../images/ss-hero1.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: auto 100vh;
     font-family: var(--body-font);
     display: grid;
-    grid-template-rows: 5rem 1fr;
     height: 100%;
     max-width: 100%;
+}
+
+#parallax-container {
+    transform: translateX(-4rem);
+    position: fixed;
+    height: 108vh;
+    object-fit: cover;
 }
 
 body::after {
@@ -94,7 +96,7 @@ main {
     position: fixed;
     overflow-x: hidden;
     overflow-y: scroll;
-    
+    margin-top: 5rem;
 }
 
 #smooth-content {
