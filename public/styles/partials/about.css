@@ -63,8 +63,8 @@
     position: relative;
     grid-column: 1 / span 12;
     border-radius: 0.5rem;
-    padding: 1rem; 
     opacity: 0;
+    margin-bottom: 1rem;
 }
 
 .about__skills li p {
