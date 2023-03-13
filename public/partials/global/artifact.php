@@ -32,49 +32,49 @@
                         </ul>
                     </div>
                 </div>
-                <div class="art-anim artifact__narrative blur" id="nar1">
+                <div class="artifact__narrative blur art-anim" id="nar1">
                     <!-- <h3><?php echo ($artifact['nar_sec1_head']); ?></h3> -->
                     <?php echo ($artifact['nar_sec1']); ?>
                 </div>
-                <div class="art-anim artifact__image" id="pic1">
+                <div class="artifact__image art-anim" id="pic1">
                     <img src="<?php echo h($artifact['nar_img1_url']); ?>" alt="<?php echo h($artifact['nar_img1_alt']); ?>">
                 </div>
-                <div class="art-anim artifact__narrative blur" id="nar2">
+                <div class="artifact__narrative blur art-anim" id="nar2">
                     <h3><?php echo ($artifact['nar_sec2_head']); ?></h3>
                     <?php echo ($artifact['nar_sec2']); ?>
                 </div>
-                <div class="art-anim artifact__image" id="pic2">
+                <div class="artifact__image art-anim" id="pic2">
                     <img src="<?php echo ($artifact['nar_img2_url']); ?>" alt="<?php echo h($artifact['nar_img2_alt']); ?>">
                 </div>
-                <div class="art-anim artifact__narrative blur" id="nar3">
+                <div class="artifact__narrative blur art-anim" id="nar3">
                     <h3><?php echo ($artifact['nar_sec3_head']); ?></h3>
                     <?php echo ($artifact['nar_sec3']); ?>
                 </div>
-                <div class="art-anim artifact__image" id="pic3">
+                <div class="artifact__image art-anim" id="pic3">
                     <img src="<?php echo ($artifact['nar_img3_url']); ?>" alt="<?php echo h($artifact['nar_img3_alt']); ?>">
                 </div>
-                <div class="art-anim artifact__narrative blur" id="nar4">
+                <div class="artifact__narrative blur art-anim" id="nar4">
                     <h3><?php echo ($artifact['nar_sec4_head']); ?></h3>
                     <?php echo ($artifact['nar_sec4']); ?>
                 </div>
-                <div class="art-anim artifact__image" id="pic4">
+                <div class="artifact__image art-anim" id="pic4">
                     <img src="<?php echo ($artifact['nar_img4_url']); ?>" alt="<?php echo h($artifact['nar_img4_alt']); ?>">
                 </div>
-                <div class="art-anim artifact__narrative blur" id="nar5">
+                <div class="artifact__narrative blur art-anim" id="nar5">
                     <h3><?php echo ($artifact['nar_sec5_head']); ?></h3>
                     <?php echo ($artifact['nar_sec5']); ?>
                 </div>
-                <div class="art-anim artifact__image" id="pic5">
+                <div class="artifact__image art-anim" id="pic5">
                     <img src="<?php echo ($artifact['nar_img5_url']); ?>" alt="<?php echo h($artifact['nar_img5_alt']); ?>">
                 </div>
-                <div class="art-anim artifact__narrative blur" id="nar6">
+                <div class="artifact__narrative blur art-anim" id="nar6">
                     <h3><?php echo ($artifact['nar_sec6_head']); ?></h3>
                     <?php echo ($artifact['nar_sec6']); ?>
                 </div>
-                <div class="art-anim artifact__image" id="pic6">
+                <div class="artifact__image art-anim" id="pic6">
                     <img src="<?php echo ($artifact['nar_img6_url']); ?>" alt="<?php echo h($artifact['nar_img6_alt']); ?>">
                 </div>
-                <div class="art-anim artifact__cta flex">
+                <div class="artifact__cta flex art-anim">
                     <a href="<?php echo ($artifact['nar_link']); ?>" target="_blank"><button class="btn-1"><h3>View The Project</h3></button></a>
                 </div>
             </div>    

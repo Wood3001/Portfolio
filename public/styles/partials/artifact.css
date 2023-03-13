@@ -111,6 +111,11 @@
     width: 100%;
 }
 
+.art-anim {
+    position: relative;
+    opacity: 0;
+}
+
 @media screen and (min-width:768px) {
 
     .artifact__specs {
@@ -132,11 +137,6 @@
         display: grid !important;
         grid-template-columns: repeat(12, 1fr);
         align-items: start;
-    }
-
-    .art-anim {
-        position: relative;
-        opacity: 0;
     }
 
     .artifact__narrative {
