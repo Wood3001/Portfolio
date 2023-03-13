@@ -116,6 +116,7 @@
     }
 
     .site-header__menu {
+        margin-top: 0;
         z-index: 1500;
         grid-column: 3 / span 1;  
     }
