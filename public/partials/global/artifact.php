@@ -11,25 +11,30 @@
             </div>
             <div class="artifact flex flex-column">
                 <div class="artifact__specs blur flex art-anim" id="specs">
-                    <div id="tech">
-                        <h3>Technologies Used:</h3>
-                        <ul>
-                            <li><?php echo h($artifact['nar_tech1']); ?></li>
-                            <li><?php echo h($artifact['nar_tech2']); ?></li>
-                            <li><?php echo h($artifact['nar_tech3']); ?></li>
-                            <li><?php echo h($artifact['nar_tech4']); ?></li>
-                            <li><?php echo h($artifact['nar_tech5']); ?></li>
-                        </ul>
+                    <div id="image">
+                        <img src="<?php echo h($artifact['img_url']); ?>" alt="Preview image for my '<?php echo h($artifact['title']); ?>' project">
                     </div>
-                    <div id="skills">
-                        <h3>Skills Shown:</h3>
-                        <ul>
-                            <li><?php echo h($artifact['nar_skill1']); ?></li>
-                            <li><?php echo h($artifact['nar_skill2']); ?></li>
-                            <li><?php echo h($artifact['nar_skill3']); ?></li>
-                            <li><?php echo h($artifact['nar_skill4']); ?></li>
-                            <li><?php echo h($artifact['nar_skill5']); ?></li>
-                        </ul>
+                    <div class="specs-wrapper">
+                        <div id="tech">
+                            <h3>Technologies Used:</h3>
+                            <ul>
+                                <li><?php echo h($artifact['nar_tech1']); ?></li>
+                                <li><?php echo h($artifact['nar_tech2']); ?></li>
+                                <li><?php echo h($artifact['nar_tech3']); ?></li>
+                                <li><?php echo h($artifact['nar_tech4']); ?></li>
+                                <li><?php echo h($artifact['nar_tech5']); ?></li>
+                            </ul>
+                        </div>
+                        <div id="skills">
+                            <h3>Skills Shown:</h3>
+                            <ul>
+                                <li><?php echo h($artifact['nar_skill1']); ?></li>
+                                <li><?php echo h($artifact['nar_skill2']); ?></li>
+                                <li><?php echo h($artifact['nar_skill3']); ?></li>
+                                <li><?php echo h($artifact['nar_skill4']); ?></li>
+                                <li><?php echo h($artifact['nar_skill5']); ?></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="artifact__narrative blur art-anim" id="nar1">

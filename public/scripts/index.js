@@ -52,7 +52,7 @@ $(window).on("load", function(){
               delayTime = delayTime + 100;
             });            
           }); 
-        }, {threshold:0.5});
+        });
         observer2.observe(document.querySelector('.sec-3'));
       }
     },{
@@ -86,7 +86,7 @@ $(window).on("load", function(){
               delayTime = delayTime + 100;
             }); 
           }); 
-        }, {threshold:0.25})
+        }, {threshold:0.15})
         observer3.observe(document.querySelector('.about__sec-2'));
       }
     },{
