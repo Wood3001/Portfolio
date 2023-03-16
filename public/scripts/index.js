@@ -18,7 +18,7 @@ $(window).on("load", function(){
       // parallaxIt(e, "#sky", 25);
       parallaxIt(e, "#city", 10);
       parallaxIt(e, "#water", -5);
-      parallaxIt(e, "#foreground", -20);
+      parallaxIt(e, "#foreground", -10);
     });
   })
 
