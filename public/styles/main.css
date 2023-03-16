@@ -40,7 +40,7 @@ body::after {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    opacity: 0.25;
+    opacity: 0.5;
 }
 
 /* ////////////////// LOADER ///////////////////// */
