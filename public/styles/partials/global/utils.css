@@ -63,20 +63,36 @@
     display: none !important;
 }
 
+.block {
+    display: block;
+}
+
 .is-orange {
     color: var(--orange);
+}
+
+.indent {
+    margin-left: 1rem;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.height-mobile {
+    height: fit-content;
 }
 
 @media (min-width:768px) {
     .grid {
         margin: 0 1rem;
     }
-}
+    
+    .hide-mobile {
+        display: unset;
+    }
 
-@media (min-width:992px) {
-
-    .title-container {
-        width: 1000px;
+    .height-mobile {
+        height: inherit;
     }
 }
-

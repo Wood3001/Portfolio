@@ -46,6 +46,7 @@
         public $nar_img5_alt;
         public $nar_img6_alt;
         public $nar_link;
+        public $view_order;
 
         static public function set_db($db) {
             self::$db = $db;
@@ -54,7 +55,7 @@
         // declare a function to retieve all information from the database
         static public function find_all() {
             // Find all objects & properties from the notes database
-            $sql = "SELECT * FROM artifacts";
+            $sql = "SELECT * FROM artifacts ORDER BY view_order";
             // declare a variable representing the database query results for the current class
             $result = self::$db->query($sql);
             // return the results of the database query
@@ -69,6 +70,11 @@
             $result = self::$db->query($sql);
             // return the database query result as an associative array
             return $result->fetch_assoc(); 
+        }
+
+        public static function compare(Artifact $x, Artifact $y){
+            return $x->view_order <=> $y->view_order;
+
         }
 
         public function __construct($args) {
@@ -114,6 +120,7 @@
             $this->nar_img5_alt = $args['nar_img5_alt'] ?? null;
             $this->nar_img6_alt = $args['nar_img6_alt'] ?? null;
             $this->nar_link = $args['nar_link'] ?? null;
+            $this->view_order = $args['view_order'] ?? null;
             }
 
     }

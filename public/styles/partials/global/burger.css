@@ -63,15 +63,14 @@
         text-transform: none;
         background: none;
         backdrop-filter: none;
-        /* padding: 1rem; */
         border: none;
         font-size: 0.8625rem;
+        padding: 0 1rem;
     }
 
     .gn {
         display: block !important;
         position: static;
-        /* width: 32rem; */
     }
 
     .gn-trigger {

@@ -1,3 +1,9 @@
+@import url('partials/home.css');
+@import url('partials/about.css');
+@import url('partials/discipline.css');
+@import url('partials/artifact.css');
+@import url('partials/animations.css');
+
 @import url('partials/global/variables.css');
 @import url('partials/global/utils.css');
 @import url('partials/global/type.css');
@@ -8,8 +14,8 @@
 
 /* global styles */
 
-html, body {
-    min-height: 100%;
+*, html {
+    scroll-behavior: smooth !important;
 }
 
 body {
@@ -37,6 +43,36 @@ body::after {
     opacity: 0.25;
 }
 
+/* ////////////////// LOADER ///////////////////// */
+
+.loader {
+    position: absolute;
+    background-color: var(--midnight);
+    width: 100%;
+    height: 100%;
+    z-index: 10000001;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-anim {
+    border: 14px solid var(--eggshell50);
+    border-top: 16px solid var(--orange);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: slideUp 2s linear infinite;
+}
+
+@keyframes slideUp {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* header styles */
+
 header {
     grid-row: 1 / span 1;
 }
@@ -53,28 +89,34 @@ main {
 }
 
 .overflow-container {
-    height: 95%;
+    height: 100%;
     width: 100%;
     position: fixed;
     overflow-x: hidden;
     overflow-y: scroll;
+    
+}
+
+#smooth-content {
+    min-height: 100%;
 }
 
 #page-container {
     position: relative;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
-#content-wrap {
-    /* padding-bottom: 20rem; */
+.full-width {
+    width: 100%;
+    padding-bottom: 16rem;
 }
 
 #footer {
-    /* position: absolute; */
+    position: absolute;
     background-color: var(--oil);
     bottom: 0;
     width: 100%;
-    height: 20rem;
+    height: 16rem;
 }
 
 .section {
@@ -102,7 +144,19 @@ footer {
 
 /* media queries */
 
+@media screen and (min-width:370px) {
+
+    #footer {
+        height: 20rem;
+    }
+
+    .full-width {
+        padding-bottom: 20rem;
+    }
+}
+
 @media screen and (min-width:481px) {
+
     .section__title h1 {
         font-size: 4rem;
     }
@@ -110,7 +164,7 @@ footer {
     body {
         background-size: cover;
     }
-
+    
 }
 
 @media screen and (min-width:768px) {
@@ -118,41 +172,62 @@ footer {
         font-size: 4rem;
     }
 
-    #footer {
-        height: 18rem;
+    #content-wrap {
+        display: flex;
+        min-width: 685px;
+        min-height: 1150px;
     }
 
+    #footer {
+        height: 16rem;
+    }
+
+    .full-width {
+        padding-bottom: 16rem;
+    }
 }
 
 @media screen and (min-width:1200px) {
 
     ::-webkit-scrollbar {
+        display: none;
         position: absolute;
         width: 10px;
       }
       
       /* Track */
       ::-webkit-scrollbar-track {
+        display: none;
         position: absolute;
         background: rgba(241, 241, 241, 0.25);
       }
       
       /* Handle */
       ::-webkit-scrollbar-thumb {
+        display: none;
         position: absolute;
         background: var(--orange25);
       }
       
       /* Handle on hover */
       ::-webkit-scrollbar-thumb:hover {
+        display: none;
         position: absolute;
         background: var(--orange50);
       }
 
     #content-wrap {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        min-width: 1025px;
+    }  
+}
+
+@media screen and (min-width:2200px) {
+
+    body {
+        background: url(../images/ss-hero1-4k.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
     }
-    
 }

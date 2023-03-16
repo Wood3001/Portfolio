@@ -9,7 +9,7 @@
     $count = 0;
 
 ?><!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-barba="wrapper">
     
     <?php 
         $title = "Web Developer & Designer";
@@ -20,12 +20,12 @@
 
     <body>
 
-        <?php require('partials/global/header.php'); ?>
+            <?php require('partials/global/header.php'); ?>
         
         <main>
-            <div class="overflow-container">
+            <div class="overflow-container" data-barba="container" data-barba-namespace="home">
                 <div id="page-container">
-                    <div id="content-wrap">
+                    <div class="full-width">
                         <section class="sec-1 flex">
                             <div class="home-banner blur">
                                 <div class="home-banner__logo flex">
@@ -41,16 +41,17 @@
                                     <img src="images/portrait01.jpg" alt="A picture of me">
                                 </div>
                                 <div class="home-banner__cta flex">
-                                    <a href="portfolio.php"><button class="btn-1"><h3>View My Portfolio</h3></button></a>
+                                    <a href="portfolio.php"><button class="btn-1"><h3>View My Work</h3></button></a>
                                 </div>
                             </div>
+                            <div class="home-banner__arrow">
+                                <a href="#sec-2"><div class="down-arrow"></div></a>
+                            </div>
                         </section>
-                        <section class="sec-2">
-                            <div class="home-intro__message">
-                                
+                        <section class="sec-2" id="sec-2">
+                            <div class="home-intro__message blur">
                                 <h2>Hello, my name is <span class="bigger my-name">Sherwood.</span></h2>
                                 <img src="images/fam-pic1.jpg" alt="a picture of me with my partner and daughter">
-                                <div class="home-intro__bg blur"></div>
                                 <div class="home-intro__text-box">
                                     <p>I am a Web Developer and New Media Designer based in Vancouver, Canada. I am a student at the British Columbia Institute of Technology. Soon I will be embarking on my new career!</p>
                                     <p>I am excited to continue my learning in a professional environment, and to work with diverse teams to accomplish amazing things!</p>
@@ -59,9 +60,12 @@
                                     <a href="about.php"><button class="btn-1"><h3>More About Me</h3></button></a>
                                 </div>
                             </div>
+                            <div class="home-banner__arrow">
+                                <a href="#sec-3"><div class="down-arrow"></div></a>
+                            </div>
                         </section>
-                        <section class="sec-3">
-                            <div class="home-card__heading flex flex-column flex-end">
+                        <section class="sec-3" id="sec-3">
+                            <div class="home-card__heading home-card__wrapper flex flex-column flex-end">
                                 <h2>Featured Projects</h2>
                             </div>
                             <div class="home-card__container flex flex-middle"> 

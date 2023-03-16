@@ -1,8 +1,11 @@
 <div class="top-bar"></div>
+<div class="loader">
+    <div class="loader-anim"></div>
+</div>
 <header class="site-header">
     <div class="site-header__content">
-        <div class="container flex">
-            <div class="site-header__logo">
+        <div class="logo-container flex hide">
+            <div class="site-header__logo block">
                 <a href="index.php"><img src="images/logo.svg" alt="My S logo"></a>
             </div>
             <div class="site-header__message">
@@ -24,9 +27,7 @@
             </button>
             <nav class="gn">
                 <ul class="gn-items">
-                    <!-- <li><a id="home" href="index.php">Home</a></li> -->
                     <li><a id="about" href="about.php">About</a></li>
-                    <li><a id="port" href="portfolio.php">Portfolio</a></li>
                     <li><a id="dev" href="development.php">Development</a></li>
                     <li><a id="des" href="design.php">Design</a></li>
                 </ul>

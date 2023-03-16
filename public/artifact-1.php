@@ -9,7 +9,7 @@
     
 
 ?><!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-barba="wrapper">
  
     <?php 
         $title = "Robot Laboratory";
@@ -19,7 +19,7 @@
     ?>
 
     <body>
-        
+
         <?php require('partials/global/header.php'); ?>
 
         <main>

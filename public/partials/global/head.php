@@ -1,5 +1,5 @@
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,5 +13,5 @@
     <script src="https://kit.fontawesome.com/d2ae5ba5c6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href=<?php echo $stylesheet; ?>>
+    <!-- <link rel="stylesheet" href=<?php echo $stylesheet; ?>> -->
 </head>
