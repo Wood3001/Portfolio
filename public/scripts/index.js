@@ -10,7 +10,7 @@ $(window).on("load", function(){
 
   /////////////////// INTERSECTION OBSERVERS /////////
 
-  /////////////////// TRANSITIONS ////////////////////
+  /////////////////// BARBA.JS TRANSITIONS ////////////////////
 
   const orange = 'rgba(241, 134, 38, 1)';
   const white = '#f8f8f8';
