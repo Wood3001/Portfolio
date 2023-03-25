@@ -1,5 +1,3 @@
-
-
 .card {
     position: relative;
     width: 15rem;
@@ -146,17 +144,16 @@ a {
         position: absolute;
         bottom: 2rem;
         margin-bottom: 0;
-        }
+    }
 }
 
 @media screen and (min-width:768px) {
 
-        .home-card {
-            width: 16rem;
-        }
-
-        .home-card__image {
-            height: 6rem;
-        }
-
+    .home-card {
+        width: 16rem;
+    }
+    
+    .home-card__image {
+        height: 6rem;
+    }
 }

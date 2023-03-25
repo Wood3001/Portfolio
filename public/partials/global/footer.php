@@ -25,6 +25,5 @@
             <p>&copy;2022 Sherwood Seabrook</p>
         </div>
     </div>
-    <div class="site-footer__meta"></div>
 </div>
 

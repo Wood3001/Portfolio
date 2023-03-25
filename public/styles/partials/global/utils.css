@@ -56,7 +56,7 @@
 }
 
 .static {
-    display: static !important;
+    position: static !important;
 }
 
 .hide {

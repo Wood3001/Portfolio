@@ -68,7 +68,7 @@
                             <div class="home-card__heading home-card__wrapper flex flex-column flex-end">
                                 <h2>Featured Projects</h2>
                             </div>
-                            <div class="home-card__container flex flex-middle"> 
+                            <div class="home-card__container flex flex-middle">
 
                                 <?php while($count < 3 && $artifact = $artifacts->fetch_assoc()) {
                                     include(get_path('public/partials/global/home-card.php'));
