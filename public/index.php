@@ -54,7 +54,7 @@
                                 <img src="images/fam-pic1.jpg" alt="a picture of me with my partner and daughter">
                                 <div class="home-intro__text-box">
                                     <p>I am a Web Developer and New Media Designer based in Vancouver, Canada. I am a student at the British Columbia Institute of Technology. Soon I will be embarking on my new career!</p>
-                                    <p>I am excited to continue my learning in a professional environment, and to work with diverse teams to accomplish amazing things!</p>
+                                    <p>I am excited to continue my learning in a professional environment and to work with diverse teams to accomplish amazing things!</p>
                                 </div>
                                 <div class="home-banner__cta">
                                     <a href="about.php"><button class="btn-1"><h3>More About Me</h3></button></a>
