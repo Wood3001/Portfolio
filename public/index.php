@@ -29,7 +29,7 @@
                         <section class="sec-1 flex">
                             <div class="home-banner blur">
                                 <div class="home-banner__logo flex">
-                                    <img  src="images/logo.svg" alt="My S logo">
+                                    <img  src="images/logo.svg" alt="My S logo" width="48" height="54">
                                 </div>
                                 <div class="home-banner__message">
                                     <div class="flex flex-column flex-middle">
@@ -38,10 +38,10 @@
                                     </div>
                                 </div>
                                 <div class="home-banner__profile-picture flex">
-                                    <img src="images/portrait01.jpg" alt="A picture of me">
+                                    <img src="images/portrait01.jpg" alt="A picture of me" width="400" height="400">
                                 </div>
                                 <div class="home-banner__cta flex">
-                                    <a href="portfolio.php"><button class="btn-1"><h3>View My Work</h3></button></a>
+                                    <a href="portfolio.php"><button class="btn-1" aria-label="View My Work"><h3>View My Work</h3></button></a>
                                 </div>
                             </div>
                             <div class="home-banner__arrow">
@@ -58,7 +58,7 @@
                                     <p>I am excited to continue my learning in a professional environment and to work with diverse teams to accomplish amazing things!</p>
                                 </div>
                                 <div class="home-banner__cta">
-                                    <a href="about.php"><button class="btn-1"><h3>More About Me</h3></button></a>
+                                    <a href="about.php"><button class="btn-1" aria-label="More About Me"><h3>More About Me</h3></button></a>
                                 </div>
                             </div>
                             <div class="home-banner__arrow">
