@@ -6,7 +6,7 @@
     height: 3.75rem;
     color: white;
     background-color:var(--purple);
-    border-radius: 0.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
     transition: background-color 0.5s;
 }
 
@@ -21,4 +21,12 @@
     color: white;
     background-color:var(--purple);
     border-radius: 0.5rem;
+}
+
+@media screen and (min-width:370px) {
+
+    .btn-1 {
+        border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+    
 }
