@@ -18,15 +18,19 @@ $(window).on("load", function(){
   barba.init({
     views: [{
       namespace: 'home',
-      beforeEnter(data) {
-        hideLogo(data);
-        rollHomeBanner(data);
+      beforeLeave() {
+        $('head').find("meta[name='description']").remove();
       },
       afterLeave(data) {
         $('.logo-container').removeClass('hide');
         showLogo(data); 
       },
+      beforeEnter(data) {
+        hideLogo(data);
+        rollHomeBanner(data);
+      },
       afterEnter() {
+        $('head').prepend('<meta name="description" content="I am a Web Developer and New Media Designer from Vancouver, British Columbia, Canada. I am a student at BCIT, soon entering the workforce!">');
         const observer1 = new IntersectionObserver(entries => {
           entries.forEach(entry => {
             var message = entry.target.querySelector('.home-intro__message');
@@ -58,6 +62,7 @@ $(window).on("load", function(){
     },{
       namespace: 'about',
       beforeLeave() {
+        $('head').find("meta[name='description']").remove();
         return gsap.fromTo('#about', 
         {color: orange},
         {color: white, duration:0});
@@ -72,6 +77,7 @@ $(window).on("load", function(){
         {color: orange, duration:0});
       },
       afterEnter() {
+        $('head').prepend('<meta name="description" content="I live in Vancouver BC with my wife & daughter. I appreciate teamwork, inclusivity, creativity and fun.">');
         const observer3 = new IntersectionObserver(entries => { 
           entries.forEach(entry => {
             var aboutAnim = entry.target.querySelectorAll('.about-anim');
@@ -92,6 +98,7 @@ $(window).on("load", function(){
     },{
       namespace: 'dev',
       beforeLeave() {
+        $('head').find("meta[name='description']").remove();
         return gsap.fromTo('#dev', 
         {color: orange},
         {color: white, duration:0});
@@ -106,6 +113,7 @@ $(window).on("load", function(){
         {color: orange, duration:0});
       },
       afterEnter() {
+        $('head').prepend('<meta name="description" content="Projects that highlight my web development and scripting abilities, including use of HTML,CSS, JavaScript and several associated libraries and plug-ins.">');
         const observer4 = new IntersectionObserver(entries => { 
           entries.forEach(entry => {
             var cards = entry.target.querySelectorAll('.card');
@@ -126,6 +134,7 @@ $(window).on("load", function(){
     },{
       namespace: 'des',
       beforeLeave() {
+        $('head').find("meta[name='description']").remove();
         return gsap.fromTo('#des', 
         {color: orange},
         {color: white, duration:0});
@@ -140,6 +149,7 @@ $(window).on("load", function(){
         {color: orange, duration:0});
       },
       afterEnter() {
+        $('head').prepend('<meta name="description" content="These projects highlight my skills related to Graphic Design, Illustration, Web Design, UI/UX Design and 3D Design.">');
         const observer4 = new IntersectionObserver(entries => { 
           entries.forEach(entry => {
             var cards = entry.target.querySelectorAll('.card');
@@ -159,10 +169,14 @@ $(window).on("load", function(){
       }
     },{
       namespace: 'artifact',
+      beforeLeave() {
+        $('head').find("meta[name='description']").remove();
+      },
       beforeEnter() {
         $('.logo-container').removeClass('hide');
       },
       afterEnter() {
+        $('head').prepend('<meta name="description" content="">');
         const observer5 = new IntersectionObserver(entries => { 
           entries.forEach(entry => {
             var artBoxes = entry.target.querySelectorAll('.art-anim');
@@ -182,10 +196,14 @@ $(window).on("load", function(){
       }
     },{
       namespace: 'portfolio',
+      beforeLeave() {
+        $('head').find("meta[name='description']").remove();
+      },
       beforeEnter() {
         $('.logo-container').removeClass('hide');
       },
       afterEnter() {
+        $('head').prepend('<meta name="description" content="These projects highlight my aptitudes in web development, web design, UI/UX design, 3D graphics and more.">');
         const observer4 = new IntersectionObserver(entries => { 
           entries.forEach(entry => {
             var cards = entry.target.querySelectorAll('.card');

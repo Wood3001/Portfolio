@@ -14,7 +14,6 @@
     <?php 
         $title = "Domepiece Media";
         $description = "This high fidelity mockup of an online store demonstrates my competence with prototyping tool Figma. Applied skills include UI/UX design, 3D Modelling.";
-        $stylesheet = "styles/artifact-4.css";
         require('partials/global/head.php');
     ?>
 
