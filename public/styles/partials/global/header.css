@@ -27,7 +27,6 @@
     grid-column: 2 / span 10;
     grid-row: 2;
     align-items: center;
-    width: 16rem;
 }
 
 .site-header__logo svg {
@@ -106,6 +105,10 @@
         grid-column: 13 / span 1;
         flex-grow: 1;
     }   
+
+    .logo-container {
+        width: 16rem;
+    }
 }
 
 @media screen and (min-width:768px) {
