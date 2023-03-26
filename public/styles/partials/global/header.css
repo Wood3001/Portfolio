@@ -29,8 +29,26 @@
     align-items: center;
 }
 
-.site-header__logo img {
+.site-header__logo svg {
     width: 2rem;
+}
+
+.cls-1 {
+    fill: var(--eggshell);
+    transition: fill .5s ease-in-out;
+}
+
+.cls-2 {
+    color: var(--eggshell);
+    transition: color .5s ease-in-out;
+}
+
+.logo-container:hover .cls-1 {
+    fill: var(--orange);
+}
+
+.logo-container:hover .cls-2 {
+    color: var(--orange);
 }
 
 .site-header__message {
@@ -41,7 +59,6 @@
 }
 
 .site-header__message a {
-    color: var(--eggshell);
     text-decoration: none;
 }
 
