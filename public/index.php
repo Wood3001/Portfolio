@@ -41,7 +41,7 @@
                                     <img src="images/portrait01.jpg" alt="A picture of me">
                                 </div>
                                 <div class="home-banner__cta flex">
-                                    <a href="portfolio.php"><button class="btn-1"><h3>View My Work</h3></button></a>
+                                    <a href="portfolio.php"><button class="btn-1" aria-label="View My Work"><h3>View My Work</h3></button></a>
                                 </div>
                             </div>
                             <div class="home-banner__arrow">
@@ -57,7 +57,7 @@
                                     <p>I am excited to continue my learning in a professional environment and to work with diverse teams to accomplish amazing things!</p>
                                 </div>
                                 <div class="home-banner__cta">
-                                    <a href="about.php"><button class="btn-1"><h3>More About Me</h3></button></a>
+                                    <a href="about.php"><button class="btn-1" aria-label="More About Me"><h3>More About Me</h3></button></a>
                                 </div>
                             </div>
                             <div class="home-banner__arrow">
