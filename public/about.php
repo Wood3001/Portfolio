@@ -30,7 +30,7 @@
                                     </div>
                                 </div>
                                 <div class="about__profile-picture flex flex-start">
-                                    <img src="images/portrait01.jpg" alt="A picture of me">
+                                    <img src="images/portrait01.jpg" alt="A picture of me" width="400" height="400">
                                 </div>
                             </section>
                             <section class="about__sec-2 grid">

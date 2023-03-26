@@ -17,7 +17,7 @@
             </div>
             <div class="site-header__message">
                 <div class="flex flex-column">
-                    <a href="index.php">
+                    <a href="index.php" aria-label="Navigate to the Home Page">
                         <h2 class="cls-2">Sherwood Seabrook</h2>
                         <h4 class="cls-2">Web Developer & Designer</h4>
                     </a>
@@ -34,9 +34,9 @@
             </button>
             <nav class="gn">
                 <ul class="gn-items">
-                    <li><a id="about" href="about.php">About</a></li>
-                    <li><a id="dev" href="development.php">Development</a></li>
-                    <li><a id="des" href="design.php">Design</a></li>
+                    <li><a id="about" href="about.php" aria-label="Navigate to the About Page">About</a></li>
+                    <li><a id="dev" href="development.php" aria-label="Navigate to the Development Page">Development</a></li>
+                    <li><a id="des" href="design.php" aria-label="Navigate to the Design Page">Design</a></li>
                 </ul>
             </nav>
         </div>

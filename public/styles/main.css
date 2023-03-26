@@ -94,6 +94,7 @@ main {
     position: fixed;
     overflow-x: hidden;
     overflow-y: scroll;
+    scrollbar-width: none;
     
 }
 

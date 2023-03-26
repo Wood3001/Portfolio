@@ -145,7 +145,7 @@
     z-index: 12;
     padding: 0;
     margin-top: 1rem;
-    width: 14rem;
+    /* width: 14rem; */
 }
 
 .home-intro__text-box p {
@@ -287,9 +287,9 @@
         margin: 1rem;
     }
 
-    .sec-3 {
+    /* .sec-3 {
         height: 260px;
-    }
+    } */
 
     .home-card__container {
         max-width: 40rem;
