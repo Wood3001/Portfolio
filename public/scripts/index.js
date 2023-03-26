@@ -333,3 +333,10 @@ if ($('.blackout').hasClass('is-active')){
     $('.blackout').fadeTo(200, 1);
   }
 }
+
+
+///////////////// ARTIFACT NARRATIVE //////////////////
+
+// Remove empty text containers from the page layout
+
+$('.artifact__narrative h3:empty').parent().addClass('hide');
