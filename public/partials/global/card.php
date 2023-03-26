@@ -9,6 +9,6 @@
         
     </div>
     <div class="card__cta flex">
-        <a href="<?php echo h($artifact['link_url']); ?>"><button class="btn-1 btn-flattop"><h3>View Project Details</h3></button></a>
+        <a href="<?php echo h($artifact['link_url']); ?>"><button class="btn-1 btn-flattop" aria-label="View Project Details"><h3>View Project Details</h3></button></a>
     </div>
 </div>
