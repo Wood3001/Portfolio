@@ -1,9 +1,1 @@
 ErrorDocument 404 /404.shtml
-
-RewriteCond %{HTTP_HOST} ^(www.)?sherwoodseabrook.com$
-RewriteCond %{REQUEST_URI} !^/public/
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /public/$1
-RewriteCond %{HTTP_HOST} ^(www.)?sherwoodseabrook.com$
-RewriteRule ^(/)?$ public/index.php [L]
