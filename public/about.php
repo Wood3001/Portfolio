@@ -17,7 +17,7 @@
                 <div>
                     <div id="page-container">
                         <div class="full-width">
-                            <section class="about__sec-1 grid">
+                            <section class="about__sec-1">
                                 <div class="section__title section__title-about">
                                     <h1>About</h1>
                                 </div>
@@ -31,9 +31,12 @@
                                 </div>
                                 <div class="about__profile-picture flex flex-start">
                                     <img src="images/portrait01.jpg" alt="A picture of me" width="400" height="400">
+                                    <div class="about__cta">
+                                        <a href="SherwoodSeabrook_Resume.pdf" download><button class="btn-1" aria-label="Download My Resume"><h3>Download My Resume</h3></button></a>
+                                    </div>
                                 </div>
                             </section>
-                            <section class="about__sec-2 grid">
+                            <section class="about__sec-2">
                                 <div class="section__title section__title-skills">
                                     <h1>Skills</h1>
                                 </div>
@@ -71,9 +74,6 @@
                                             <li><p>Adobe Dimension</p></li>
                                             <li><p>Adobe Aero</p></li>
                                             <li><p>Blender 3D</p></li>
-                                            <li><p></p></li>
-                                            <li><p></p></li>
-                                            <li><p></p></li>
                                         </ul>
                                     </div>   
                                 </div>
