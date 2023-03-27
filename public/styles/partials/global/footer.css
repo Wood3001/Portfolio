@@ -25,7 +25,7 @@
     width: 6rem;
     margin-bottom: 1rem;
     margin-top: 0.25rem;
-    opacity: 0.5;
+    opacity: 0.75;
 }
 
 .site-footer {
@@ -44,6 +44,7 @@
     flex-direction: column;
     line-height: 1.35;
     align-items: center;
+    opacity: 0.75;
 }
 
 .site-footer_links ul {
@@ -58,7 +59,7 @@
     color: var(--eggshell);
     width: 1.5rem;
     padding: 0.75rem;
-    opacity: 0.5;
+    opacity: 0.75;
     transition: color 0.125s ease-in-out;
 }
 
@@ -145,11 +146,8 @@
 
     .site-footer__logo img {
         display: block;
-        max-width: 100%;
         width: 12rem;
-        margin-bottom: 1rem;
         margin-top: 0.5rem;
-        opacity: 0.5;
     }
 
     .site-footer__logotext {
@@ -174,6 +172,7 @@
     .site-footer__copyright {
         order: 2;
         margin-top: 0.75rem;
+        margin-right: 0.5rem;
     }
 
     .site-footer__meta {
