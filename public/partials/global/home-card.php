@@ -4,6 +4,9 @@
     </div>
     <div class="home-card__message">
         <h2><?php echo h($artifact['title']); ?></h2>
-        <h3><?php echo $artifact['discipline'] == 0 ? 'Web Development' : 'Design'; ?> | <?php echo h($artifact['date_posted']); ?></h3>
+        <div class="home-card__desc">
+            <p><?php echo h($artifact['description']); ?></p>
+        </div>
+        <h3 class="is-orange"><?php echo $artifact['discipline'] == 0 ? 'Web Development' : 'Design'; ?> | <?php echo h($artifact['date_posted']); ?></h3>
     </div>
 </a>

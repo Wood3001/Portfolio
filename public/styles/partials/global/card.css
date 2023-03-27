@@ -64,11 +64,6 @@
     margin: 1rem;
     box-shadow: 0.25rem 0.25rem 0.75rem var(--oil-trns);
     overflow: hidden;
-    transition: box-shadow 0.5s;
-}
-
-.home-card:hover {
-    box-shadow: 0 0 1rem var(--eggshell50);
 }
 
 .home-card__image {
@@ -80,7 +75,16 @@
 .home-card__image img {
     width: 100%;
     overflow: hidden;
-    transform: translateY(-55px);
+    transform: scale(1) translateY(-55px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.home-card:hover .home-card__image img {
+    transform: scale(1.05) translateY(-55px);
+}
+
+.home-card__desc {
+    display: none;
 }
 
 .home-card__message {
@@ -161,4 +165,27 @@ a {
     .home-card__image {
         height: 6rem;
     }
+}
+
+@media screen and (min-width:1200px) {
+
+    .home-card {
+        width: 20rem;
+    }
+    
+    .home-card__image {
+        height: 8rem;
+    }
+
+    .home-card__desc {
+        margin-top: 1rem;
+        display: block;
+        height: 5rem;
+    }
+
+    .home-card__desc p {
+        font-size: 1rem;
+
+    }
+
 }
