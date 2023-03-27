@@ -7,7 +7,7 @@ $(window).on("load", function(){
   $loader.slideUp('fast', function(){
     $loader.addClass("hide");
   });
-
+});
   /////////////////// INTERSECTION OBSERVERS /////////
 
   /////////////////// BARBA.JS TRANSITIONS ////////////////////
@@ -160,6 +160,8 @@ $(window).on("load", function(){
     },{
       namespace: 'artifact',
       beforeEnter() {
+        // Remove empty text containers from the page layout
+        $('.artifact__narrative h3:empty').parent().addClass('hide');
         $('.logo-container').removeClass('hide');
       },
       afterEnter() {
@@ -249,7 +251,7 @@ $(window).on("load", function(){
       duration: 0.5 
       });
   }
-});
+
 
 /////////////////// NAVIGATION /////////////////
 
@@ -337,6 +339,5 @@ if ($('.blackout').hasClass('is-active')){
 
 ///////////////// ARTIFACT NARRATIVE //////////////////
 
-// Remove empty text containers from the page layout
 
-$('.artifact__narrative h3:empty').parent().addClass('hide');
+

@@ -73,8 +73,9 @@
 }
 
 .site-footer__copyright p {
-    color: var(--midnight);
-    font-size: 1rem;
+    color: var(--eggshell);
+    opacity: 0.375;
+    font-size: 0.75rem;
     margin-top: 0;
 }
 
@@ -86,7 +87,6 @@
 .contact__item {
     flex-direction: column;
     justify-content: center;
-    /* opacity: 0.5; */
     margin: 0.5rem 0;
     align-items: center;
 }
@@ -173,6 +173,7 @@
 
     .site-footer__copyright {
         order: 2;
+        margin-top: 0.75rem;
     }
 
     .site-footer__meta {
@@ -188,10 +189,6 @@
         justify-content: left;
         opacity: 0.5;
         margin: 0.5rem 0;
-    }
-
-    .site-footer__copyright {
-        margin-top: 2rem;
     }
 }
 

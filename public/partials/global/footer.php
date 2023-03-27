@@ -22,7 +22,7 @@
             <li><a href="https://github.com/Wood3001" aria-label="Visit My Github Page"><i class="fa-brands fa-github fa-1x"></i></a></li>
         </ul>
         <div class="site-footer__copyright">
-            <p>&copy;2022 Sherwood Seabrook</p>
+            <p>&copy;2023 Sherwood Seabrook</p>
         </div>
     </div>
 </div>
