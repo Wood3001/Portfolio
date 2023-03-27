@@ -173,10 +173,11 @@ $(window).on("load", function(){
         $('head').find("meta[name='description']").remove();
       },
       beforeEnter() {
+        $('head').prepend('<meta name="description" content=" <?php echo $title; ?> ">');
         $('.logo-container').removeClass('hide');
       },
       afterEnter() {
-        $('head').prepend('<meta name="description" content="">');
+        
         const observer5 = new IntersectionObserver(entries => { 
           entries.forEach(entry => {
             var artBoxes = entry.target.querySelectorAll('.art-anim');
