@@ -15,7 +15,12 @@
 
 .card__image img {
     width: 100%;
-    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.75s ease-in-out;
+}
+
+.card__image img:hover {
+    transform: scale(1.05);
 }
 
 .card__message {
@@ -63,7 +68,7 @@
 }
 
 .home-card:hover {
-    box-shadow: 0 0 1rem var(--orange);
+    box-shadow: 0 0 1rem var(--eggshell50);
 }
 
 .home-card__image {

@@ -96,7 +96,7 @@
 }
 
 .col-wrapper {
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 1rem;
 }
 
@@ -114,6 +114,10 @@
     .section__title-about {
         grid-column: 1 / span 12;
         grid-row: 1;
+    }
+
+    .scroll-box {
+        padding: 1rem;
     }
 }
 
