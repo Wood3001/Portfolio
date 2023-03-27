@@ -31,7 +31,6 @@ barba.init({
       const observer1 = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           var message = entry.target.querySelector('.home-intro__message');
-    
           if (entry.isIntersecting) {
                 message.classList.add('wipe-enter-anim');
                 return;
