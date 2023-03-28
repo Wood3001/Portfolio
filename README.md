@@ -6,6 +6,7 @@ My Portfolio is a web application designed to showcase my professional work and 
 
 - HTML5
 - CSS3
+- PHP/MySQL
 - JavaScript
 - jQuery
 - jQuery UI
