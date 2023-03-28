@@ -6,7 +6,7 @@
     <div class="site-header__content">
         <div class="logo-container flex hide">
             <div class="site-header__logo block">
-                <a href="index.php">
+                <a href="<?php echo get_public_url('/'); ?>">
                     <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 120 135">
                         <g>
                             <path class="cls-1" d="M97.03,37.45c-15.65-9.77-41.08-7.15-48.76,2.25-1.9,2.32,.07,5.78,3.05,5.44,70.37-7.88,34.73,58.05-20.16,50.58,.93-4.63-2.53-9.13-5.84-11.63-14.49-10.94-24.2,.33-25.33,14.42,.78,26.5,35.21,26.32,58.33,21.62,14.12-3.13,47.54-14.41,52.81-51.56,1.44-10.12-2.37-24.17-14.11-31.12Z"/>
