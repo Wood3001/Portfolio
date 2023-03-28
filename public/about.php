@@ -1,6 +1,12 @@
-<!DOCTYPE html>
+<?php
+
+    // import the init page
+    require('../db/init.php');
+
+
+?><!DOCTYPE html>
 <html lang="en" data-barba="wrapper">
-    
+
     <?php 
         $title = "About Me";
         $description = "I live in Vancouver BC with my wife & daughter. I appreciate teamwork, inclusivity, creativity and fun.";
