@@ -1,4 +1,4 @@
-//execute the function once the page has finished loading
+// execute the function once the page has finished loading
 $(window).on("load", function(){
 
   ///////////////// LOADER /////////////////////////
@@ -334,9 +334,3 @@ if ($('.blackout').hasClass('is-active')){
     $('.blackout').fadeTo(200, 1);
   }
 }
-
-
-///////////////// ARTIFACT NARRATIVE //////////////////
-
-
-
