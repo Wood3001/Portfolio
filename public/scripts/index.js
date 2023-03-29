@@ -1,7 +1,7 @@
 //execute the function once the page has finished loading
 $(window).on("load", function(){
 
-  ///////////////// LOADER //////////////////////////
+  ///////////////// LOADER /////////////////////////
 
   const $loader = $(".loader");
   $loader.slideUp('fast', function(){
@@ -11,7 +11,7 @@ $(window).on("load", function(){
 
 /////////////////// INTERSECTION OBSERVERS /////////
 
-/////////////////// BARBA.JS TRANSITIONS ////////////////////
+/////////////////// BARBA.JS TRANSITIONS ///////////
 
 const orange = 'rgba(241, 134, 38, 1)';
 const white = '#f8f8f8';
