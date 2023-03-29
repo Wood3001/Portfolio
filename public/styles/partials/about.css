@@ -200,7 +200,7 @@
     .about__skills {
         grid-column: 5 / span 4;
         padding: 0;
-        margin-left: 1rem;
+        margin-left: 2rem;
         align-items: stretch;
     }
 
