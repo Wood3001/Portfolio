@@ -62,7 +62,7 @@
 .scroll-box {
     hyphens: auto;
     border: none;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .scroll-box p {
@@ -73,6 +73,10 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1rem repeat(10, 1fr) 1rem;
+}
+
+.section__title h1 {
+    margin-bottom: 1rem;
 }
 
 .section__title-skills {
@@ -158,6 +162,10 @@
     .section__title {
         margin-top: 0;
         margin-bottom: 1rem;
+    }
+
+    .section__title h1 {
+        margin-bottom: inherit;
     }
 
     .section__title-about {
