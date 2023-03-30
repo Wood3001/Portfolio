@@ -34,9 +34,9 @@
             </button>
             <nav class="gn">
                 <ul class="gn-items">
-                    <li><a id="about" href="about.php" aria-label="Navigate to the About Page">About</a></li>
-                    <li><a id="dev" href="development.php" aria-label="Navigate to the Development Page">Development</a></li>
-                    <li><a id="des" href="design.php" aria-label="Navigate to the Design Page">Design</a></li>
+                    <li><a id="about" href="<?php echo get_public_url('/about.php'); ?>" aria-label="Navigate to the About Page">About</a></li>
+                    <li><a id="dev" href="<?php echo get_public_url('/development.php'); ?>" aria-label="Navigate to the Development Page">Development</a></li>
+                    <li><a id="des" href="<?php echo get_public_url('/design.php'); ?>" aria-label="Navigate to the Design Page">Design</a></li>
                 </ul>
             </nav>
         </div>
