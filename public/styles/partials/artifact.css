@@ -48,7 +48,7 @@
 .artifact__narrative {
     width: 17rem;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 0.25rem 0.25rem 0.75rem var(--oil-trns);
 }
