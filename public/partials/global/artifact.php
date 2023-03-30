@@ -4,7 +4,7 @@
             <div class="artifact__heading flex flex-column">
                 <div class="title-container">
                     <div class="breadcrumb-container flex flex-row">
-                        <a class="breadcrumb" href="../../../public/portfolio.php">Projects</a><p class="breadcrumb_arrow">&nbsp > &nbsp</p><a class="breadcrumb" href="../../../public/<?php echo $artifact['discipline'] == 0 ? 'development' : 'design'; ?>.php"><?php echo $artifact['discipline'] == 0 ? 'Web Development' : 'Design'; ?></a>
+                        <a class="breadcrumb" href="<?php echo get_public_url('/portfolio.php'); ?>">Projects</a><p class="breadcrumb_arrow">&nbsp > &nbsp</p><a class="breadcrumb" href="../../../public/<?php echo $artifact['discipline'] == 0 ? 'development' : 'design'; ?>.php"><?php echo $artifact['discipline'] == 0 ? 'Web Development' : 'Design'; ?></a>
                     </div>
                     <h1><?php echo h($artifact['title']); ?></h1>
                 </div>

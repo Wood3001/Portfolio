@@ -27,7 +27,7 @@
                         <div class="disc-section__title">
                             <div class="title-container">
                                 <div class="breadcrumb-container flex flex-row">
-                                    <a class="breadcrumb" href="../../../public/portfolio.php" aria-label="See All Projects">All Projects</a>
+                                    <a class="breadcrumb" href="<?php echo get_public_url('/portfolio.php'); ?>" aria-label="See All Projects">All Projects</a>
                                 </div>
                                 <h1>Design</h1>
                             </div>
