@@ -28,8 +28,8 @@
                             <div class="title-container">
                             <div class="breadcrumb-container flex flex-row">
                                 <p class="breadcrumb_arrow">Filter by:&nbsp</p>
-                                <a class="breadcrumb" href="../../../public/development.php">Development</a>&nbsp &nbsp
-                                <a class="breadcrumb" href="../../../public/design.php">Design</a>
+                                <a class="breadcrumb" href="../../../public/development.php" aria-label="See Development Projects">Development</a>&nbsp &nbsp
+                                <a class="breadcrumb" href="../../../public/design.php" aria-label="See Design Projects">Design</a>
                             </div>
                                 <h1>My Projects</h1>
                             </div>

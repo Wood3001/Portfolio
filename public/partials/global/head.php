@@ -13,5 +13,4 @@
     <script src="https://kit.fontawesome.com/d2ae5ba5c6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
-    <!-- <link rel="stylesheet" href=<?php echo $stylesheet; ?>> -->
 </head>

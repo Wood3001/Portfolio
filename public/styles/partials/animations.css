@@ -49,6 +49,6 @@
 }
 
 @keyframes arrowPulse {
-    from {opacity: 0;}
-    to {opacity: 0.225;}
+    from {opacity: 0.225;}
+    to {opacity: 0.375;}
 }
