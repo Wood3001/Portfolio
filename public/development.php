@@ -41,7 +41,9 @@
                                     }} ?>
                                 
                                 <div class="card flex flex-column blur height-mobile">
-                                    <div class="card__image"></div>
+                                    <div class="card__coming-soon-img">
+                                        <img src="images/radio.png" alt="a drawing of a radio" width="320" height="224">
+                                    </div>
                                     <div class="card__message">
                                         <h3>Stay Tuned!</h3>
                                         <h2>More Projects Coming Soon!</h2>

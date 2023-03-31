@@ -13,6 +13,16 @@
     overflow: hidden;
 }
 
+.card__coming-soon-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.card__coming-soon-img img {
+    width: 100%;
+    transform: scale(1.05);
+}
+
 .card__image img {
     width: 100%;
     transform: scale(1);
