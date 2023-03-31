@@ -3,7 +3,6 @@
 /* Discipline Styles */
 
 .disc-section__title {
-    width: 100vw;
     display: flex;
     justify-content: center;
     margin: 1rem;
@@ -42,19 +41,23 @@
 @media screen and (min-width:370px) {
 
     .title-container {
-        width: 19rem;
+        width: 20rem;
     }
 }
 
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:672px) {
+
+    .disc-section__title {
+        max-width: 40rem;
+        width: inherit;
+        display: inherit;
+        justify-content: unset;
+    }
+    
 
     .disc-card__container {
         width: 42rem;
-    }
-
-    .title-container {
-        width: 40rem;
     }
 
     .card-wrap {
@@ -63,7 +66,18 @@
     }
 }
 
+@media screen and (min-width:768px) {
+
+        .title-container {
+        width: 40rem;
+    }
+}
+
 @media screen and (min-width:1024px) {
+
+    .disc-section__title {
+        max-width: 62rem;
+    }
 
     .disc-card__container {
         width: 64rem;

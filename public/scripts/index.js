@@ -162,6 +162,7 @@ barba.init({
     beforeEnter() {
       // Remove empty text containers from the page layout
       $('.artifact__narrative h3:empty').parent().addClass('hide');
+      $(".artifact__image img[src='']").parent().addClass('hide');
       $('.logo-container').removeClass('hide');
     },
     afterEnter() {

@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="artifact flex flex-column">
-                <div class="artifact__specs blur flex art-anim" id="specs">
+                <div class="artifact__specs art-anim" id="specs">
                     <div id="image">
                         <img src="<?php echo h($artifact['img_url']); ?>" alt="Preview image for my '<?php echo h($artifact['title']); ?>' project">
                     </div>
