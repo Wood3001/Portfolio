@@ -34,7 +34,11 @@
 }
 
 .card__message {
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
     padding: 1rem;
+    justify-content: space-between;
 }
 
 .card__message p {
