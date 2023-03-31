@@ -45,9 +45,9 @@
                                     <div class="card__coming-soon-img">
                                         <img src="images/radio.png" alt="a drawing of a radio" width="320" height="224">
                                     </div>
-                                    <div class="card__message">
-                                        <h3>Stay Tuned!</h3>
-                                        <h2>More Projects Coming Soon!</h2>
+                                    <div class="card__coming-soon-msg">
+                                            <h2>Stay Tuned!</h2>
+                                            <p>More Projects Coming Soon!</p>
                                     </div>
                                     <div class="card__cta flex"></div>
                                 </div>

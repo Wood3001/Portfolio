@@ -41,11 +41,29 @@
     justify-content: space-between;
 }
 
+.card__coming-soon-msg {
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    padding: 1rem;
+}
+
 .card__message p {
     margin: 0.5rem 0;
 }
 
+.card__coming-soon-msg p {
+    margin: 0.5rem 0;
+}
+
 .card__message h3 {
+    color: var(--orange);
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.card__coming-soon-msg h3 {
     color: var(--orange);
     font-size: 0.75rem;
     font-weight: 400;
@@ -109,11 +127,11 @@ a {
         width: 20rem;
     }
 
-    .card__message {
+    .card__message, .card__coming-soon-msg {
         padding: 2rem;
     }
 
-    .card__message p {
+    .card__message p, .card__coming-soon-msg p {
         padding: 0.5rem 0;
     }
 
