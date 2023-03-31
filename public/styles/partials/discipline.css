@@ -49,7 +49,7 @@
 @media screen and (min-width:672px) {
 
     .disc-section__title {
-        max-width: 40rem;
+        max-width: 42rem;
         width: inherit;
         display: inherit;
         justify-content: unset;
@@ -57,7 +57,7 @@
     
 
     .disc-card__container {
-        width: 42rem;
+        width: 44rem;
     }
 
     .card-wrap {
@@ -69,18 +69,18 @@
 @media screen and (min-width:768px) {
 
         .title-container {
-        width: 40rem;
+        width: 42rem;
     }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1056px) {
 
     .disc-section__title {
-        max-width: 62rem;
+        max-width: 64rem;
     }
 
     .disc-card__container {
-        width: 64rem;
+        width: 66rem;
     }
 
     .disc-section__title {
