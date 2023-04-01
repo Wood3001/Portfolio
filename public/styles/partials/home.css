@@ -233,6 +233,7 @@
         height: auto;
         padding: 3rem;
         border-radius: 50%;
+        box-shadow: 0.25rem 0.25rem 0.75rem var(--oil-trns);
     }
 
     .home-banner__cta a {
