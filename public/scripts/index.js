@@ -7,7 +7,7 @@ $(window).on("load", function(){
   $loader.slideUp('fast', function(){
     $loader.addClass("hide");
   });
-});
+
 
 /////////////////// INTERSECTION OBSERVERS /////////
 
@@ -247,11 +247,14 @@ function showLogo() {
 
 function rollHomeBanner() {
   return gsap.from('.home-banner',{
-    rotation: 180,
+    rotation: 720,
     scale: 0,
-    duration: 0.5 
+    duration: 2,
+    ease: 'power3.out',
     });
 }
+
+});
 
 /////////////////// NAVIGATION /////////////////
 

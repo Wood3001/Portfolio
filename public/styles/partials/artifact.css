@@ -10,7 +10,7 @@
 }
 
 #specs {
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
     line-height: 1.75;
 }
 
@@ -35,26 +35,26 @@
 }
 
 #image {
+    display: flex;
+    flex-direction: column;
     background-color: var(--eggshell);
     position: relative;
     overflow: hidden;
-    height: 8rem;
+    height: 10rem;
     width: 100%;
-    order: 2;
 }
 
 #image img {
     height: auto;
     transform: translateY(-6rem);
-    /* filter: blur(0.125rem); */
+    
 }
 
 #image a {
     height: 3.75rem;
     width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    order: -1;
+    z-index: 5;
 }
 
 #image a button {
@@ -201,9 +201,10 @@
         box-shadow: 0.25rem 0.25rem 0.75rem var(--oil-trns);
     }
 
-    #image img {
-        min-width: 100%;
-        min-height: 20rem;
+    #image a {
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
 
     #skills{
