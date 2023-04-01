@@ -46,7 +46,7 @@
 #image img {
     height: auto;
     transform: translateY(-6rem);
-    filter: blur(0.25rem);
+    /* filter: blur(0.125rem); */
 }
 
 #image a {
@@ -179,7 +179,7 @@
     }
 
     .specs-wrapper {
-        grid-column: 1 / span 1;
+        grid-column: 3 / span 1;
         height: 10rem;
         display: flex;
         flex-direction: row;
@@ -193,7 +193,7 @@
     }
 
     #image {
-        grid-column: 3 / span 1;
+        grid-column: 1 / span 1;
         grid-row: 1 / span 1;
         border-radius: 0.5rem;
         overflow: hidden;
@@ -308,48 +308,48 @@
     }
 
     #pic1 {
-        grid-column: 1 / span 6;
+        grid-column: 7 / span 6;
         grid-row: 3 / span 1;
     }
 
     #pic2 {
-        grid-column: 7 / span 6;
+        grid-column: 1 / span 6;
         grid-row: 4 / span 1;
     }
 
     #nar2 {
-        grid-column: 7 / span 6;
+        grid-column: 1 / span 6;
         grid-row: 3 / span 1;
     }
 
     #nar3 {
-        grid-column: 1 / span 6;
+        grid-column: 7 / span 6;
         grid-row: 4 / span 1;
     }
 
     #pic3 {
-        grid-column: 1 / span 6;
+        grid-column: 7 / span 6;
         grid-row: 5 / span 1;
     }
 
     #pic4 {
-        grid-column: 7 / span 6;
+        grid-column: 1 / span 6;
         grid-row: 6 / span 1;
     }
 
     #nar4 {
-        grid-column: 7 / span 6;
+        grid-column: 1 / span 6;
         grid-row: 5 / span 1;
     }
 
     #nar5 {
-        grid-column: 1 / span 6;
+        grid-column: 7 / span 6;
         grid-row: 6 / span 1;
     }
 
     #pic5 {
         margin: auto;
-        grid-column: 1 / span 12;
+        grid-column: 7 / span 12;
         grid-row: 7 / span 1;
     }
 
