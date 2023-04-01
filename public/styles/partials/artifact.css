@@ -35,14 +35,30 @@
 }
 
 #image {
+    background-color: var(--eggshell);
+    position: relative;
     overflow: hidden;
     height: 8rem;
     width: 100%;
+    order: 2;
 }
 
 #image img {
     height: auto;
     transform: translateY(-6rem);
+    filter: blur(0.25rem);
+}
+
+#image a {
+    height: 3.75rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#image a button {
+    border-radius: unset;
 }
 
 #skills{
@@ -159,6 +175,7 @@
         backdrop-filter: unset;
         box-shadow: unset;
         padding-bottom: 1rem;
+        overflow: unset;
     }
 
     .specs-wrapper {
@@ -181,6 +198,7 @@
         border-radius: 0.5rem;
         overflow: hidden;
         height: 13rem;
+        box-shadow: 0.25rem 0.25rem 0.75rem var(--oil-trns);
     }
 
     #image img {
@@ -206,7 +224,7 @@
     }
 
     .artifact {
-        max-width: 64rem;
+        max-width: 66rem;
         margin: auto !important;
         display: grid !important;
         grid-template-columns: repeat(12, 1fr);
@@ -371,7 +389,7 @@
     
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1056px) {
 
     .artifact__heading {
         align-items: center;

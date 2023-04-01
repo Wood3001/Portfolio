@@ -13,6 +13,7 @@
                 <div class="artifact__specs art-anim" id="specs">
                     <div id="image">
                         <img src="<?php echo h($artifact['img_url']); ?>" alt="Preview image for my '<?php echo h($artifact['title']); ?>' project">
+                        <a href="<?php echo ($artifact['nar_link']); ?>" target="_blank" aria-label="View The Project"><button class="btn-1"><h3>View The Project</h3></button></a>
                     </div>
                     <div class="specs-wrapper">
                         <div id="tech">
