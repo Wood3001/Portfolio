@@ -27,6 +27,9 @@
     width: 100vw;
     padding: 2rem 0;
     transform: scale(1);
+    background: var(--oil-trns);
+    -webkit-backdrop-filter: blur(0.75rem);
+    backdrop-filter: blur(0.75rem);
 }
 
 .home-banner__logo {
@@ -229,8 +232,8 @@
 @media screen and (min-width:768px) {
 
     .home-banner {
-        width: auto;
-        height: auto;
+        width: 25rem;
+        height: 24rem;
         padding: 3rem;
         border-radius: 50%;
         box-shadow: 0.25rem 0.25rem 0.75rem var(--oil-trns);

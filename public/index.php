@@ -27,7 +27,7 @@
                 <div id="page-container">
                     <div class="full-width">
                         <section class="sec-1 flex">
-                            <div class="home-banner blur">
+                            <div class="home-banner">
                                 <div class="home-banner__logo flex">
                                     <img  src="images/logo.svg" alt="My S logo" width="48" height="54">
                                 </div>
