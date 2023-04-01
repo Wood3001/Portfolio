@@ -286,7 +286,12 @@ $('.logo-container').on('click', function(e) {
   }
 });
 
-$('.gn-trigger, .gn a').on('click', turnBun);
+$('.gn-trigger, .gn a').on('click', function() {
+  windowWidth = $('body').width();
+  if(windowWidth < 1200) {
+    turnBun();
+  }
+});
 
   tl.to(".burger li", {backgroundColor:"#F18626"}, 0.015);
   tl.to("#bun", {rotation:"270_ccw"}, 0.015);
