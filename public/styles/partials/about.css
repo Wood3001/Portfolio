@@ -58,7 +58,6 @@
     border-radius: 0.5rem;
     align-items: center;
     overflow: hidden;
-    grid-template-columns: 1rem repeat(10, 1fr) 1rem;
 }
 
 .scroll-box {
@@ -74,6 +73,7 @@
 .about__sec-2 {
     width: 100%;
     display: grid;
+    grid-template-columns: 1rem repeat(10, 1fr) 1rem;
 }
 
 .section__title h1 {

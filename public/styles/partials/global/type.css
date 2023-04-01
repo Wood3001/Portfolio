@@ -78,7 +78,7 @@ a {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:704px) {
     h1 {font-size: 2.25rem;}
     h2 {font-size: 1.125rem;}
 
