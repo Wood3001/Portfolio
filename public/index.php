@@ -34,7 +34,7 @@
                                 <div class="home-banner__message">
                                     <div class="flex flex-column flex-middle">
                                         <h1>Sherwood Seabrook</h1>
-                                        <h2>Web Developer & Designer</h2>
+                                        <h2>Frontend Developer</h2>
                                     </div>
                                 </div>
                                 <div class="home-banner__profile-picture flex">

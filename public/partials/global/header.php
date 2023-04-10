@@ -19,7 +19,7 @@
                 <div class="flex flex-column">
                     <a href="index.php" aria-label="Navigate to the Home Page">
                         <h2 class="cls-2">Sherwood Seabrook</h2>
-                        <h4 class="cls-2">Web Developer & Designer</h4>
+                        <h4 class="cls-2">Frontend Developer</h4>
                     </a>
                 </div>
             </div>
