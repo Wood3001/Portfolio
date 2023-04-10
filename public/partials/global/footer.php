@@ -6,7 +6,7 @@
         <div class="contact__content">
             <div class="site-footer__logotext">
                 <h2>Sherwood Seabrook</h2>
-                <h4>Web Developer & Designer</h4>
+                <h4>Frontend Developer</h4>
             </div>
             <div class="contact__item flex">
                 <a href="tel:+16043775170" aria-label="Dial My Phone Number"><p>+1 (604) 377 5170</p></a>
