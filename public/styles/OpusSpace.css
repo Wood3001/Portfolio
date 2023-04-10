@@ -1,5 +1,5 @@
 @import url(partials/artifact.css);
 
-#nar6 a {
-    font-weight: 700;
+#nar6 pattern {
+    font-size: 12px;
 }
