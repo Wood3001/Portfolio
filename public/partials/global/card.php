@@ -9,6 +9,6 @@
             <h2><?php echo h($artifact['title']); ?></h2>
             <p><?php echo h($artifact['description']); ?></p>
         </div>
-        <h3><?php echo h($artifact['date_posted']); ?> | <?php echo $artifact['discipline'] == 0 ? 'Web Development' : 'Design'; ?></h3>
+        <h3><?php echo h($artifact['date_posted']); ?> | <?php echo $artifact['discipline'] == 0 ? 'Development' : 'Design'; ?></h3>
     </div>
 </div>
