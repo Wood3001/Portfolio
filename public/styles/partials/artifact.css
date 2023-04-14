@@ -2,6 +2,7 @@
 
 .artifact {
     margin: 1rem;
+    align-items: center;
 }
 
 .artifact__heading {
@@ -130,7 +131,7 @@
 }
 
 .artifact__image {
-    width: 20rem;
+    width: 16rem;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -144,6 +145,7 @@
 }
 
 .artifact__cta {
+    width: 100%;
     margin-top: 1rem;
     justify-content: center;
 }
@@ -165,6 +167,10 @@
 
     .artifact__narrative {
         width: 17rem;
+    }
+
+    .artifact__specs {
+        width: 20rem;
     }
     
 }
