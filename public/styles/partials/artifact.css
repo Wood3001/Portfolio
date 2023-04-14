@@ -19,7 +19,7 @@
 }
 
 .artifact__specs {
-    width: 20rem;
+    width: 16rem;
     display: flex;
     flex-direction: column;
     border-radius: 0.5rem;
@@ -31,6 +31,7 @@
 }
 
 .specs-wrapper {
+    margin-left: 4rem;
     margin: 1rem;
 }
 
@@ -66,7 +67,7 @@
 }
 
 .artifact__narrative {
-    width: 17rem;
+    width: 13rem;
     flex-direction: column;
     padding: 1.5rem;
     border-radius: 0.5rem;
@@ -154,6 +155,18 @@
 .art-anim {
     position: relative;
     opacity: 0;
+}
+
+@media screen and (min-width:370px) {
+
+    .artifact__image {
+        width: 20rem;
+    }
+
+    .artifact__narrative {
+        width: 17rem;
+    }
+    
 }
 
 @media screen and (min-width:768px) {
