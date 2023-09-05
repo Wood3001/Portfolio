@@ -131,6 +131,15 @@
     max-width: 20rem;
 }
 
+.home-intro__text-box a {
+    font-weight: 700;
+    transition: all 500ms ease-in-out;
+}
+
+.home-intro__text-box a:hover {
+    color: var(--orange);
+}
+
 .my-name {
     color: var(--orange);
 }

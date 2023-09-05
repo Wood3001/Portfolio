@@ -34,7 +34,7 @@
                                 <div class="home-banner__message">
                                     <div class="flex flex-column flex-middle">
                                         <h1>Sherwood Seabrook</h1>
-                                        <h2>Frontend Developer</h2>
+                                        <h2>Front End Developer</h2>
                                     </div>
                                 </div>
                                 <div class="home-banner__profile-picture flex">
@@ -54,8 +54,7 @@
                                 <span class="bigger my-name">Sherwood.</span></h2>
                                 <img src="images/fam-pic1.jpg" alt="a picture of me with my partner and daughter">
                                 <div class="home-intro__text-box">
-                                    <p>I am a Web Developer and New Media Designer based in Vancouver, Canada. I am a student at the British Columbia Institute of Technology. Soon I will be embarking on my new career!</p>
-                                    <p>I am excited to continue my learning in a professional environment and to work with diverse teams to accomplish amazing things!</p>
+                                    <p>I am a Front End Developer based in Vancouver, Canada. I am a graduate-with-distincton of <a href="https://www.bcit.ca/programs/new-media-design-and-web-development-diploma-full-time-6525dipma/" target="_blank">New Media Design & Web Development</a> at British Columbia Institute of Technology (BCIT). Presently I am seeking a full-time Junior Developer position. I am excited to continue learning and practising my skills in a professional environment!</p>
                                 </div>
                                 <div class="home-banner__cta">
                                     <a href="<?php echo get_public_url('/about.php'); ?>"><button class="btn-1" aria-label="More About Me"><h3>More About Me</h3></button></a>
