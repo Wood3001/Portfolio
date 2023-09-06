@@ -16,7 +16,6 @@
     </div>
     <div class="site-footer_links">
         <ul>
-            <li><a href="https://twitter.com/wood_3001" target="_blank" aria-label="Visit My Twitter Page"><i class="fa-brands fa-twitter fa-1x"></i></a></li>
             <li><a href="https://www.instagram.com/wood_3001" target="_blank" aria-label="Visit My Instagram Page"><i class="fa-brands fa-instagram fa-1x"></i></a></li>
             <li><a href="https://www.linkedin.com/in/wood3001" target="_blank" aria-label="Visit My LinkedIn Page"><i class="fa-brands fa-linkedin fa-1x"></i></a></li>
             <li><a href="https://github.com/Wood3001" target="_blank" aria-label="Visit My Github Page"><i class="fa-brands fa-github fa-1x"></i></a></li>
