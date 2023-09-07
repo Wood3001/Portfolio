@@ -49,11 +49,12 @@
                                 <div class="about__skills skills-dev blur about-anim">
                                     <div class="sub-title">
                                         <h3>Programming Languages</h3>
+                                        <p>Proficient in a range of programming languages commonly used in web development.</p>
                                     </div>
                                     <div class="col-wrapper flex">
                                         <ul class="col">
-                                            <li><p>HTML</p></li>
-                                            <li><p>CSS</p></li>
+                                            <li><p>HTML5</p></li>
+                                            <li><p>CSS3</p></li>
                                             <li><p>JavaScript</p></li>
                                             <li><p>PHP</p></li>
                                         </ul>
@@ -61,7 +62,8 @@
                                 </div>
                                 <div class="about__skills skills-des blur about-anim">
                                     <div class="sub-title">
-                                    <h3>Front-End Development</h3>
+                                        <h3>Front-End Development</h3>
+                                        <p>Skilled in front-end technologies, with expertise in creating responsive and interactive web interfaces.</p>
                                     </div>
                                     <div class="col-wrapper flex">
                                         <ul class="col col-1">
@@ -70,7 +72,7 @@
                                             <li><p>CSS Pre/Post Processors</p></li>
                                             <li><p>JavaScript Frameworks and Libraries</p></li>
                                             <li><p>Cross-Browser Compatibility</p></li>
-                                            <li><p>Debugging and Browser Ddeveloper Tools</p></li>
+                                            <li><p>Debugging and Browser Tools</p></li>
                                             <li><p>Single Page Applications</p></li>
                                         </ul>
                                         <ul class="col col-2">
@@ -85,19 +87,21 @@
                                             <li><p>Tailwind</p></li>
                                             <li><p>Bootstrap</p></li>
                                             <li><p>Fullpage.js</p></li>
+                                            <li><p>Barba.js</p></li>
                                         </ul>
                                     </div>   
                                 </div>
                                 <div class="about__skills skills-3d blur about-anim">
                                     <div class="sub-title">
-                                    <h3>Back-End Development</h3>
+                                        <h3>Back-End Development</h3>
+                                        <p>Trained in back-end technologies including server-side scripting and database management for web applications.</p>
                                     </div>
                                     <div class="col-wrapper flex">
                                         <ul class="col col-1">
                                             <li><h4>Concepts:</h4></li>
                                             <li><p>Server-Side Scripting</p></li>
                                             <li><p>Database Management</p></li>
-                                            <li><p>RESTful API Ddevelopment / Integration</p></li>
+                                            <li><p>RESTful API Development / Integration</p></li>
                                             <li><p>Authentication and Authorization Systems</p></li>
                                             <li><p>Content Management Systems</p></li>
                                         </ul>
@@ -116,6 +120,7 @@
                                 <div class="about__skills skills-av blur about-anim">
                                     <div class="sub-title">
                                         <h3>Development Tools</h3>
+                                        <p>Well-versed in essential development tools to enhance productivity and collaboration throughout the software development process.</p>
                                     </div>
                                     <div class="col-wrapper flex">
                                         <ul class="col col-1">
@@ -140,6 +145,7 @@
                                 <div class="about__skills skills-av blur about-anim">
                                     <div class="sub-title">
                                         <h3>Digital Content Creation</h3>
+                                        <p>Proficient in digital content creation tools for graphics, music, audio/video editing, 3D modeling and animations, contributing to multimedia-rich web experiences.</p>
                                     </div>
                                     <div class="col-wrapper flex">
                                         <ul class="col col-1">

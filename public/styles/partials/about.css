@@ -102,25 +102,15 @@
     margin-bottom: 1rem;
 }
 
-/* .skills-dev {
-    grid-row: 5 / span 1;
-}
-
-.skills-des {
-    grid-row: 6 / span 1;
-}
-
-.skills-3d {
-    grid-row: 7 / span 1;
-}
-
-.skills-av {
-    grid-row: 8 / span 1;
-} */
-
 .sub-title {
     padding: 1.5rem;
+    padding-bottom: 0;
     text-shadow: 0 0 3px var(--oil);
+}
+
+.sub-title p {
+    font-style: italic;
+    font-size: 1rem;
 }
 
 .col-wrapper {
@@ -135,6 +125,7 @@
 
 .about__skills h3 {
     font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .about__skills h4 {
