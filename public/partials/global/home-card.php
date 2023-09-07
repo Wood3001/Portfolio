@@ -7,6 +7,20 @@
         <div class="home-card__desc">
             <p><?php echo h($artifact['description']); ?></p>
         </div>
-        <h3 class="is-orange"><?php echo $artifact['discipline'] == 0 ? 'Web Development' : 'Design'; ?> | <?php echo h($artifact['date_posted']); ?></h3>
+        <h3 class="is-orange"><?php 
+        
+            if ($artifact['discipline'] == 0){
+                echo "Student Project";
+            } elseif ($artifact['discipline'] == 1){
+                echo "Internship Project";
+            } elseif ($artifact['discipline'] == 2){
+                echo "Personal Project";
+            } elseif ($artifact['discipline'] == 3){
+                echo "Freelance Project";
+            } elseif ($artifact['discipline'] == 4){
+                echo "Employer Project";
+            }
+    
+        ?> | <?php echo h($artifact['date_posted']); ?></h3>
     </div>
 </a>

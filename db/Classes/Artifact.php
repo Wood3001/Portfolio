@@ -47,6 +47,7 @@
         public $nar_img6_alt;
         public $nar_link;
         public $view_order;
+        public $button_text;
 
         static public function set_db($db) {
             self::$db = $db;
@@ -121,6 +122,7 @@
             $this->nar_img6_alt = $args['nar_img6_alt'] ?? null;
             $this->nar_link = $args['nar_link'] ?? null;
             $this->view_order = $args['view_order'] ?? null;
+            $this->button_text = $args['button_text'] ?? null;
             }
 
     }

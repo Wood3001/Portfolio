@@ -81,7 +81,7 @@
                     <img src="<?php echo ($artifact['nar_img6_url']); ?>" alt="<?php echo h($artifact['nar_img6_alt']); ?>">
                 </div>
                 <div class="artifact__cta flex art-anim">
-                    <a href="<?php echo ($artifact['nar_link']); ?>" target="_blank" aria-label="View The Project"><button class="btn-1"><h3>View The Project</h3></button></a>
+                    <a href="<?php echo ($artifact['nar_link']); ?>" target="_blank" aria-label="<?php echo ($artifact['button_text']); ?>"><button class="btn-1"><h3><?php echo ($artifact['button_text']); ?></h3></button></a>
                 </div>
             </div>    
             <footer id="footer">
