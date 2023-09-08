@@ -15,9 +15,7 @@
     ?>
 
     <body>
-        <div id="open-modal" class="modal">
-            <a href="#" title="Close" class="modal-close">Close</a>
-        </div>
+        
         <?php require('partials/global/header.php'); ?>
 
         <main>
