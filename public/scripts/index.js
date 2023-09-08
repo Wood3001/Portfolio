@@ -88,74 +88,14 @@ barba.init({
         }); 
       }, {threshold:0.15})
       observer3.observe(document.querySelector('.about__sec-2'));
-    }
-  },{
-    namespace: 'dev',
-    beforeLeave() {
-      return gsap.fromTo('#dev', 
-      {color: orange},
-      {color: white, duration:0});
-    },
-    afterLeave() {
-      $('#dev').removeAttr('style');
-    },
-    beforeEnter() {
-      $('.logo-container').removeClass('hide');
-      return gsap.fromTo('#dev', 
-      {color: white},
-      {color: orange, duration:0});
-    },
-    afterEnter() {
-      const observer4 = new IntersectionObserver(entries => { 
-        entries.forEach(entry => {
-          var cards = entry.target.querySelectorAll('.card');
-          var delayTime = 0;
-    
-          cards.forEach((card) => {
-            setTimeout(function(){
-              if (entry.isIntersecting) {
-                card.classList.add('fly-up-anim');
-              }
-            },delayTime);
-            delayTime = delayTime + 100;
-          }); 
-        }); 
-      }, {threshold:0});
-      observer4.observe(document.querySelector('.js-devcards'));
-    }
-  },{
-    namespace: 'des',
-    beforeLeave() {
-      return gsap.fromTo('#des', 
-      {color: orange},
-      {color: white, duration:0});
-    },
-    afterLeave() {
-      $('#des').removeAttr('style');
-    },
-    beforeEnter() {
-      $('.logo-container').removeClass('hide');
-      return gsap.fromTo('#des', 
-      {color: white},
-      {color: orange, duration:0});
-    },
-    afterEnter() {
-      const observer4 = new IntersectionObserver(entries => { 
-        entries.forEach(entry => {
-          var cards = entry.target.querySelectorAll('.card');
-          var delayTime = 0;
-          
-          cards.forEach((card) => {
-            setTimeout(function(){
-              if (entry.isIntersecting) {
-                card.classList.add('fly-up-anim');
-              }
-            },delayTime);
-            delayTime = delayTime + 100;
-          }); 
-        }); 
-      }, {threshold:0});
-      observer4.observe(document.querySelector('.js-descards'));
+
+      // modal
+      $('#diploma-wrapper').on('click', function(){
+        openModal();
+      });
+      $('#modal').on('click', function(){
+        closeModal();
+      });
     }
   },{
     namespace: 'artifact',
@@ -252,6 +192,18 @@ function rollHomeBanner() {
     duration: 2,
     ease: 'power3.out',
     });
+}
+
+/////////////// MODAL ///////////////////
+
+// Open the Modal
+function openModal() {
+  $("#modal").css({"display" : "block"});
+}
+
+// Close the Modal
+function closeModal() {
+  $("#modal").css({"display" : "none"});
 }
 
 });
