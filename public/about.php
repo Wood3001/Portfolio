@@ -15,7 +15,9 @@
     ?>
 
     <body>
-        <div id="modal" class="modal"></div>
+        <div id="open-modal" class="modal">
+            <a href="#" title="Close" class="modal-close">Close</a>
+        </div>
         <?php require('partials/global/header.php'); ?>
 
         <main>
@@ -39,10 +41,12 @@
                                     <div class="about__cta">
                                         <a href="SherwoodSeabrook_Resume.pdf" download><button class="btn-1" aria-label="Download My Resume"><h3>Download My Resume</h3></button></a>
                                         <a href="mailto:contact@sherwoodseabrook.com"><button class="btn-1" aria-label="Send Me An Email"><h3>Send Me An Email</h3></button></a>
-                                        <div id="diploma-wrapper"><img src="images/diploma-bcit.jpg" id="diploma" alt="My BCIT Diploma"></div>
+                                        <a id="diploma-wrapper" href="#open-modal">
+                                            <img src="images/diploma-bcit.jpg" id="diploma" alt="My BCIT Diploma">
+                                            <p>Click To Enlarge</p>
+                                        </a>
                                     </div>
                                 </div>
-                                
                             </section>
                             <section class="about__sec-2">
                                 <div class="section__title section__title-skills">

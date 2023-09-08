@@ -8,7 +8,6 @@ $(window).on("load", function(){
     $loader.addClass("hide");
   });
 
-
 /////////////////// INTERSECTION OBSERVERS /////////
 
 /////////////////// BARBA.JS TRANSITIONS ///////////
@@ -88,14 +87,6 @@ barba.init({
         }); 
       }, {threshold:0.15})
       observer3.observe(document.querySelector('.about__sec-2'));
-
-      // modal
-      $('#diploma-wrapper').on('click', function(){
-        openModal();
-      });
-      $('#modal').on('click', function(){
-        closeModal();
-      });
     }
   },{
     namespace: 'artifact',
@@ -192,18 +183,6 @@ function rollHomeBanner() {
     duration: 2,
     ease: 'power3.out',
     });
-}
-
-/////////////// MODAL ///////////////////
-
-// Open the Modal
-function openModal() {
-  $("#modal").css({"display" : "block"});
-}
-
-// Close the Modal
-function closeModal() {
-  $("#modal").css({"display" : "none"});
 }
 
 });
