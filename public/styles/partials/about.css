@@ -156,6 +156,7 @@
 .about__skills li p {
     margin-top: 0;
     margin-bottom: 1rem;
+    line-height: 1.25;
 }
 
 .sub-title {

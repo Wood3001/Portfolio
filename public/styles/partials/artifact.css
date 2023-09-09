@@ -135,7 +135,7 @@
     display: flex;
     justify-content: center;
     align-self: center;
-    margin: 1rem 0;
+    margin: 1rem;
 }
 
 .artifact__image img {
@@ -271,7 +271,6 @@
 
     .artifact__image {
         width: unset;
-        padding: 1rem; 
     }
 
     .artifact__image img {
@@ -292,10 +291,11 @@
 
     .artifact__narrative {
         flex-direction: row;
-        padding: 1.5rem;
+        padding: 2rem;
         border-radius: 0.5rem;
         box-shadow: 0.25rem 0.25rem 0.75rem var(--oil-trns);
-        align-self: center;
+        height: -webkit-fill-available;
+        margin: 1rem;
     }
     
     .artifact__narrative ul {
