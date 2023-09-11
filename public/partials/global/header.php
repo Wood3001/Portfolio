@@ -1,6 +1,7 @@
 <div id="open-modal" class="modal">
     <a href="#" title="Close" class="modal-close">Close</a>
 </div>
+<div class="blackout"></div>
 <div class="top-bar"></div>
 <div class="loader">
     <div class="loader-anim"></div>
@@ -46,3 +47,4 @@
         </div>
     </div>
 </header>
+

@@ -3,7 +3,7 @@
 .site-header {
     position: fixed;
     height: 5rem;
-    z-index: 10;
+    z-index: 16;
 }
 
 .top-bar {
@@ -78,10 +78,6 @@
 
 .site-header__menu li a:hover {
     color: var(--orange);
-}
- 
-.site-header__menu nav .flex {
-    column-gap: var(--column-gap);
 }
 
 @media (min-width:370px) {

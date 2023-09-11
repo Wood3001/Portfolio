@@ -85,7 +85,6 @@
                     </footer>
                 </div>
             </div>
-            <div class="blackout"></div>
         </main>
 
         <?php require('partials/global/scripts.php'); ?>
