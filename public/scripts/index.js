@@ -141,7 +141,7 @@ $(window).on("load", function(){
     transitions: [{
       name: 'default-transition',
       leave(data) {
-        parallaxReset();
+        ofCont.scrollTop = 0;
         windowWidth = $('body').width();
         if((windowWidth < 1200)&&($('.gn-trigger').hasClass('is-active'))) {
           $('.gn-trigger').removeClass('is-active');
@@ -154,9 +154,6 @@ $(window).on("load", function(){
           opacity: 0,
           duration: 0.25
         });
-      },
-      beforeEnter() {
-        ofCont.scrollTop = 0;
       },
       enter(data) {
         return gsap.from(data.next.container, {
@@ -189,7 +186,7 @@ $(window).on("load", function(){
      });
  }
 
-    /////// PARALLAX //////////////
+  /////// PARALLAX //////////////
 
   // Create cross browser requestAnimationFrame method:
   window.requestAnimationFrame = window.requestAnimationFrame
@@ -205,41 +202,30 @@ $(window).on("load", function(){
   var ofCont = document.getElementById("overflow-container");
 
   function parallaxFront(){
-      var scrolltop = ofCont.scrollTop; // get number of pixels document has scrolled vertically 
-      // front.animate({top:(-scrolltop * 25) + "px"}, {duration:parallaxTime, fill:"both"});
+      var scrolltop = ofCont.scrollTop;
       gsap.to(front, {y:(-scrolltop * 0.025) + "px", duration:2, ease:"power1.out"})
   }
 
   function parallaxMiddleA(){
-      var scrolltop = ofCont.scrollTop; // get number of pixels document has scrolled vertically 
-      // middleA.animate({top:(-scrolltop * 10) + "px"}, {duration:parallaxTime, fill:"both"});
+      var scrolltop = ofCont.scrollTop;
       gsap.to(middleA, {y:(-scrolltop * 0.01) + "px", duration:2, ease:"power1.out"})
   }
 
   function parallaxMiddleB(){
-      var scrolltop = ofCont.scrollTop; // get number of pixels document has scrolled vertically 
-      // middleB.animate({top:(-scrolltop * 2) + "px"}, {duration:parallaxTime, fill:"both"});
+      var scrolltop = ofCont.scrollTop;
       gsap.to(middleB, {y:(-scrolltop * 0.002) + "px", duration:2, ease:"power1.out"})
   }
 
   function parallaxBack(){
-      var scrolltop = ofCont.scrollTop; // get number of pixels document has scrolled vertically 
-      // back.animate({top:(-scrolltop * -25) + "px"}, {duration:parallaxTime, fill:"both"});
+      var scrolltop = ofCont.scrollTop;
       gsap.to(back, {y:(-scrolltop * -0.015) + "px", duration:2, ease:"power1.out"})
   }
 
-  function parallaxReset(){
-      gsap.to(front, {y:"0px", duration:1, ease:"power1.out"})
-      gsap.to(middleA, {y:"0px", duration:1, ease:"power1.out"})
-      gsap.to(middleB, {y:"0px", duration:1, ease:"power1.out"})
-      gsap.to(back, {y:"0px", duration:1, ease:"power1.out"})
-  }
-
-  ofCont.onscroll = function(){ // on page scroll
+  ofCont.onscroll = function(){
     requestAnimationFrame(parallaxFront)
     requestAnimationFrame(parallaxMiddleA)
     requestAnimationFrame(parallaxMiddleB)
-    requestAnimationFrame(parallaxBack) // call parallaxlayers() on next available screen paint
+    requestAnimationFrame(parallaxBack) 
   };
 });
 
