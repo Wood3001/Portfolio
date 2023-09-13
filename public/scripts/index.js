@@ -141,6 +141,7 @@ barba.init({
   transitions: [{
     name: 'default-transition',
     leave(data) {
+      parallaxReset();
       windowWidth = $('body').width();
       if((windowWidth < 1200)&&($('.gn-trigger').hasClass('is-active'))) {
         $('.gn-trigger').removeClass('is-active');
@@ -184,6 +185,64 @@ function rollHomeBanner() {
     ease: 'power3.out',
     });
 }
+
+    /////// PARALLAX //////////////
+
+    // Create cross browser requestAnimationFrame method:
+    window.requestAnimationFrame = window.requestAnimationFrame
+    || window.mozRequestAnimationFrame
+    || window.webkitRequestAnimationFrame
+    || window.msRequestAnimationFrame
+    || function(f){setTimeout(f, 1000/60)}
+
+    var front = document.getElementById("layer1");
+    var middleA = document.getElementById("layer2a");
+    var middleB = document.getElementById("layer2b");
+    var back = document.getElementById("layer3");
+    var ofCont = document.getElementById("overflow-container");
+
+    var parallaxTime = 50;
+
+    function parallaxFront(){
+        var scrolltop = ofCont.scrollTop/outerHeight; // get number of pixels document has scrolled vertically 
+        front.animate({top:(-scrolltop * 25) + "px"}, {duration:parallaxTime, fill:"both"});
+    }
+
+    function parallaxMiddleA(){
+        var scrolltop = ofCont.scrollTop/outerHeight; // get number of pixels document has scrolled vertically 
+        middleA.animate({top:(-scrolltop * 10) + "px"}, {duration:parallaxTime, fill:"both"});
+    }
+
+    function parallaxMiddleB(){
+        var scrolltop = ofCont.scrollTop/outerHeight; // get number of pixels document has scrolled vertically 
+        middleB.animate({top:(-scrolltop * 2) + "px"}, {duration:parallaxTime, fill:"both"});
+    }
+
+    function parallaxBack(){
+        var scrolltop = ofCont.scrollTop/outerHeight; // get number of pixels document has scrolled vertically 
+        back.animate({top:(-scrolltop * -25) + "px"}, {duration:parallaxTime, fill:"both"});
+    }
+
+    function parallaxReset(){
+        parallaxTime = 500;
+        front.animate({top:"0px"}, {duration:parallaxTime, fill:"both"});
+        middleA.animate({top:"0px"}, {duration:parallaxTime, fill:"both"});
+        middleB.animate({top:"0px"}, {duration:parallaxTime, fill:"both"});
+        back.animate({top:"0px"}, {duration:parallaxTime, fill:"both"});
+    }
+
+    //barba.hooks.afterEnter((data) => {
+
+      ofCont.onscroll = function(){ // on page scroll
+        requestAnimationFrame(parallaxFront)
+        requestAnimationFrame(parallaxMiddleA)
+        requestAnimationFrame(parallaxMiddleB)
+        requestAnimationFrame(parallaxBack) // call parallaxlayers() on next available screen paint
+        if (parallaxTime <= 3000){
+          parallaxTime+= 75;
+        }
+      };
+    //});
 
 });
 
@@ -253,14 +312,11 @@ $(window).resize(function() {
 function disableScroll() {
   $('body').addClass('stop-scrolling');
   $('.overflow-container').addClass('stop-scrolling');
-  $('.page-container').addClass('stop-scrolling');
-
 }
 
 function enableScroll() {
   $('body').removeClass('stop-scrolling');
   $('.overflow-container').removeClass('stop-scrolling');
-  $('.page-container').removeClass('stop-scrolling');
 }
 
 function blackOut() {

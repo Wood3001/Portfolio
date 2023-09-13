@@ -1,4 +1,4 @@
-<div class="overflow-container" data-barba="container" data-barba-namespace="artifact">
+<div id="overflow-container" data-barba="container" data-barba-namespace="artifact">
     <div id="page-container">  
         <div class="full-width">
             <div class="artifact__heading flex flex-column">

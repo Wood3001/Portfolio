@@ -21,6 +21,7 @@
     <body>
 
         <?php require('partials/global/header.php'); ?>
+        <?php require('partials/global/background.php'); ?>
 
         <main>
         
