@@ -21,10 +21,11 @@
     <body>
 
             <?php require('partials/global/header.php'); ?>
+            <?php require('partials/global/background.php'); ?>
         
         <main>
-            <div class="overflow-container" data-barba="container" data-barba-namespace="home">
-                <div id="page-container">
+            <div id="overflow-container">
+                <div id="page-container" data-barba="container" data-barba-namespace="home">
                     <div class="full-width">
                         <section class="sec-1 flex">
                             <div class="home-banner">

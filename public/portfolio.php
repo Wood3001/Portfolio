@@ -19,10 +19,11 @@
     <body>
 
         <?php require('partials/global/header.php'); ?>
+        <?php require('partials/global/background.php'); ?>
 
         <main>
-            <div class="overflow-container" data-barba="container" data-barba-namespace="portfolio">
-                <div id="page-container">
+            <div id="overflow-container">
+                <div id="page-container" data-barba="container" data-barba-namespace="portfolio">
                     <div class="full-width">
                         <div class="disc-section__title">
                             <div class="title-container">
