@@ -154,14 +154,14 @@ $(window).on("load", function(){
         return gsap.to(data.current.container, {
           x: '-100%',
           opacity: 0,
-          duration: 0.25
+          duration: .250
         });
       },
       enter(data) {
         return gsap.from(data.next.container, {
           x: '100%',
           opacity: 0,
-          duration: 0.25
+          duration: .250
         });
       }
     }]
