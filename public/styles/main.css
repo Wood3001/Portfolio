@@ -95,6 +95,7 @@ main {
     position: fixed;
     overflow-x: hidden;
     overflow-y: scroll;
+    margin-top: 6rem;
     /* scrollbar-width: none; */
     
 }

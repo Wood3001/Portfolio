@@ -18,17 +18,12 @@
         require('partials/global/head.php');
     ?>
 
-        <body>
+    <body>
 
         <?php require('partials/global/header.php'); ?>
         <?php require('partials/global/background.php'); ?>
-
-        <main>
         
-            <?php include(get_path('public/partials/global/artifact.php')); ?>
-
-            <div class="blackout"></div>
-        </main> 
+        <?php include(get_path('public/partials/global/artifact.php')); ?>
 
         <?php require('partials/global/scripts.php'); ?>
         

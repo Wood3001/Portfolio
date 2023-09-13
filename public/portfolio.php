@@ -21,48 +21,40 @@
         <?php require('partials/global/header.php'); ?>
         <?php require('partials/global/background.php'); ?>
 
-        <main>
-            <div id="overflow-container">
-                <div id="page-container" data-barba="container" data-barba-namespace="portfolio">
-                    <div class="full-width">
-                        <div class="disc-section__title">
-                            <div class="title-container">
-                            <!-- <div class="breadcrumb-container flex flex-row">
-                                <p class="breadcrumb_arrow">Filter by:&nbsp</p>
-                                <a class="breadcrumb" href="../../../public/development.php" aria-label="See Development Projects">Development</a>&nbsp &nbsp
-                                <a class="breadcrumb" href="../../../public/design.php" aria-label="See Design Projects">Design</a>
-                            </div> -->
-                                <h1>My Projects</h1>
-                            </div>
+        <main id="overflow-container">
+            <div id="page-container" data-barba="container" data-barba-namespace="portfolio">
+                <div class="full-width">
+                    <div class="disc-section__title">
+                        <div class="title-container">
+                            <h1>My Projects</h1>
                         </div>
-                        <div class="disc-card__container flex js-allcards">
-                            <div class="card-wrap flex">
+                    </div>
+                    <div class="disc-card__container flex js-allcards">
+                        <div class="card-wrap flex">
 
-                                <?php while($artifact = $artifacts->fetch_assoc()) {   
-                                        include(get_path('public/partials/global/card.php'));
-                                    } ?>
+                            <?php while($artifact = $artifacts->fetch_assoc()) {   
+                                    include(get_path('public/partials/global/card.php'));
+                                } ?>
 
-                                <div class="card flex flex-column blur height-mobile">
-                                    <div class="card__coming-soon-img">
-                                        <img src="images/radio.png" alt="a drawing of a radio" width="320" height="224">
-                                    </div>
-                                    <div class="card__coming-soon-msg">
-                                        <h2>Stay Tuned!</h2>
-                                        <p>More Projects Coming Soon!</p>
-                                    </div>
-                                    <div class="card__cta flex"></div>
+                            <div class="card flex flex-column blur height-mobile">
+                                <div class="card__coming-soon-img">
+                                    <img src="images/radio.png" alt="a drawing of a radio" width="320" height="224">
                                 </div>
+                                <div class="card__coming-soon-msg">
+                                    <h2>Stay Tuned!</h2>
+                                    <p>More Projects Coming Soon!</p>
+                                </div>
+                                <div class="card__cta flex"></div>
                             </div>
                         </div>
                     </div>
-                    <footer id="footer">
-
-                        <?php require('partials/global/footer.php'); ?>
-
-                    </footer>
                 </div>
+                <footer id="footer">
+
+                    <?php require('partials/global/footer.php'); ?>
+
+                </footer>
             </div>
-            <div class="blackout"></div>
         </main> 
 
         <?php require('partials/global/scripts.php'); ?>

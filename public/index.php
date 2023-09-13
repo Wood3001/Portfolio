@@ -23,68 +23,70 @@
             <?php require('partials/global/header.php'); ?>
             <?php require('partials/global/background.php'); ?>
         
-        <main>
-            <div id="overflow-container">
-                <div id="page-container" data-barba="container" data-barba-namespace="home">
-                    <div class="full-width">
-                        <section class="sec-1 flex">
-                            <div class="home-banner">
-                                <div class="home-banner__logo flex">
-                                    <img  src="images/logo.svg" alt="My S logo" width="48" height="54">
-                                </div>
-                                <div class="home-banner__message">
-                                    <div class="flex flex-column flex-middle">
-                                        <h1>Sherwood Seabrook</h1>
-                                        <h2>Front End Developer</h2>
-                                    </div>
-                                </div>
-                                <div class="home-banner__profile-picture flex">
-                                    <img src="images/portrait01.jpg" alt="A picture of me" width="400" height="400">
-                                </div>
-                                <div class="home-banner__cta flex">
-                                    <a href="<?php echo get_public_url('/portfolio.php'); ?>"><button class="btn-1" aria-label="View My Work"><h3>View My Work</h3></button></a>
+        <main id="overflow-container">
+            <div id="page-container" data-barba="container" data-barba-namespace="home">
+                <div class="full-width">
+                    <section class="sec-1 flex">
+                        <div class="home-banner">
+                            <div class="home-banner__logo flex">
+                                <img  src="images/logo.svg" alt="My S logo" width="48" height="54">
+                            </div>
+                            <div class="home-banner__message">
+                                <div class="flex flex-column flex-middle">
+                                    <h1>Sherwood Seabrook</h1>
+                                    <h2>Front End Developer</h2>
                                 </div>
                             </div>
-                            <div class="home-banner__arrow">
-                                <a href="#sec-2"><div class="down-arrow"></div></a>
+                            <div class="home-banner__profile-picture flex">
+                                <img src="images/portrait01.jpg" alt="A picture of me" width="400" height="400">
                             </div>
-                        </section>
-                        <section class="sec-2" id="sec-2">
-                            <div class="home-intro__message blur">
-                                <h2>Hello, my name is <br>
-                                <span class="bigger my-name">Sherwood.</span></h2>
-                                <img src="images/fam-pic1.jpg" alt="a picture of me with my partner and daughter">
-                                <div class="home-intro__text-box">
-                                    <p>I am a Front End Developer based in Vancouver, Canada. I am a graduate-with-distincton of <a href="https://www.bcit.ca/programs/new-media-design-and-web-development-diploma-full-time-6525dipma/" target="_blank">New Media Design & Web Development</a> at British Columbia Institute of Technology (BCIT). Presently I am seeking a full-time Junior Developer position. I am excited to continue learning and practising my skills in a professional environment!</p>
-                                </div>
-                                <div class="home-banner__cta">
-                                    <a href="<?php echo get_public_url('/about.php'); ?>"><button class="btn-1" aria-label="More About Me"><h3>More About Me</h3></button></a>
-                                </div>
-                            </div>
-                            <div class="home-banner__arrow">
-                                <a href="#sec-3"><div class="down-arrow"></div></a>
-                            </div>
-                        </section>
-                        <section class="sec-3" id="sec-3">
-                            <div class="home-card__heading home-card__wrapper flex flex-column flex-end">
-                                <h2>Featured Projects</h2>
-                            </div>
-                            <div class="home-card__container flex flex-middle">
+                            <div class="home-banner__cta flex">
 
-                                <?php while($count < 3 && $artifact = $artifacts->fetch_assoc()) {
-                                    include(get_path('public/partials/global/home-card.php'));
-                                    $count++;
-                                } ?>
+                                <a href="<?php echo get_public_url('/portfolio.php'); ?>"><button class="btn-1" aria-label="View My Work"><h3>View My Work</h3></button></a>
+                                
+                            </div>
+                        </div>
+                        <div class="home-banner__arrow">
+                            <a href="#sec-2"><div class="down-arrow"></div></a>
+                        </div>
+                    </section>
+                    <section class="sec-2" id="sec-2">
+                        <div class="home-intro__message blur">
+                            <h2>Hello, my name is <br>
+                            <span class="bigger my-name">Sherwood.</span></h2>
+                            <img src="images/fam-pic1.jpg" alt="a picture of me with my partner and daughter">
+                            <div class="home-intro__text-box">
+                                <p>I am a Front End Developer based in Vancouver, Canada. I am a graduate-with-distincton of <a href="https://www.bcit.ca/programs/new-media-design-and-web-development-diploma-full-time-6525dipma/" target="_blank">New Media Design & Web Development</a> at British Columbia Institute of Technology (BCIT). Presently I am seeking a full-time Junior Developer position. I am excited to continue learning and practising my skills in a professional environment!</p>
+                            </div>
+                            <div class="home-banner__cta">
+
+                                <a href="<?php echo get_public_url('/about.php'); ?>"><button class="btn-1" aria-label="More About Me"><h3>More About Me</h3></button></a>
 
                             </div>
-                        </section>
-                    </div>
-                    <footer id="footer">
+                        </div>
+                        <div class="home-banner__arrow">
+                            <a href="#sec-3"><div class="down-arrow"></div></a>
+                        </div>
+                    </section>
+                    <section class="sec-3" id="sec-3">
+                        <div class="home-card__heading home-card__wrapper flex flex-column flex-end">
+                            <h2>Featured Projects</h2>
+                        </div>
+                        <div class="home-card__container flex flex-middle">
 
-                        <?php require('partials/global/footer.php'); ?>
+                            <?php while($count < 3 && $artifact = $artifacts->fetch_assoc()) {
+                                include(get_path('public/partials/global/home-card.php'));
+                                $count++;
+                            } ?>
 
-                    </footer>
+                        </div>
+                    </section>
                 </div>
+                <footer id="footer">
+
+                    <?php require('partials/global/footer.php'); ?>
+
+                </footer>
             </div>
         </main>
 

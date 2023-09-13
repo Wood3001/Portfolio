@@ -1,4 +1,4 @@
-<div id="overflow-container">
+<main id="overflow-container">
     <div id="page-container" data-barba="container" data-barba-namespace="artifact">  
         <div class="full-width">
             <div class="artifact__heading flex flex-column">
@@ -91,4 +91,4 @@
             </footer>
         </div>
     </div>
-</div>
+</main>

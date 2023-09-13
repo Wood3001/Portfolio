@@ -140,8 +140,10 @@ $(window).on("load", function(){
     }],
     transitions: [{
       name: 'default-transition',
-      leave(data) {
+      beforeLeave() {
         ofCont.scrollTop = 0;
+      },
+      leave(data) {
         windowWidth = $('body').width();
         if((windowWidth < 1200)&&($('.gn-trigger').hasClass('is-active'))) {
           $('.gn-trigger').removeClass('is-active');
