@@ -65,7 +65,7 @@
                         </div>
                         <div class="about__skills skills-des blur about-anim">
                             <div class="sub-title">
-                                <h3>Front-End Development</h3>
+                                <h3>Front End Development</h3>
                                 <p>Skilled in front-end technologies, with expertise in creating responsive and interactive web interfaces.</p>
                             </div>
                             <div class="col-wrapper flex">
@@ -96,7 +96,7 @@
                         </div>
                         <div class="about__skills skills-3d blur about-anim">
                             <div class="sub-title">
-                                <h3>Back-End Development</h3>
+                                <h3>Back End Development</h3>
                                 <p>Trained in back-end technologies including server-side scripting and database management for web applications.</p>
                             </div>
                             <div class="col-wrapper flex">
