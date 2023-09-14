@@ -208,22 +208,22 @@ $(window).on("load", function(){
 
   function parallaxFront(){
       var scrolltop = ofCont.scrollTop*windowHeight/1080/scrollHeight*2180;
-      gsap.to(front, {y:(-scrolltop * -0.025) + "px", duration:scrollHeight/1000, ease:"power1.out"})
+      gsap.to(front, {y:(-scrolltop * -0.025) + "px", duration:3, ease:"power1.out"})
   }
 
   function parallaxMiddleA(){
       var scrolltop = ofCont.scrollTop*windowHeight/1080/scrollHeight*2180;
-      gsap.to(middleA, {y:(-scrolltop * -0.01) + "px", duration:scrollHeight/1000, ease:"power1.out"})
+      gsap.to(middleA, {y:(-scrolltop * -0.01) + "px", duration:3, ease:"power1.out"})
   }
 
   function parallaxMiddleB(){
       var scrolltop = ofCont.scrollTop*windowHeight/1080/scrollHeight*2180;
-      gsap.to(middleB, {y:(-scrolltop * -0.002) + "px", duration:scrollHeight/1000, ease:"power1.out"})
+      gsap.to(middleB, {y:(-scrolltop * -0.002) + "px", duration:3, ease:"power1.out"})
   }
 
   function parallaxBack(){
       var scrolltop = ofCont.scrollTop*windowHeight/1080/scrollHeight*2180;
-      gsap.to(back, {y:(-scrolltop * 0.02) + "px", duration:scrollHeight/1000, ease:"power1.out"})
+      gsap.to(back, {y:(-scrolltop * 0.02) + "px", duration:3, ease:"power1.out"})
   }
 
   ofCont.onscroll = function(){
