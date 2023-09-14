@@ -1,12 +1,13 @@
 /* header styles */
 
 .site-header {
-    position: fixed;
+    /* position: fixed; */
     height: 5rem;
     z-index: 16;
 }
 
 .top-bar {
+    position: fixed;
     background: var(--midnight);
     height: 1rem;
     width: 100%;

@@ -7,7 +7,7 @@
     <div class="loader-anim"></div>
 </div>
 <header class="site-header">
-    <div class="site-header__content">\
+    <div class="site-header__content">
         <div class="logo-container flex hide">
             <div class="site-header__logo block">
                 <a href="<?php echo get_public_url('/'); ?>">
