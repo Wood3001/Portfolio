@@ -176,7 +176,7 @@
                     </section>
                 </div>
                 <footer id="footer">
-                    
+
                     <?php require('partials/global/footer.php'); ?>
                     
                 </footer>

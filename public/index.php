@@ -23,7 +23,7 @@
             <?php require('partials/global/header.php'); ?>
             <?php require('partials/global/background.php'); ?>
         
-        <main id="overflow-container">
+        <main id="overflow-container" class="smooth-scroll">
             <div id="page-container" data-barba="container" data-barba-namespace="home">
                 <div class="full-width">
                     <section class="sec-1 flex">
@@ -43,7 +43,7 @@
                             <div class="home-banner__cta flex">
 
                                 <a href="<?php echo get_public_url('/portfolio.php'); ?>"><button class="btn-1" aria-label="View My Work"><h3>View My Work</h3></button></a>
-                                
+
                             </div>
                         </div>
                         <div class="home-banner__arrow">

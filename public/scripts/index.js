@@ -18,13 +18,15 @@ $(window).on("load", function(){
   barba.init({
     views: [{
       namespace: 'home',
-      beforeEnter(data) {
-        hideLogo(data);
-        rollHomeBanner(data);
+      beforeLeave() {
       },
       afterLeave(data) {
         $('.logo-container').removeClass('hide');
         showLogo(data); 
+      },
+      beforeEnter(data) {
+        hideLogo(data);
+        rollHomeBanner(data);
       },
       afterEnter() {
         const observer1 = new IntersectionObserver(entries => {
@@ -86,7 +88,7 @@ $(window).on("load", function(){
             }); 
           }); 
         }, {threshold:0.15})
-        observer3.observe(document.querySelector('.about__sec-2'));
+        observer3.observe(document.querySelector('.about__sec-2')); 
       }
     },{
       namespace: 'artifact',
@@ -140,10 +142,8 @@ $(window).on("load", function(){
     }],
     transitions: [{
       name: 'default-transition',
-      beforeLeave() {
-        ofCont.scrollTop = 0;
-      },
       leave(data) {
+        ofCont.scrollTop = 0;
         windowWidth = $('body').width();
         if((windowWidth < 1200)&&($('.gn-trigger').hasClass('is-active'))) {
           $('.gn-trigger').removeClass('is-active');
@@ -160,6 +160,7 @@ $(window).on("load", function(){
       enter(data) {
         return gsap.from(data.next.container, {
           x: '100%',
+          y: 0,
           opacity: 0,
           duration: .250
         });
@@ -186,6 +187,22 @@ $(window).on("load", function(){
      duration: 2,
      ease: 'power3.out',
      });
+ }
+
+ barba.hooks.beforeLeave(() => {
+  pauseSmoothScroll();
+ })
+
+ barba.hooks.afterEnter(() => {
+  unpauseSmoothScroll();
+ })
+
+ function unpauseSmoothScroll() {
+    $("#overflow-container").addClass("smooth-scroll");
+}
+
+ function pauseSmoothScroll() {
+    $("#overflow-container").removeClass("smooth-scroll");
  }
 
   /////// PARALLAX //////////////

@@ -83,6 +83,10 @@
     height: fit-content;
 }
 
+.smooth-scroll {
+    scroll-behavior: smooth;
+}
+
 @media (min-width:768px) {
     .grid {
         margin: 0 1rem;
