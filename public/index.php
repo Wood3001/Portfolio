@@ -46,9 +46,6 @@
 
                             </div>
                         </div>
-                        <div class="home-banner__arrow">
-                            <a href="#sec-2"><div class="down-arrow"></div></a>
-                        </div>
                     </section>
                     <section class="sec-2" id="sec-2">
                         <div class="home-intro__message blur">
@@ -63,9 +60,6 @@
                                 <a href="<?php echo get_public_url('/about.php'); ?>"><button class="btn-1" aria-label="More About Me"><h3>More About Me</h3></button></a>
 
                             </div>
-                        </div>
-                        <div class="home-banner__arrow">
-                            <a href="#sec-3"><div class="down-arrow"></div></a>
                         </div>
                     </section>
                     <section class="sec-3" id="sec-3">
