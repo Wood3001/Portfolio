@@ -2,14 +2,12 @@
     <a href="#" title="Close" class="modal-close">Close</a>
 </div>
 <div class="blackout"></div>
-
+<div class="top-bar"></div>
 <div class="loader">
     <div class="loader-anim"></div>
 </div>
 <header class="site-header">
-    <div class="top-bar"></div>
-    <div class="site-header__content">
-        <div class="top-bar"></div>
+    <div class="site-header__content">\
         <div class="logo-container flex hide">
             <div class="site-header__logo block">
                 <a href="<?php echo get_public_url('/'); ?>">
