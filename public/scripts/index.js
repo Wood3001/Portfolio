@@ -66,9 +66,6 @@ $(window).on("load", function(){
         observer2.observe(document.querySelector('.sec-3'));
 
       //////////// PAGE NAV BUTTON ///////////////////
-
-        // sections = document.querySelectorAll(".anchor");
-        console.log(sections);
         
         const navButton = $('<div id="nav-button" style="position:fixed;filter:opacity(0);z-index:10;"></div>').prependTo(ofCont);
         var j = 0;
@@ -81,7 +78,6 @@ $(window).on("load", function(){
         // this block updates and animates the button according to the mouse position, allowing the button to stay in sync when other modes of navigation are used
         $(".anchor").on("mouseover", function(event){
             k =  $(this).index();
-            console.log("k: " + k)
             if (k == sections.length -1){
               navButton.css({"transform" : "rotate(180deg)"});
             }else{
@@ -92,7 +88,6 @@ $(window).on("load", function(){
         // this block animates the scroll position and button graphic when the button is clicked
         navButton.on("click", function() {
             j = k;
-            console.log("in: " + j);
             if (j < sections.length -2) {
                 j++;
                 gsap.to(ofCont, {duration:0.5, ease:"power1.out", scrollTo:sections[j]});
@@ -112,13 +107,9 @@ $(window).on("load", function(){
                 }, "150");
                 setTimeout(() => {
                   k = 0;
-                  console.log("k out: " + k);
                 }, "400");
-                
             }
-            console.log("out:" + j);
         });
-
       }
     },{
       namespace: 'about',
