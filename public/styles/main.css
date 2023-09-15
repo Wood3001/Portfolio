@@ -221,7 +221,6 @@ footer {
     background-color: var(--eggshell);
     clip-path: polygon(50% 83%, 0 33%, 100% 33%);
     translate: 0 67vh;
-    z-index: 10;
     animation: buttonPulse 1.5s ease-in-out 0s infinite alternate;
     transition: all 1s ease-in-out;
 }
