@@ -23,11 +23,11 @@
             <?php require('partials/global/header.php'); ?>
             <?php require('partials/global/background.php'); ?>
         
-        <main id="overflow-container" class="smooth-scroll">
+        <main id="overflow-container" class="smooth-scroll flex">
             <div id="page-container" data-barba="container" data-barba-namespace="home">
-                <div class="full-width">
+                <div class="full-width" id="nav-container">
 
-                    <?php require('partials/global/page-nav-button.php'); ?>
+                    <!-- <?php require('partials/global/page-nav-button.php'); ?> -->
 
                     <section class="sec-1 flex anchor">
                         <div class="home-banner">
@@ -66,16 +66,18 @@
                         </div>
                     </section>
                     <section class="sec-3 anchor">
-                        <div class="home-card__heading home-card__wrapper flex flex-column flex-end">
-                            <h2>Featured Projects</h2>
-                        </div>
-                        <div class="home-card__container flex flex-middle">
+                        <div class="home-card__container">
+                            <div class="home-card__heading home-card__wrapper flex flex-column flex-end">
+                                <h2>Featured Projects</h2>
+                            </div>
+                            <div class="home-card__container flex flex-middle">
 
-                            <?php while($count < 3 && $artifact = $artifacts->fetch_assoc()) {
-                                include(get_path('public/partials/global/home-card.php'));
-                                $count++;
-                            } ?>
+                                <?php while($count < 3 && $artifact = $artifacts->fetch_assoc()) {
+                                    include(get_path('public/partials/global/home-card.php'));
+                                    $count++;
+                                } ?>
 
+                            </div>
                         </div>
                     </section>
                 </div>

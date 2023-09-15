@@ -92,6 +92,7 @@ main {
     overflow-x: hidden;
     overflow-y: scroll;
     margin-top: 5rem;
+    justify-content: center;
 }
 
 #smooth-content {
@@ -214,8 +215,7 @@ footer {
 
 /* page nav button */
 
-.nav-button {
-    position: fixed;
+#nav-button {
     width: 5rem;
     height: 5rem;
     background-color: var(--eggshell);
@@ -318,14 +318,3 @@ footer {
         min-width: 1025px;
     }  
 }
-
-/* @media screen and (min-width:2200px) {
-
-    body {
-        background: url(../images/ss-hero1-4k.png);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-    }
-} */

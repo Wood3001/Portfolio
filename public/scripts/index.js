@@ -17,10 +17,9 @@ $(window).on("load", function(){
 
   gsap.registerPlugin(ScrollToPlugin);
 
-  const navButton = $(".nav-button");
   var ofCont = document.getElementById("overflow-container");
+  
   var sections = document.querySelectorAll(".anchor");
-  var j;
 
   var ofCont = document.getElementById("overflow-container");
 
@@ -28,6 +27,7 @@ $(window).on("load", function(){
     views: [{
       namespace: 'home',
       beforeLeave() {
+        $('#nav-button').remove();
       },
       afterLeave(data) {
         $('.logo-container').removeClass('hide');
@@ -65,14 +65,24 @@ $(window).on("load", function(){
         });
         observer2.observe(document.querySelector('.sec-3'));
 
-        //////////// PAGE NAV BUTTON ///////////////////
+      //////////// PAGE NAV BUTTON ///////////////////
 
+        // sections = document.querySelectorAll(".anchor");
         console.log(sections);
+        
+        const navButton = $('<div id="nav-button" style="position:fixed;filter:opacity(0)"></div>').prependTo(ofCont);
+        var j = 0;
+        var k = 1;
+
+        setTimeout(() => {
+          gsap.to(navButton, {filter:"opacity(1)"})
+        }, "500");
 
         // this block updates and animates the button according to the mouse position, allowing the button to stay in sync when other modes of navigation are used
         $(".anchor").on("mouseover", function(event){
-            j =  $(this).index()-1;
-            if (j == sections.length -1){
+            k =  $(this).index();
+            console.log("k: " + k)
+            if (k == sections.length -1){
               navButton.css({"transform" : "rotate(180deg)"});
             }else{
               navButton.css({"transform" : "rotate(0deg)"});
@@ -81,22 +91,32 @@ $(window).on("load", function(){
       
         // this block animates the scroll position and button graphic when the button is clicked
         navButton.on("click", function() {
+            j = k;
+            console.log("in: " + j);
             if (j < sections.length -2) {
                 j++;
                 gsap.to(ofCont, {duration:0.5, ease:"power1.out", scrollTo:sections[j]});
+                k++;
             }else if (j == sections.length -2){
                 j++;
                 gsap.to(ofCont, {duration:0.5, ease:"power1.out", scrollTo:sections[j]});
                 setTimeout(() => {
                   navButton.css({"transform" : "rotate(180deg)"});
-                }, "250");
+                }, "150");
+                k++;
             }else{
                 j = 0;
                 gsap.to(ofCont, {duration:0.5, ease:"power1.out", scrollTo:sections[j]});
                 setTimeout(() => {
                   navButton.css({"transform" : "rotate(0deg)"});
-                }, "250");
+                }, "150");
+                setTimeout(() => {
+                  k = 0;
+                  console.log("k out: " + k);
+                }, "400");
+                
             }
+            console.log("out:" + j);
         });
 
       }
@@ -233,21 +253,22 @@ $(window).on("load", function(){
      });
  }
 
- barba.hooks.beforeLeave(() => {
-  pauseSmoothScroll();
-
-  sections.forEach(node => {
-    node.remove();
+  barba.hooks.beforeLeave(() => {
+    pauseSmoothScroll();
+    sections.forEach(node => {
+      node.remove();
+    });
   });
 
-  navButton.remove();
+  barba.hooks.afterLeave(() => {
+    
+  })
 
- })
-
- barba.hooks.afterEnter(() => {
-  unpauseSmoothScroll();
-  
- })
+  barba.hooks.afterEnter(() => {
+    unpauseSmoothScroll();
+    sections = document.querySelectorAll(".anchor");
+    ofCont = document.getElementById("overflow-container");
+  })
 
  function unpauseSmoothScroll() {
     $("#overflow-container").addClass("smooth-scroll");
