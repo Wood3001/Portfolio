@@ -26,7 +26,10 @@
         <main id="overflow-container" class="smooth-scroll">
             <div id="page-container" data-barba="container" data-barba-namespace="home">
                 <div class="full-width">
-                    <section class="sec-1 flex">
+
+                    <?php require('partials/global/page-nav-button.php'); ?>
+
+                    <section class="sec-1 flex anchor">
                         <div class="home-banner">
                             <div class="home-banner__logo flex">
                                 <img  src="images/logo.svg" alt="My S logo" width="48" height="54">
@@ -47,7 +50,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="sec-2" id="sec-2">
+                    <section class="sec-2 anchor">
                         <div class="home-intro__message blur">
                             <h2>Hello, my name is <br>
                             <span class="bigger my-name">Sherwood.</span></h2>
@@ -62,7 +65,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="sec-3" id="sec-3">
+                    <section class="sec-3 anchor">
                         <div class="home-card__heading home-card__wrapper flex flex-column flex-end">
                             <h2>Featured Projects</h2>
                         </div>

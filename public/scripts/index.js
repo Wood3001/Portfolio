@@ -15,6 +15,15 @@ $(window).on("load", function(){
   const orange = 'rgba(241, 134, 38, 1)';
   const white = '#f8f8f8';
 
+  gsap.registerPlugin(ScrollToPlugin);
+
+  const navButton = $(".nav-button");
+  var ofCont = document.getElementById("overflow-container");
+  var sections = document.querySelectorAll(".anchor");
+  var j;
+
+  var ofCont = document.getElementById("overflow-container");
+
   barba.init({
     views: [{
       namespace: 'home',
@@ -55,6 +64,41 @@ $(window).on("load", function(){
           }); 
         });
         observer2.observe(document.querySelector('.sec-3'));
+
+        //////////// PAGE NAV BUTTON ///////////////////
+
+        console.log(sections);
+
+        // this block updates and animates the button according to the mouse position, allowing the button to stay in sync when other modes of navigation are used
+        $(".anchor").on("mouseover", function(event){
+            j =  $(this).index()-1;
+            if (j == sections.length -1){
+              navButton.css({"transform" : "rotate(180deg)"});
+            }else{
+              navButton.css({"transform" : "rotate(0deg)"});
+            }
+        });
+      
+        // this block animates the scroll position and button graphic when the button is clicked
+        navButton.on("click", function() {
+            if (j < sections.length -2) {
+                j++;
+                gsap.to(ofCont, {duration:0.5, ease:"power1.out", scrollTo:sections[j]});
+            }else if (j == sections.length -2){
+                j++;
+                gsap.to(ofCont, {duration:0.5, ease:"power1.out", scrollTo:sections[j]});
+                setTimeout(() => {
+                  navButton.css({"transform" : "rotate(180deg)"});
+                }, "250");
+            }else{
+                j = 0;
+                gsap.to(ofCont, {duration:0.5, ease:"power1.out", scrollTo:sections[j]});
+                setTimeout(() => {
+                  navButton.css({"transform" : "rotate(0deg)"});
+                }, "250");
+            }
+        });
+
       }
     },{
       namespace: 'about',
@@ -191,10 +235,18 @@ $(window).on("load", function(){
 
  barba.hooks.beforeLeave(() => {
   pauseSmoothScroll();
+
+  sections.forEach(node => {
+    node.remove();
+  });
+
+  navButton.remove();
+
  })
 
  barba.hooks.afterEnter(() => {
   unpauseSmoothScroll();
+  
  })
 
  function unpauseSmoothScroll() {
@@ -218,7 +270,6 @@ $(window).on("load", function(){
   var middleA = document.getElementById("layer2a");
   var middleB = document.getElementById("layer2b");
   var back = document.getElementById("layer3");
-  var ofCont = document.getElementById("overflow-container");
 
   var windowHeight = $(ofCont).height();
   var scrollHeight = $(".full-width").height();
@@ -337,3 +388,4 @@ if ($('.blackout').hasClass('is-active')){
     $('.blackout').fadeTo(200, 1);
   }
 }
+

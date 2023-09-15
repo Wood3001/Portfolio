@@ -1,7 +1,10 @@
 <main id="overflow-container">
     <div id="page-container" data-barba="container" data-barba-namespace="artifact">  
         <div class="full-width">
-            <div class="artifact__heading flex flex-column">
+
+            <!-- <?php require('partials/global/page-nav-button.php'); ?> -->
+
+            <div class="artifact__heading flex flex-column anchor">
                 <div class="title-container">
                     <div class="breadcrumb-container flex flex-row">
                         <a class="breadcrumb" href="<?php echo get_public_url('/portfolio.php'); ?>">My Work</a>
@@ -9,7 +12,7 @@
                     <h1><?php echo h($artifact['title']); ?></h1>
                 </div>
             </div>
-            <div class="artifact flex flex-column">
+            <div class="artifact flex flex-column anchor">
                 <div class="artifact__specs art-anim" id="specs">
                     <div id="image">
                         <img src="<?php echo h($artifact['img_url']); ?>" alt="Preview image for my '<?php echo h($artifact['title']); ?>' project">
@@ -83,7 +86,8 @@
                 <div class="artifact__cta flex art-anim">
                     <a href="<?php echo ($artifact['nar_link']); ?>" target="_blank" aria-label="<?php echo ($artifact['button_text']); ?>"><button class="btn-1"><h3><?php echo ($artifact['button_text']); ?></h3></button></a>
                 </div>
-            </div>    
+            </div>   
+            <div class="anchor dummy"></div> 
             <footer id="footer">
 
                 <?php require('partials/global/footer.php'); ?>

@@ -91,8 +91,7 @@ main {
     position: fixed;
     overflow-x: hidden;
     overflow-y: scroll;
-    margin-top: 6rem;
-    /* scroll-behavior: smooth; */
+    margin-top: 5rem;
 }
 
 #smooth-content {
@@ -169,7 +168,7 @@ footer {
     position: absolute;
     width: 100%;
     height: 105%;
-    background-image: url(../images/ss-hero1-parallax_1.png);
+    background-image: url(../images/ss-hero1-parallax_1O.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -181,7 +180,7 @@ footer {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(../images/ss-hero1-parallax_2a.png);
+    background-image: url(../images/ss-hero1-parallax_2aO.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -193,7 +192,7 @@ footer {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(../images/ss-hero1-parallax_2b.png);
+    background-image: url(../images/ss-hero1-parallax_2bO.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -205,12 +204,40 @@ footer {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(../images/ss-hero1-parallax_3.png);
+    background-image: url(../images/ss-hero1-parallax_3O.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
     top: -15px;
+}
+
+/* page nav button */
+
+.nav-button {
+    position: fixed;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--eggshell);
+    clip-path: polygon(50% 83%, 0 33%, 100% 33%);
+    translate: 0 67vh;
+    z-index: 10;
+    animation: buttonPulse 1.5s ease-in-out 0s infinite alternate;
+    transition: all 1s ease-in-out;
+}
+
+#nav-button:hover {
+    animation: buttonPulseHov 1.5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes buttonPulse {
+    0% {opacity: 0.2;}
+    100% {opacity:0.35;}
+}
+
+@keyframes buttonPulseHov {
+    0% {opacity: 0.3;}
+    100% {opacity:0.45;}
 }
 
 /* media queries */

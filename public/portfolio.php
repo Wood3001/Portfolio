@@ -24,7 +24,10 @@
         <main id="overflow-container">
             <div id="page-container" data-barba="container" data-barba-namespace="portfolio">
                 <div class="full-width">
-                    <div class="disc-section__title">
+
+                    <!-- <?php require('partials/global/page-nav-button.php'); ?> -->
+
+                    <div class="disc-section__title anchor">
                         <div class="title-container">
                             <h1>My Projects</h1>
                         </div>
@@ -48,6 +51,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="anchor"></div>
                 </div>
                 <footer id="footer">
 

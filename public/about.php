@@ -22,7 +22,10 @@
         <main id="overflow-container">
             <div id="page-container" data-barba="container" data-barba-namespace="about">
                 <div class="full-width">
-                    <section class="about__sec-1">
+
+                    <!-- <?php require('partials/global/page-nav-button.php'); ?> -->
+
+                    <section class="about__sec-1 anchor">
                         <div class="section__title section__title-about">
                             <h1>About</h1>
                         </div>
@@ -45,7 +48,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="about__sec-2">
+                    <section class="about__sec-2 anchor">
                         <div class="section__title section__title-skills">
                             <h1>Skills</h1>
                         </div>
@@ -175,6 +178,7 @@
                         </div>
                     </section>
                 </div>
+                <div class="anchor"></div>
                 <footer id="footer">
 
                     <?php require('partials/global/footer.php'); ?>
