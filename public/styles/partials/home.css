@@ -100,7 +100,7 @@
     grid-template-columns: 1.5rem 5rem 1fr 1.5rem;
     grid-template-rows: 1rem 6rem 1fr 6rem 4rem;
     opacity: 0;
-    margin: 15vh 0;
+    margin: 6vh 0 0;
     z-index: 11;
 }
 
@@ -325,6 +325,14 @@
 
     .home-card__container {
         max-width: 72rem;
+    }
+}
+
+@media screen and (min-width:1400px) {
+
+    .home-intro__message {
+
+        margin: 22vh 0 0;
     }
 }
 

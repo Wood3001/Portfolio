@@ -92,7 +92,7 @@ main {
     overflow-x: hidden;
     overflow-y: scroll;
     margin-top: 5rem;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 #smooth-content {
@@ -218,9 +218,11 @@ footer {
 #nav-button {
     width: 5rem;
     height: 5rem;
+    margin: 2rem;
+    bottom: 20vh;
+    z-index: 15;
     background-color: var(--eggshell);
     clip-path: polygon(50% 83%, 0 33%, 100% 33%);
-    translate: 0 67vh;
     animation: buttonPulse 1.5s ease-in-out 0s infinite alternate;
     transition: all 1s ease-in-out;
 }

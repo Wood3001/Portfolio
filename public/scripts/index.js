@@ -67,7 +67,7 @@ $(window).on("load", function(){
 
       //////////// PAGE NAV BUTTON ///////////////////
         
-        const navButton = $('<div id="nav-button" style="position:fixed;filter:opacity(0);z-index:10;"></div>').prependTo(ofCont);
+        const navButton = $('<div id="nav-button" style="position:fixed;filter:opacity(0);"></div>').prependTo(ofCont);
         var j = 0;
         var k = 1;
 
