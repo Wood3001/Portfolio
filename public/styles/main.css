@@ -93,6 +93,8 @@ main {
     overflow-y: scroll;
     margin-top: 5rem;
     justify-content: flex-end;
+    scrollbar-width: 0px;
+    justify-content: center;
 }
 
 #smooth-content {
@@ -136,7 +138,7 @@ footer {
     background-color: var(--oil-trns2);
     -webkit-backdrop-filter: blur(0.0625rem);
     backdrop-filter: blur(0.25rem);
-    width: 100%;
+    /* width: 100%; */
     height: 100vh;
     position: fixed;
     z-index: 15;
@@ -216,10 +218,11 @@ footer {
 /* page nav button */
 
 #nav-button {
+    display: none;
     width: 5rem;
     height: 5rem;
     margin: 2rem;
-    bottom: 20vh;
+    bottom: 10vh;
     z-index: 15;
     background-color: var(--eggshell);
     clip-path: polygon(50% 83%, 0 33%, 100% 33%);
@@ -267,6 +270,11 @@ footer {
 }
 
 @media screen and (min-width:768px) {
+
+    #overflow-container {
+        justify-content: flex-end;
+    }
+
     .section__title h1 {
         font-size: 4rem;
     }
@@ -283,6 +291,11 @@ footer {
 
     .full-width {
         padding-bottom: 16rem;
+    }
+
+    #nav-button {
+        display: block;
+        bottom: 20vh;
     }
 }
 
