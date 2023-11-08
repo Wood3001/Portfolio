@@ -48,8 +48,8 @@
 
 #image img {
     height: auto;
-    transform: translateY(-6rem);
-    
+    transform: translateY(-5rem);
+    object-fit: cover;
 }
 
 #image a {
